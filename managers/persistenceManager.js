@@ -1,11 +1,9 @@
-const mongoClient = require('./mongoClient');
+const mongoClient = require('./persistenceManagerMongo');
 
 exports.getUser = async (email) => {
-  const user = await mongoClient.getUser(email);
-  return user;
+  return await mongoClient.getUser(email);
 };
 
 exports.addUser = async (user) => {
-  await mongoClient.addUser(user);
-  return user;
+  return await mongoClient.addUser(user);
 };

@@ -28,19 +28,16 @@ exports.login = async (req, res) => {
 };
 
 /**
- * /register
+ * /user
  *
  * @param req
  * @param res
  * @returns {Promise<*>}
  */
-exports.register = async (req, res) => {
+exports.add = async (req, res) => {
   const userParam = req.body;
-
-  logger.info('1 userParam' + JSON.stringify(userParam));
   try {
-    const user = await userServices.register(userParam);
-    logger.info('2 userParam' + user);
+    const user = await userServices.add(userParam);
     return user && user.error
       ? res.status(200)
         .jsonp({ error: user.error })

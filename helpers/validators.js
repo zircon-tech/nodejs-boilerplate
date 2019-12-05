@@ -10,7 +10,9 @@ exports.boolean = (value) => check(value, `${value} must be boolean`).isBoolean(
 // User
 exports.email = check('email').isEmail();
 exports.password = check('password').isLength({ min: 5 });
-exports.name = check('name').isLength({ min: 2 });
+exports.first_name = check('first_name').isLength({ min: 2 });
+exports.last_name = check('last_name').isLength({ min: 2 });
+exports.cellphone = check('cellphone').isLength({ min: 8 });
 
 /* Validation */
 exports.validation = (req, res, next) => {

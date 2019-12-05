@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 const http = require('http');
@@ -10,7 +11,8 @@ const helmet = require('helmet');
 const logger = require('./helpers/logger');
 const { ENVIRONMENT, PORT } = require('./config');
 
-
+// CORS
+app.use(cors());
 // parse application/json
 app.use(bodyParser.json());
 
@@ -38,9 +40,9 @@ app.use('/user', appMiddleware.jwtCheck);
 /** ***************************************
  * ROUTES
  *************************************** */
-const guest = require('./routes/user');
+const user = require('./routes/user');
 // Imports routes for guest
-app.use('/', guest);
+app.use('/', user);
 
 
 /** ***************************************

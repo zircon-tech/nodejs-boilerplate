@@ -1245,3 +1245,840 @@ Error: listen EADDRINUSE :::3000
 2019-12-05T18:27:13.944Z -- info: 2 mongo{"name":"name","email":"pepe@gmail.com","password":"123456"}
 2019-12-05T18:27:13.946Z -- info: 2 userParamtrue
 2019-12-05T18:27:14.087Z -- info: Insert 1 user into the collection
+2019-12-05T19:10:33.235Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T19:27:10.755Z -- info: Node server running on http://localhost:3000
+2019-12-05T19:27:10.789Z -- info: Connected successfully to MongoDB server
+2019-12-05T19:27:22.238Z -- info: ====================================
+2019-12-05T19:27:22.238Z -- info: NEW REQUEST
+2019-12-05T19:27:22.239Z -- info: URL /
+2019-12-05T19:27:22.239Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","sec-fetch-mode":"navigate","sec-fetch-user":"?1","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3","sec-fetch-site":"none","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7","cookie":"rs6_overview_pagination=8; wp-settings-1=libraryContent%3Dbrowse%26mfold%3Do%26editor%3Dtinymce%26edit_element_vcUIPanelWidth%3D651%26edit_element_vcUIPanelLeft%3D900px%26edit_element_vcUIPanelTop%3D74px; wp-settings-time-1=1571168130; Webstorm-df8e3b28=09aa9e16-4f80-4fe7-8fa7-a420acbedfcd; _ga=GA1.1.339268889.1575040844; CookieConsent=true","if-none-match":"W/\"542-eM16hwPr0yA0Wb77XCLV2e9qrYk\""}
+2019-12-05T19:27:22.239Z -- info: BODY {}
+2019-12-05T19:27:22.239Z -- info: ====================================
+2019-12-05T19:40:42.572Z -- error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.(anonymous function) [as post] (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.(anonymous function) [as post] (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/routes/user.js:25:8)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+2019-12-05T19:40:42.656Z -- error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.(anonymous function) [as post] (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.(anonymous function) [as post] (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/routes/user.js:25:8)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+2019-12-05T19:42:54.716Z -- error: uncaughtException: first_name is not defined
+ReferenceError: first_name is not defined
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/routes/user.js:27:4)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:41:15)
+    at Module._compile (module.js:660:30)
+2019-12-05T19:42:59.685Z -- error: uncaughtException: first_name is not defined
+ReferenceError: first_name is not defined
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/routes/user.js:27:4)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:41:15)
+    at Module._compile (module.js:660:30)
+2019-12-05T19:44:58.861Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T19:45:00.459Z -- info: Node server running on http://localhost:3000
+2019-12-05T19:45:00.496Z -- info: Connected successfully to MongoDB server
+2019-12-05T19:45:06.438Z -- info: ====================================
+2019-12-05T19:45:06.439Z -- info: NEW REQUEST
+2019-12-05T19:45:06.439Z -- info: URL /login
+2019-12-05T19:45:06.439Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"616c52d7-b921-0b27-21b0-59cbd63875e8","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:45:06.440Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T19:45:06.440Z -- info: ====================================
+2019-12-05T19:45:06.475Z -- info: 1 login 
+2019-12-05T19:45:06.527Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T19:45:06.530Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T19:45:06.531Z -- info: 4 getUser result {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}
+2019-12-05T19:45:06.531Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo
+2019-12-05T19:45:59.656Z -- info: ====================================
+2019-12-05T19:45:59.656Z -- info: NEW REQUEST
+2019-12-05T19:45:59.656Z -- info: URL /register
+2019-12-05T19:45:59.656Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"116","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","authorization":"Bearer sdasdasdasd","postman-token":"eadee18f-ac49-71af-213b-0bdb4759b4e7","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:45:59.656Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":""}
+2019-12-05T19:45:59.657Z -- info: ====================================
+2019-12-05T19:46:40.733Z -- info: ====================================
+2019-12-05T19:46:40.733Z -- info: NEW REQUEST
+2019-12-05T19:46:40.733Z -- info: URL /register
+2019-12-05T19:46:40.734Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"116","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","postman-token":"2f35d5ad-d8ca-3bf4-da70-82a34155ba85","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:46:40.735Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":""}
+2019-12-05T19:46:40.736Z -- info: ====================================
+2019-12-05T19:47:06.852Z -- info: ====================================
+2019-12-05T19:47:06.853Z -- info: NEW REQUEST
+2019-12-05T19:47:06.853Z -- info: URL /register
+2019-12-05T19:47:06.854Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"116","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"e90f5f77-b54a-9a60-53b9-28a54974280c","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:47:06.856Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":""}
+2019-12-05T19:47:06.857Z -- info: ====================================
+2019-12-05T19:47:18.285Z -- info: ====================================
+2019-12-05T19:47:18.285Z -- info: NEW REQUEST
+2019-12-05T19:47:18.285Z -- info: URL /register
+2019-12-05T19:47:18.285Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"128","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"8b2a8831-1e6e-3db6-f8df-55d30496bb87","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:47:18.286Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:47:18.286Z -- info: ====================================
+2019-12-05T19:47:18.287Z -- info: 1 userParam{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:47:18.288Z -- info: service{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:47:18.288Z -- info: 1 mongo{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:47:18.289Z -- info: 2 mongo{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:47:18.292Z -- info: 2 userParamtrue
+2019-12-05T19:47:18.296Z -- info: Insert 1 user into the collection
+2019-12-05T19:49:18.235Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T19:49:18.253Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T19:49:26.835Z -- info: Node server running on http://localhost:3000
+2019-12-05T19:49:26.872Z -- info: Connected successfully to MongoDB server
+2019-12-05T19:49:34.108Z -- info: ====================================
+2019-12-05T19:49:34.108Z -- info: NEW REQUEST
+2019-12-05T19:49:34.108Z -- info: URL /register
+2019-12-05T19:49:34.108Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"128","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"ace0174a-f87d-9383-6f9f-dabd6a02a0b6","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:49:34.109Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:49:34.109Z -- info: ====================================
+2019-12-05T19:49:34.135Z -- info: 1 userParam{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:49:34.135Z -- info: service{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:49:34.136Z -- info: 1 mongo{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:49:34.136Z -- info: 2 mongo{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:49:34.139Z -- info: 2 userParamtrue
+2019-12-05T19:49:34.146Z -- info: Insert 1 user into the collection
+2019-12-05T19:54:45.754Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T19:54:45.827Z -- info: Node server running on http://localhost:3000
+2019-12-05T19:54:45.856Z -- info: Connected successfully to MongoDB server
+2019-12-05T19:54:51.471Z -- info: ====================================
+2019-12-05T19:54:51.472Z -- info: NEW REQUEST
+2019-12-05T19:54:51.474Z -- info: URL /register
+2019-12-05T19:54:51.474Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"128","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"1117e938-4635-cde3-b568-5982ac278066","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:54:51.474Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:54:51.474Z -- info: ====================================
+2019-12-05T19:54:51.502Z -- info: 1 userParam{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:54:51.503Z -- info: service{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:54:51.514Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T19:54:51.514Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T19:54:51.515Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:55:00.854Z -- info: ====================================
+2019-12-05T19:55:00.855Z -- info: NEW REQUEST
+2019-12-05T19:55:00.855Z -- info: URL /register
+2019-12-05T19:55:00.855Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"128","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"2493afd9-7a02-0600-5e16-2df8084a271f","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T19:55:00.855Z -- info: BODY {"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:55:00.855Z -- info: ====================================
+2019-12-05T19:55:00.874Z -- info: 1 userParam{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:55:00.874Z -- info: service{"first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T19:55:00.878Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T19:55:00.879Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T19:55:00.879Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:03:45.227Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:04:43.307Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:05:07.089Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:06:01.595Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:06:10.930Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:07:58.511Z -- info: Node server running on http://localhost:3000
+2019-12-05T20:07:58.548Z -- info: Connected successfully to MongoDB server
+2019-12-05T20:08:12.518Z -- info: ====================================
+2019-12-05T20:08:12.519Z -- info: NEW REQUEST
+2019-12-05T20:08:12.519Z -- info: URL /login
+2019-12-05T20:08:12.519Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"78b88451-cd10-7014-3245-6c2f67a12457","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:08:12.520Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T20:08:12.520Z -- info: ====================================
+2019-12-05T20:08:12.542Z -- info: 1 login 
+2019-12-05T20:08:12.554Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:08:12.554Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:08:12.554Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:12.555Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc2NDkyLCJleHAiOjE1NzYxODEyOTJ9.HPy_ab5aMZrnSctzUyqAIf1wsxIuA6eGANZjJ4X5xBs
+2019-12-05T20:08:30.826Z -- info: ====================================
+2019-12-05T20:08:30.827Z -- info: NEW REQUEST
+2019-12-05T20:08:30.828Z -- info: URL /register
+2019-12-05T20:08:30.828Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"7ab78421-92d6-536e-82bc-fe68443279ac","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:08:30.829Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:30.830Z -- info: ====================================
+2019-12-05T20:08:30.841Z -- info: 1 userParam{"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:30.842Z -- info: service{"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:30.847Z -- info: 1 getUser pepe1@gmail.com
+2019-12-05T20:08:30.848Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T20:08:30.848Z -- info: 4 getUser result null
+2019-12-05T20:08:30.848Z -- info: 1 mongo{"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:30.848Z -- info: 2 mongo{"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:30.851Z -- info: 2 userParamtrue
+2019-12-05T20:08:30.855Z -- info: Insert 1 user into the collection
+2019-12-05T20:08:36.331Z -- info: ====================================
+2019-12-05T20:08:36.331Z -- info: NEW REQUEST
+2019-12-05T20:08:36.331Z -- info: URL /register
+2019-12-05T20:08:36.331Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"f553e5e7-2fe0-0a18-e7fb-adba2806c350","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:08:36.333Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:36.333Z -- info: ====================================
+2019-12-05T20:08:36.335Z -- info: 1 userParam{"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:36.335Z -- info: service{"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:36.337Z -- info: 1 getUser pepe1@gmail.com
+2019-12-05T20:08:36.338Z -- info: 2 getUser Successfully found document: {"_id":"5de963bebf1a8c320eb46ae2","first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:08:36.338Z -- info: 4 getUser result {"_id":"5de963bebf1a8c320eb46ae2","first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:59.318Z -- info: ====================================
+2019-12-05T20:08:59.318Z -- info: NEW REQUEST
+2019-12-05T20:08:59.321Z -- info: URL /register
+2019-12-05T20:08:59.322Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","postman-token":"280ad01e-5f70-83f3-acd5-954ad7c86545","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:08:59.322Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:08:59.322Z -- info: ====================================
+2019-12-05T20:16:54.009Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:16:54.009Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:51:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T20:17:16.810Z -- info: Node server running on http://localhost:3000
+2019-12-05T20:17:16.842Z -- info: Connected successfully to MongoDB server
+2019-12-05T20:19:12.270Z -- info: ====================================
+2019-12-05T20:19:12.271Z -- info: NEW REQUEST
+2019-12-05T20:19:12.271Z -- info: URL /login
+2019-12-05T20:19:12.272Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"e367c8db-1aa4-f1c0-6aba-cf282836bc9a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:19:12.272Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T20:19:12.272Z -- info: ====================================
+2019-12-05T20:19:12.293Z -- info: 1 login 
+2019-12-05T20:19:12.306Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:19:12.306Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:19:12.306Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:19:12.307Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc3MTUyLCJleHAiOjE1NzYxODE5NTJ9.JJGmfX_B-OD_GyI2j9PmwScEBPi1gOmKJvipBqpzlo4
+2019-12-05T20:19:16.620Z -- info: ====================================
+2019-12-05T20:19:16.620Z -- info: NEW REQUEST
+2019-12-05T20:19:16.620Z -- info: URL /user
+2019-12-05T20:19:16.621Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","postman-token":"60eb3de1-c59f-76de-6256-0c9bdcb49631","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:19:16.621Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:19:16.621Z -- info: ====================================
+2019-12-05T20:24:24.007Z -- info: ====================================
+2019-12-05T20:24:24.008Z -- info: NEW REQUEST
+2019-12-05T20:24:24.008Z -- info: URL /user
+2019-12-05T20:24:24.008Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"246c3440-4344-3f3d-7878-c5ddbe4a75c2","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:24:24.008Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:24:24.008Z -- info: ====================================
+2019-12-05T20:24:24.008Z -- info: 1 checking to JWt
+2019-12-05T20:24:24.009Z -- info: 2 checking to JWt
+2019-12-05T20:24:24.012Z -- info: 3 checking to JWt
+2019-12-05T20:24:24.013Z -- info: 1 userParam{"first_name":"pepe1","last_name":"pepe1","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:24:24.014Z -- info: service{"first_name":"pepe1","last_name":"pepe1","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:24:24.016Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:24:24.017Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:24:24.021Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:24:28.072Z -- info: ====================================
+2019-12-05T20:24:28.072Z -- info: NEW REQUEST
+2019-12-05T20:24:28.072Z -- info: URL /login
+2019-12-05T20:24:28.073Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"18b5d85b-8319-1f0a-2daa-e1e7e34fe433","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:24:28.073Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T20:24:28.073Z -- info: ====================================
+2019-12-05T20:24:28.074Z -- info: 1 login 
+2019-12-05T20:24:28.077Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:24:28.077Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:24:28.077Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:24:28.078Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc3NDY4LCJleHAiOjE1NzYxODIyNjh9.-roltaMmbLu5H_hZX_NO4yiyXrVsWpTnSqIeD3_-yA4
+2019-12-05T20:25:17.340Z -- info: ====================================
+2019-12-05T20:25:17.340Z -- info: NEW REQUEST
+2019-12-05T20:25:17.341Z -- info: URL /user
+2019-12-05T20:25:17.343Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"3f859176-7ff7-e7a0-824d-404d805c3c20","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:25:17.344Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:25:17.344Z -- info: ====================================
+2019-12-05T20:25:17.344Z -- info: 1 checking to JWt
+2019-12-05T20:25:17.344Z -- info: 4 checking to JWt
+2019-12-05T20:43:25.355Z -- error: uncaughtException: Cannot find module '../managers/external_auth'
+Error: Cannot find module '../managers/external_auth'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/services/user.js:2:22)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T20:43:33.808Z -- error: uncaughtException: Cannot find module '../managers/external_auth'
+Error: Cannot find module '../managers/external_auth'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/services/user.js:2:22)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T20:45:01.706Z -- error: uncaughtException: Cannot find module '../managers/external_auth'
+Error: Cannot find module '../managers/external_auth'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/services/user.js:2:22)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T20:45:10.093Z -- error: uncaughtException: Cannot find module '../managers/external_auth'
+Error: Cannot find module '../managers/external_auth'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/services/user.js:2:22)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T20:45:41.266Z -- info: Node server running on http://localhost:3000
+2019-12-05T20:45:41.270Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:52:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T20:45:41.323Z -- info: Connected successfully to MongoDB server
+2019-12-05T20:45:46.376Z -- info: ====================================
+2019-12-05T20:45:46.378Z -- info: NEW REQUEST
+2019-12-05T20:45:46.378Z -- info: URL /login
+2019-12-05T20:45:46.378Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"5eadd21e-47ac-429e-0c02-ee84c15aa529","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:45:46.378Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T20:45:46.378Z -- info: ====================================
+2019-12-05T20:45:46.401Z -- info: 1 login 
+2019-12-05T20:45:46.416Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:45:46.416Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:45:46.416Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:45:46.416Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc4NzQ2LCJleHAiOjE1NzYxODM1NDZ9.QdzffqjomhPgIVpQJ6ue-yhew0MoewN20RDeJ8PSffE
+2019-12-05T20:46:02.649Z -- info: ====================================
+2019-12-05T20:46:02.650Z -- info: NEW REQUEST
+2019-12-05T20:46:02.650Z -- info: URL /user
+2019-12-05T20:46:02.650Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"952fdeaa-777f-94b7-906c-df70b6829c6a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:46:02.650Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:02.650Z -- info: ====================================
+2019-12-05T20:46:02.651Z -- info: 1 checking to JWt
+2019-12-05T20:46:02.651Z -- info: 4 checking to JWt
+2019-12-05T20:46:09.524Z -- info: ====================================
+2019-12-05T20:46:09.525Z -- info: NEW REQUEST
+2019-12-05T20:46:09.525Z -- info: URL /user
+2019-12-05T20:46:09.525Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"659a9bed-e56b-36bc-d22b-2c3c90e09828","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:46:09.525Z -- info: BODY {"first_name":"pepe1","last_name":"pepe1","email":"pepe1@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:09.525Z -- info: ====================================
+2019-12-05T20:46:09.525Z -- info: 1 checking to JWt
+2019-12-05T20:46:09.525Z -- info: 2 checking to JWt
+2019-12-05T20:46:09.528Z -- info: 3 checking to JWt
+2019-12-05T20:46:09.542Z -- info: 1 userParam{"first_name":"pepe1","last_name":"pepe1","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:09.542Z -- info: service{"first_name":"pepe1","last_name":"pepe1","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:09.546Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:46:09.546Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:46:09.546Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:23.885Z -- info: ====================================
+2019-12-05T20:46:23.885Z -- info: NEW REQUEST
+2019-12-05T20:46:23.885Z -- info: URL /user
+2019-12-05T20:46:23.886Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"130","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"0115bdb1-25b1-d9b2-597d-abf9525c1bc7","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:46:23.886Z -- info: BODY {"first_name":"pep2","last_name":"pepe2","email":"pepe3@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:23.886Z -- info: ====================================
+2019-12-05T20:46:23.886Z -- info: 1 checking to JWt
+2019-12-05T20:46:23.886Z -- info: 2 checking to JWt
+2019-12-05T20:46:23.887Z -- info: 3 checking to JWt
+2019-12-05T20:46:23.889Z -- info: 1 userParam{"first_name":"pep2","last_name":"pepe2","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:23.889Z -- info: service{"first_name":"pep2","last_name":"pepe2","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:23.896Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:46:23.898Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:46:23.898Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:36.824Z -- info: ====================================
+2019-12-05T20:46:36.825Z -- info: NEW REQUEST
+2019-12-05T20:46:36.825Z -- info: URL /user
+2019-12-05T20:46:36.825Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"130","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"61239483-723b-6c4f-870c-7528ac8fde29","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:46:36.825Z -- info: BODY {"first_name":"pep2","last_name":"pepe2","email":"pepe2@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:36.825Z -- info: ====================================
+2019-12-05T20:46:36.825Z -- info: 1 checking to JWt
+2019-12-05T20:46:36.825Z -- info: 2 checking to JWt
+2019-12-05T20:46:36.826Z -- info: 3 checking to JWt
+2019-12-05T20:46:36.830Z -- info: 1 userParam{"first_name":"pep2","last_name":"pepe2","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:36.830Z -- info: service{"first_name":"pep2","last_name":"pepe2","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:46:36.831Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:46:36.832Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:46:36.832Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:47:24.542Z -- info: ====================================
+2019-12-05T20:47:24.542Z -- info: NEW REQUEST
+2019-12-05T20:47:24.542Z -- info: URL /user
+2019-12-05T20:47:24.542Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"130","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"7f32dee7-f5a3-fd67-623c-24bb7e28dee4","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:47:24.543Z -- info: BODY {"first_name":"pep2","last_name":"pepe2","email":"pepe2@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:47:24.543Z -- info: ====================================
+2019-12-05T20:47:24.543Z -- info: 1 checking to JWt
+2019-12-05T20:47:24.543Z -- info: 2 checking to JWt
+2019-12-05T20:47:24.543Z -- info: 3 checking to JWt
+2019-12-05T20:47:24.544Z -- info: 1 userParam{"first_name":"pep2","last_name":"pepe2","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:47:24.545Z -- info: service{"first_name":"pep2","last_name":"pepe2","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:47:24.546Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:47:24.546Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:47:24.546Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:49:33.096Z -- info: ====================================
+2019-12-05T20:49:33.097Z -- info: NEW REQUEST
+2019-12-05T20:49:33.097Z -- info: URL /user
+2019-12-05T20:49:33.097Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc1MTA2LCJleHAiOjE1NzYxNzk5MDZ9.6H56vj81nijHAwtUDXJzb4uVK6qH4BDVN6T7fd5EYRo","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"ac1ef1f1-3488-583a-71d5-169637c254fa","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:49:33.097Z -- info: BODY {"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:49:33.097Z -- info: ====================================
+2019-12-05T20:49:33.097Z -- info: 1 checking to JWt
+2019-12-05T20:49:33.097Z -- info: 2 checking to JWt
+2019-12-05T20:49:33.098Z -- info: 3 checking to JWt
+2019-12-05T20:49:33.100Z -- info: 1 userParam{"first_name":"pepe4","last_name":"pepe4","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:49:33.101Z -- info: service{"first_name":"pepe4","last_name":"pepe4","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:49:33.103Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:49:33.103Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:49:33.103Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:52:25.270Z -- info: Node server running on http://localhost:3000
+2019-12-05T20:52:25.278Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:52:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T20:52:25.306Z -- info: Connected successfully to MongoDB server
+2019-12-05T20:52:41.556Z -- info: ====================================
+2019-12-05T20:52:41.557Z -- info: NEW REQUEST
+2019-12-05T20:52:41.557Z -- info: URL /login
+2019-12-05T20:52:41.557Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"54","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"f1ee5d77-5e7d-78e2-22d3-2e0784ecb8cc","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:52:41.557Z -- info: BODY {"email":"pepe4@gmail.com","password":"123456"}
+2019-12-05T20:52:41.557Z -- info: ====================================
+2019-12-05T20:52:41.592Z -- info: 1 login 
+2019-12-05T20:52:41.612Z -- info: 1 getUser pepe4@gmail.com
+2019-12-05T20:52:41.613Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T20:52:41.613Z -- info: 4 getUser result null
+2019-12-05T20:52:41.614Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGU0QGdtYWlsLmNvbSIsImlhdCI6MTU3NTU3OTE2MSwiZXhwIjoxNTc2MTgzOTYxfQ.aCHUkiYnfanqHCEY8cECIOBna5-zw9rdWKRNUCDw6Xg
+2019-12-05T20:52:49.454Z -- info: ====================================
+2019-12-05T20:52:49.455Z -- info: NEW REQUEST
+2019-12-05T20:52:49.455Z -- info: URL /login
+2019-12-05T20:52:49.455Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"8fa82c73-a9c0-2c9a-6030-c8971cb00709","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:52:49.455Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T20:52:49.455Z -- info: ====================================
+2019-12-05T20:52:49.456Z -- info: 1 login 
+2019-12-05T20:52:49.463Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:52:49.465Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:52:49.467Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:52:49.467Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78
+2019-12-05T20:53:16.276Z -- info: ====================================
+2019-12-05T20:53:16.277Z -- info: NEW REQUEST
+2019-12-05T20:53:16.277Z -- info: URL /user
+2019-12-05T20:53:16.278Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"b23c5577-cac6-7174-4ba3-f4369e705d27","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:53:16.278Z -- info: BODY {"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:53:16.280Z -- info: ====================================
+2019-12-05T20:53:16.284Z -- info: 1 userParam{"first_name":"pepe4","last_name":"pepe4","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:53:16.285Z -- info: service{"first_name":"pepe4","last_name":"pepe4","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:53:16.288Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:53:16.290Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:53:16.290Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:53:55.533Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:53:55.556Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:52:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T20:54:23.544Z -- info: Node server running on http://localhost:3000
+2019-12-05T20:54:23.576Z -- info: Connected successfully to MongoDB server
+2019-12-05T20:54:38.579Z -- info: ====================================
+2019-12-05T20:54:38.583Z -- info: NEW REQUEST
+2019-12-05T20:54:38.583Z -- info: URL /login
+2019-12-05T20:54:38.584Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"1d06bc33-a554-6ef6-4a0f-a5d0e7e27e21","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:54:38.584Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T20:54:38.584Z -- info: ====================================
+2019-12-05T20:54:38.609Z -- info: 1 login 
+2019-12-05T20:54:38.628Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T20:54:38.628Z -- info: 2 getUser Successfully found document: {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:54:38.629Z -- info: 4 getUser result {"_id":"5de95f4e18b7812d1c41ca96","first_name":"pepe","last_name":"pepe","email":"pepe@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:54:38.629Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5Mjc4LCJleHAiOjE1NzYxODQwNzh9.THpssJJQXhmeOqsT5CL0PDxXRt2M1yyiUkznjg8OF4g
+2019-12-05T20:54:42.399Z -- info: ====================================
+2019-12-05T20:54:42.400Z -- info: NEW REQUEST
+2019-12-05T20:54:42.400Z -- info: URL /user
+2019-12-05T20:54:42.400Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"08a3ff98-34ea-2794-f761-90289fc05ffe","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:54:42.400Z -- info: BODY {"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:54:42.400Z -- info: ====================================
+2019-12-05T20:54:42.408Z -- info: 1 userParam{"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:54:42.408Z -- info: service{"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:54:42.411Z -- info: 1 getUser pepe4@gmail.com
+2019-12-05T20:54:42.411Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T20:54:42.411Z -- info: 4 getUser result null
+2019-12-05T20:54:42.412Z -- info: 1 mongo{"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:54:42.412Z -- info: 2 mongo{"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:54:42.414Z -- info: 2 userParamtrue
+2019-12-05T20:54:42.417Z -- info: Insert 1 user into the collection
+2019-12-05T20:55:03.761Z -- info: ====================================
+2019-12-05T20:55:03.762Z -- info: NEW REQUEST
+2019-12-05T20:55:03.762Z -- info: URL /user
+2019-12-05T20:55:03.762Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer JhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"f5dc9e33-6695-bc84-2186-f4c1bd2610d0","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:55:03.762Z -- info: BODY {"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:03.762Z -- info: ====================================
+2019-12-05T20:55:17.467Z -- info: ====================================
+2019-12-05T20:55:17.468Z -- info: NEW REQUEST
+2019-12-05T20:55:17.468Z -- info: URL /user
+2019-12-05T20:55:17.468Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer ejJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"54d74b77-6e91-e14f-f098-62ff5729d686","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:55:17.468Z -- info: BODY {"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:17.469Z -- info: ====================================
+2019-12-05T20:55:42.452Z -- info: ====================================
+2019-12-05T20:55:42.452Z -- info: NEW REQUEST
+2019-12-05T20:55:42.452Z -- info: URL /user
+2019-12-05T20:55:42.452Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"80288202-c807-6bfa-62db-93816da7c98e","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:55:42.452Z -- info: BODY {"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:42.452Z -- info: ====================================
+2019-12-05T20:55:42.456Z -- info: 1 userParam{"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:42.457Z -- info: service{"first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:42.458Z -- info: 1 getUser pepe4@gmail.com
+2019-12-05T20:55:42.458Z -- info: 2 getUser Successfully found document: {"_id":"5de96e92e7464640fd1f76db","first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:55:42.458Z -- info: 4 getUser result {"_id":"5de96e92e7464640fd1f76db","first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:56.396Z -- info: ====================================
+2019-12-05T20:55:56.396Z -- info: NEW REQUEST
+2019-12-05T20:55:56.397Z -- info: URL /login
+2019-12-05T20:55:56.398Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"54","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"65530579-a5a8-0aef-58eb-9c9171a3e8ff","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:55:56.398Z -- info: BODY {"email":"pepe4@gmail.com","password":"123456"}
+2019-12-05T20:55:56.399Z -- info: ====================================
+2019-12-05T20:55:56.400Z -- info: 1 login 
+2019-12-05T20:55:56.402Z -- info: 1 getUser pepe4@gmail.com
+2019-12-05T20:55:56.403Z -- info: 2 getUser Successfully found document: {"_id":"5de96e92e7464640fd1f76db","first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T20:55:56.404Z -- info: 4 getUser result {"_id":"5de96e92e7464640fd1f76db","first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:55:56.404Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGU0QGdtYWlsLmNvbSIsImlhdCI6MTU3NTU3OTM1NiwiZXhwIjoxNTc2MTg0MTU2fQ.XKWSgskOJ0aYkH9gF2-KSmIARnud_a9FKX1xDbdk1no
+2019-12-05T20:59:43.113Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T20:59:43.357Z -- info: Node server running on http://localhost:3000
+2019-12-05T20:59:43.389Z -- info: Connected successfully to MongoDB server
+2019-12-05T20:59:56.965Z -- info: ====================================
+2019-12-05T20:59:56.967Z -- info: NEW REQUEST
+2019-12-05T20:59:56.967Z -- info: URL /user
+2019-12-05T20:59:56.967Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"f652a812-6029-21ad-e4f8-80243958d144","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T20:59:56.967Z -- info: BODY {"first_name":"pepe5","last_name":"pepe5","email":"pepe5@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:59:56.967Z -- info: ====================================
+2019-12-05T20:59:56.995Z -- info: service{"first_name":"pepe5","last_name":"pepe5","email":"pepe5@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:59:57.006Z -- info: 1 getUser pepe5@gmail.com
+2019-12-05T20:59:57.006Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T20:59:57.006Z -- info: 4 getUser result null
+2019-12-05T20:59:57.006Z -- info: 1 mongo{"first_name":"pepe5","last_name":"pepe5","email":"pepe5@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:59:57.006Z -- info: 2 mongo{"first_name":"pepe5","last_name":"pepe5","email":"pepe5@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T20:59:57.012Z -- info: Insert 1 user into the collection
+2019-12-05T21:02:48.051Z -- info: Node server running on http://localhost:3000
+2019-12-05T21:02:48.062Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:52:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T21:02:48.090Z -- info: Connected successfully to MongoDB server
+2019-12-05T21:09:35.557Z -- error: uncaughtException: Cannot find module './mongoClient'
+Error: Cannot find module './mongoClient'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/managers/persistenceManager.js:1:83)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T21:09:35.557Z -- error: uncaughtException: Cannot find module './mongoClient'
+Error: Cannot find module './mongoClient'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/managers/persistenceManager.js:1:83)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T21:10:59.126Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T21:11:11.414Z -- info: Node server running on http://localhost:3000
+2019-12-05T21:11:11.617Z -- info: Connected successfully to MongoDB server
+2019-12-05T21:11:27.836Z -- info: ====================================
+2019-12-05T21:11:27.837Z -- info: NEW REQUEST
+2019-12-05T21:11:27.837Z -- info: URL /user
+2019-12-05T21:11:27.837Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"558fe6ac-50bd-a07e-7e08-41cc50ae3816","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T21:11:27.837Z -- info: BODY {"first_name":"pepe6","last_name":"pepe6","email":"pepe6@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T21:11:27.837Z -- info: ====================================
+2019-12-05T21:11:27.860Z -- info: service{"first_name":"pepe6","last_name":"pepe6","email":"pepe6@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T21:11:27.870Z -- info: User not found.
+2019-12-05T21:11:27.876Z -- info: Insert 1 user into the collection
+2019-12-05T21:13:28.752Z -- error: uncaughtException: Identifier 'user' has already been declared
+/home/claudio/token-celeste/node-api-boilerplate/services/user.js:39
+  const user = await persistence.addUser(user);
+        ^
+
+SyntaxError: Identifier 'user' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:624:28)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/controllers/user.js:1:84)
+2019-12-05T21:13:28.752Z -- error: uncaughtException: Identifier 'user' has already been declared
+/home/claudio/token-celeste/node-api-boilerplate/services/user.js:39
+  const user = await persistence.addUser(user);
+        ^
+
+SyntaxError: Identifier 'user' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:624:28)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/controllers/user.js:1:84)
+2019-12-05T21:14:13.962Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T21:14:13.962Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:52:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T21:14:20.579Z -- info: Node server running on http://localhost:3000
+2019-12-05T21:14:20.616Z -- info: Connected successfully to MongoDB server
+2019-12-05T21:14:31.090Z -- info: ====================================
+2019-12-05T21:14:31.090Z -- info: NEW REQUEST
+2019-12-05T21:14:31.091Z -- info: URL /user
+2019-12-05T21:14:31.091Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"b14186a6-fdbb-0359-3806-232f55ca0c12","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T21:14:31.091Z -- info: BODY {"first_name":"pepe7","last_name":"pepe7","email":"pepe7@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T21:14:31.091Z -- info: ====================================
+2019-12-05T21:14:31.127Z -- info: service{"first_name":"pepe7","last_name":"pepe7","email":"pepe7@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T21:14:31.136Z -- info: User not found.
+2019-12-05T21:14:31.143Z -- info: Insert 1 user into the collection
+2019-12-05T21:16:06.492Z -- info: Node server running on http://localhost:3000
+2019-12-05T21:16:06.535Z -- info: Connected successfully to MongoDB server
+2019-12-05T21:16:28.891Z -- info: ====================================
+2019-12-05T21:16:28.891Z -- info: NEW REQUEST
+2019-12-05T21:16:28.892Z -- info: URL /login
+2019-12-05T21:16:28.892Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"54","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"26937090-9ef6-15f7-f6e0-274183db6d25","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T21:16:28.893Z -- info: BODY {"email":"pepe4@gmail.com","password":"123456"}
+2019-12-05T21:16:28.893Z -- info: ====================================
+2019-12-05T21:16:28.922Z -- info: 1 login 
+2019-12-05T21:16:28.936Z -- info: User successfully found document: {"_id":"5de96e92e7464640fd1f76db","first_name":"pepe4","last_name":"pepe4","email":"pepe4@gmail.com","password":"123456","cellphone":"121212121212"}.
+2019-12-05T21:16:28.936Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGU0QGdtYWlsLmNvbSIsImlhdCI6MTU3NTU4MDU4OCwiZXhwIjoxNTc2MTg1Mzg4fQ.i_JLQ2LaNZ9_G6ssfP1PIgAEFymOTxyzS-rb_sXpzwY
+2019-12-05T21:16:33.335Z -- info: ====================================
+2019-12-05T21:16:33.335Z -- info: NEW REQUEST
+2019-12-05T21:16:33.336Z -- info: URL /user
+2019-12-05T21:16:33.336Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"131","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTc5MTY5LCJleHAiOjE1NzYxODM5Njl9.4iXiohKlXdaDL5le1nOvjLLztmmpMnezCjvseUqJr78","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","cache-control":"no-cache","api_key":"123456","postman-token":"9c4bff22-3825-7937-f26b-b5ffe5de8b1a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T21:16:33.337Z -- info: BODY {"first_name":"pepe7","last_name":"pepe7","email":"pepe7@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T21:16:33.337Z -- info: ====================================
+2019-12-05T21:16:33.344Z -- info: service{"first_name":"pepe7","last_name":"pepe7","email":"pepe7@gmail.com","password":"123456","cellphone":"121212121212"}
+2019-12-05T21:16:33.346Z -- info: User not found.
+2019-12-05T21:16:33.355Z -- info: Insert 1 user into the collection

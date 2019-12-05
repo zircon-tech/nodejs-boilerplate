@@ -5,15 +5,15 @@ const {
   validation,
   email,
   password,
-  name,
+  first_name,
+  last_name,
+  cellphone,
 } = require('../helpers/validators');
 
 // CONTROLLER
 const userController = require('../controllers/user');
 
 // CREATE ROUTES ON ROUTER
-
-// App login
 router.post(
   '/login',
   [email, password],
@@ -21,12 +21,11 @@ router.post(
   userController.login,
 );
 
-// App register
 router.post(
-  '/register',
-  [name, email, password],
+  '/user',
+  [first_name, last_name, email, password, cellphone],
   validation,
-  userController.register,
+  userController.add,
 );
 
 module.exports = router;
