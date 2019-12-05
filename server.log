@@ -1,0 +1,1247 @@
+2019-12-04T20:22:12.896Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:39:41.687Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:39:53.385Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:40:18.370Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:41:03.645Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:41:12.727Z -- info: ====================================
+2019-12-04T20:41:42.516Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:41:45.565Z -- info: ====================================
+2019-12-04T20:41:45.565Z -- info: NEW REQUEST
+2019-12-04T20:41:45.566Z -- info: URL
+2019-12-04T20:41:45.567Z -- info: HEADERS
+2019-12-04T20:41:45.569Z -- info: BODY
+2019-12-04T20:41:45.569Z -- info: ====================================
+2019-12-04T20:42:33.055Z -- info: ====================================
+2019-12-04T20:42:33.055Z -- info: NEW REQUEST
+2019-12-04T20:42:33.056Z -- info: URL
+2019-12-04T20:42:33.056Z -- info: HEADERS
+2019-12-04T20:42:33.056Z -- info: BODY
+2019-12-04T20:42:33.056Z -- info: ====================================
+2019-12-04T20:42:52.289Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:42:58.712Z -- info: ====================================
+2019-12-04T20:42:58.712Z -- info: NEW REQUEST
+2019-12-04T20:42:58.713Z -- info: URL
+2019-12-04T20:42:58.713Z -- info: HEADERS
+2019-12-04T20:42:58.714Z -- info: BODY
+2019-12-04T20:42:58.714Z -- info: ====================================
+2019-12-04T20:44:17.209Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:44:21.125Z -- info: ====================================
+2019-12-04T20:44:21.134Z -- info: NEW REQUEST
+2019-12-04T20:44:21.135Z -- info: URL /login
+2019-12-04T20:44:21.135Z -- info: HEADERS [object Object]
+2019-12-04T20:44:21.135Z -- info: BODY [object Object]
+2019-12-04T20:44:21.135Z -- info: ====================================
+2019-12-04T20:44:53.916Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:45:00.187Z -- info: ====================================
+2019-12-04T20:45:00.187Z -- info: NEW REQUEST
+2019-12-04T20:45:00.188Z -- info: URL /login
+2019-12-04T20:45:00.188Z -- info: HEADERS [object Object]
+2019-12-04T20:45:00.188Z -- info: BODY [object Object]
+2019-12-04T20:45:00.188Z -- info: BODY[object Object]
+2019-12-04T20:45:00.188Z -- info: ====================================
+2019-12-04T20:45:52.048Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:46:05.471Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:46:14.605Z -- info: ====================================
+2019-12-04T20:46:14.605Z -- info: NEW REQUEST
+2019-12-04T20:46:14.605Z -- info: URL /login
+2019-12-04T20:46:14.605Z -- info: HEADERS [object Object]
+2019-12-04T20:46:14.606Z -- info: BODY [object Object]
+2019-12-04T20:46:14.606Z -- info: BODY
+2019-12-04T20:46:14.606Z -- info: ====================================
+2019-12-04T20:47:09.256Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:47:13.575Z -- info: ====================================
+2019-12-04T20:47:13.575Z -- info: NEW REQUEST
+2019-12-04T20:47:13.576Z -- info: URL /login
+2019-12-04T20:47:13.576Z -- info: HEADERS [object Object]
+2019-12-04T20:47:13.576Z -- info: BODY [object Object]
+2019-12-04T20:47:13.576Z -- info: BODY
+2019-12-04T20:47:13.577Z -- info: ====================================
+2019-12-04T20:48:29.940Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:48:33.793Z -- info: ====================================
+2019-12-04T20:48:33.793Z -- info: NEW REQUEST
+2019-12-04T20:48:33.794Z -- info: URL
+2019-12-04T20:48:33.794Z -- info: HEADERS [object Object]
+2019-12-04T20:48:33.794Z -- info: BODY [object Object]
+2019-12-04T20:48:33.795Z -- info: BODY
+2019-12-04T20:48:33.795Z -- info: ====================================
+2019-12-04T20:49:00.237Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:49:02.950Z -- info: ====================================
+2019-12-04T20:49:02.950Z -- info: NEW REQUEST
+2019-12-04T20:49:02.951Z -- info: URL
+2019-12-04T20:49:02.951Z -- info: HEADERS [object Object]
+2019-12-04T20:49:02.951Z -- info: BODY [object Object]
+2019-12-04T20:49:02.951Z -- info: BODY
+2019-12-04T20:49:02.951Z -- info: ====================================
+2019-12-04T20:49:09.444Z -- info: ====================================
+2019-12-04T20:49:09.444Z -- info: NEW REQUEST
+2019-12-04T20:49:09.445Z -- info: URL
+2019-12-04T20:49:09.445Z -- info: HEADERS [object Object]
+2019-12-04T20:49:09.445Z -- info: BODY [object Object]
+2019-12-04T20:49:09.445Z -- info: BODY
+2019-12-04T20:49:09.445Z -- info: ====================================
+2019-12-04T20:49:37.033Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:49:41.278Z -- info: ====================================
+2019-12-04T20:49:41.279Z -- info: NEW REQUEST
+2019-12-04T20:49:41.279Z -- info: URL
+2019-12-04T20:49:41.279Z -- info: HEADERS [object Object]
+2019-12-04T20:49:41.279Z -- info: BODY [object Object]
+2019-12-04T20:49:41.280Z -- info: BODY
+2019-12-04T20:49:41.280Z -- info: ====================================
+2019-12-04T20:49:53.338Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:49:58.147Z -- info: ====================================
+2019-12-04T20:49:58.148Z -- info: NEW REQUEST
+2019-12-04T20:49:58.149Z -- info: URL
+2019-12-04T20:49:58.150Z -- info: HEADERS [object Object]
+2019-12-04T20:49:58.150Z -- info: BODY [object Object]
+2019-12-04T20:51:39.158Z -- error: uncaughtException: missing ) after argument list
+/home/claudio/token-celeste/node-api-basic-architecture/middleware/app.js:9
+  logger.info("HEADERS",  ${req.headers}`);
+                          ^
+
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:624:28)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-basic-architecture/app.js:26:23)
+2019-12-04T20:56:01.516Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:56:08.851Z -- info: ====================================
+2019-12-04T20:56:08.852Z -- info: NEW REQUEST
+2019-12-04T20:56:08.852Z -- info: URL
+2019-12-04T20:56:08.853Z -- info: HEADERS
+2019-12-04T20:56:08.853Z -- info: BODY [object Object]
+2019-12-04T20:56:08.854Z -- info: BODY
+2019-12-04T20:56:08.854Z -- info: ====================================
+2019-12-04T20:56:08.857Z -- info: test req.body %s
+2019-12-04T20:56:20.953Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:56:26.838Z -- info: ====================================
+2019-12-04T20:56:26.839Z -- info: NEW REQUEST
+2019-12-04T20:56:26.840Z -- info: URL
+2019-12-04T20:56:26.840Z -- info: HEADERS
+2019-12-04T20:56:26.841Z -- info: BODY [object Object]
+2019-12-04T20:56:26.842Z -- info: BODY
+2019-12-04T20:56:26.842Z -- info: ====================================
+2019-12-04T20:56:26.846Z -- info: test req.body %s
+2019-12-04T20:56:58.090Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:57:02.859Z -- info: ====================================
+2019-12-04T20:57:02.861Z -- info: NEW REQUEST
+2019-12-04T20:57:02.862Z -- info: URL
+2019-12-04T20:57:02.862Z -- info: HEADERS
+2019-12-04T20:57:02.862Z -- info: ====================================
+2019-12-04T20:57:02.862Z -- info: test req.body %s
+2019-12-04T20:57:23.944Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:57:29.944Z -- info: ====================================
+2019-12-04T20:57:29.945Z -- info: NEW REQUEST
+2019-12-04T20:57:29.946Z -- info: URL
+2019-12-04T20:57:29.946Z -- info: HEADERS
+2019-12-04T20:57:29.947Z -- info: ====================================
+2019-12-04T20:57:29.947Z -- info: test req.body %s
+2019-12-04T20:58:42.350Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:58:49.691Z -- info: ====================================
+2019-12-04T20:58:49.691Z -- info: NEW REQUEST
+2019-12-04T20:58:49.692Z -- info: URL
+2019-12-04T20:58:49.692Z -- info: HEADERS
+2019-12-04T20:58:49.692Z -- info: ====================================
+2019-12-04T20:58:49.692Z -- info: test req.body %s
+2019-12-04T20:59:31.572Z -- info: Node server running on http://localhost:3000
+2019-12-04T20:59:45.605Z -- info: ====================================
+2019-12-04T20:59:45.605Z -- info: NEW REQUEST
+2019-12-04T20:59:45.609Z -- info: URL
+2019-12-04T20:59:45.610Z -- info: HEADERS
+2019-12-04T20:59:45.611Z -- info: ====================================
+2019-12-04T20:59:45.612Z -- info: test req.body %s
+2019-12-04T21:00:04.856Z -- info: ====================================
+2019-12-04T21:00:04.856Z -- info: NEW REQUEST
+2019-12-04T21:00:04.857Z -- info: URL
+2019-12-04T21:00:04.857Z -- info: HEADERS
+2019-12-04T21:00:04.857Z -- info: ====================================
+2019-12-04T21:00:04.857Z -- info: test req.body %s
+2019-12-04T21:02:04.818Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:02:10.352Z -- info: ====================================
+2019-12-04T21:02:10.353Z -- info: NEW REQUEST
+2019-12-04T21:02:10.353Z -- info: URL
+2019-12-04T21:02:10.354Z -- info: HEADERS
+2019-12-04T21:02:10.354Z -- info: ====================================
+2019-12-04T21:02:10.354Z -- info: test req.body %o
+2019-12-04T21:07:36.319Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:07:42.108Z -- info: ====================================
+2019-12-04T21:07:42.108Z -- info: NEW REQUEST
+2019-12-04T21:07:42.111Z -- info: URL
+2019-12-04T21:07:42.111Z -- info: HEADERS
+2019-12-04T21:07:42.112Z -- info: ====================================
+2019-12-04T21:07:42.112Z -- info: test req.body %j
+2019-12-04T21:10:54.507Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:11:11.644Z -- info: ====================================
+2019-12-04T21:11:11.645Z -- info: NEW REQUEST
+2019-12-04T21:11:11.645Z -- info: URL
+2019-12-04T21:11:11.646Z -- info: HEADERS
+2019-12-04T21:11:11.646Z -- info: ====================================
+2019-12-04T21:11:11.646Z -- info: test req.body %j
+2019-12-04T21:12:01.492Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:12:09.247Z -- info: ====================================
+2019-12-04T21:12:09.247Z -- info: NEW REQUEST
+2019-12-04T21:12:09.248Z -- info: URL
+2019-12-04T21:12:09.248Z -- info: HEADERS
+2019-12-04T21:12:09.252Z -- info: ====================================
+2019-12-04T21:12:09.252Z -- info: test req.body %j
+2019-12-04T21:12:31.067Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:12:35.289Z -- info: ====================================
+2019-12-04T21:12:35.291Z -- info: NEW REQUEST
+2019-12-04T21:12:35.292Z -- info: URL
+2019-12-04T21:12:35.292Z -- info: HEADERS %j
+2019-12-04T21:12:35.296Z -- info: ====================================
+2019-12-04T21:12:35.296Z -- info: test req.body %j
+2019-12-04T21:13:09.154Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:13:18.449Z -- info: ====================================
+2019-12-04T21:13:18.452Z -- info: NEW REQUEST
+2019-12-04T21:13:18.452Z -- info: URL
+2019-12-04T21:13:18.452Z -- info: HEADERS %j
+2019-12-04T21:13:18.456Z -- info: ====================================
+2019-12-04T21:13:18.456Z -- info: test req.body %j
+2019-12-04T21:15:16.775Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:15:39.339Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:15:48.395Z -- info: ====================================
+2019-12-04T21:15:48.397Z -- info: NEW REQUEST
+2019-12-04T21:15:48.398Z -- info: HEADERS %j
+2019-12-04T21:15:48.398Z -- info: ====================================
+2019-12-04T21:15:48.398Z -- info: test req.body %j
+2019-12-04T21:17:35.153Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:17:42.831Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:19:28.245Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:19:31.252Z -- info: ====================================
+2019-12-04T21:19:31.253Z -- info: NEW REQUEST
+2019-12-04T21:19:31.253Z -- debug: URL
+2019-12-04T21:19:31.254Z -- info: HEADERS %j
+2019-12-04T21:19:31.254Z -- info: ====================================
+2019-12-04T21:19:31.254Z -- info: test req.body %j
+2019-12-04T21:20:06.551Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:21:03.897Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:21:35.609Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:22:08.682Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:26:10.374Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:29:55.736Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:29:58.702Z -- info: ====================================
+2019-12-04T21:29:58.703Z -- info: NEW REQUEST
+2019-12-04T21:29:58.703Z -- debug: URL
+2019-12-04T21:29:58.704Z -- info: HEADERS %j
+2019-12-04T21:29:58.704Z -- info: ====================================
+2019-12-04T21:29:58.704Z -- info: test req.body %j
+2019-12-04T21:31:14.193Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:31:44.233Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:31:51.351Z -- info: ====================================
+2019-12-04T21:31:51.351Z -- info: NEW REQUEST
+2019-12-04T21:31:51.352Z -- debug: URL
+2019-12-04T21:31:51.352Z -- info: HEADERS %j
+2019-12-04T21:31:51.353Z -- info: ====================================
+2019-12-04T21:31:51.353Z -- info: test req.body %j
+2019-12-04T21:33:03.948Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:33:09.644Z -- info: ====================================
+2019-12-04T21:33:09.645Z -- info: NEW REQUEST
+2019-12-04T21:33:09.646Z -- debug: URL
+2019-12-04T21:33:09.646Z -- info: HEADERS %j
+2019-12-04T21:33:09.647Z -- info: ====================================
+2019-12-04T21:33:09.647Z -- info: test req.body %j
+2019-12-04T21:35:25.369Z -- info: Node server running on http://localhost:3000
+2019-12-04T21:35:29.100Z -- info: ====================================
+2019-12-04T21:35:29.101Z -- info: NEW REQUEST
+2019-12-04T21:35:29.101Z -- debug: URL
+2019-12-04T21:35:29.101Z -- info: HEADERS %j
+2019-12-04T21:35:29.102Z -- info: ====================================
+2019-12-04T21:35:29.102Z -- info: test req.body %j
+2019-12-05T13:20:49.028Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:21:35.614Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:21:45.209Z -- info: ====================================
+2019-12-05T13:21:45.209Z -- info: NEW REQUEST
+2019-12-05T13:21:45.210Z -- debug: URL
+2019-12-05T13:21:45.210Z -- info: HEADERS %j
+2019-12-05T13:21:45.211Z -- info: ====================================
+2019-12-05T13:21:45.211Z -- info: test req.body %j
+2019-12-05T13:23:20.327Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:23:22.172Z -- info: NEW REQUEST
+2019-12-05T13:23:22.172Z -- debug: URL /login
+2019-12-05T13:23:22.173Z -- info: HEADERS %j
+2019-12-05T13:23:22.174Z -- info: ====================================
+2019-12-05T13:23:22.174Z -- info: test req.body %j
+2019-12-05T13:24:33.496Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:24:42.802Z -- info: ====================================
+2019-12-05T13:24:42.802Z -- info: NEW REQUEST
+2019-12-05T13:24:42.803Z -- info: URL /login
+2019-12-05T13:24:42.803Z -- info: HEADERS [object Object]
+2019-12-05T13:24:42.803Z -- info: BODY [object Object]
+2019-12-05T13:24:42.803Z -- info: ====================================
+2019-12-05T13:25:02.470Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:25:08.282Z -- info: ====================================
+2019-12-05T13:25:08.282Z -- info: NEW REQUEST
+2019-12-05T13:25:08.283Z -- info: URL /login
+2019-12-05T13:25:08.283Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Bearer","api_key":"123456","postman-token":"a7b1d86a-3826-994f-71d1-bdd9536d7dea","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T13:25:08.283Z -- info: BODY [object Object]
+2019-12-05T13:25:08.283Z -- info: ====================================
+2019-12-05T13:28:27.131Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:28:28.865Z -- info: ====================================
+2019-12-05T13:28:28.866Z -- info: NEW REQUEST
+2019-12-05T13:28:28.867Z -- info: URL /login
+2019-12-05T13:28:28.869Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Bearer","api_key":"123456","postman-token":"96278ddc-ba27-b1c5-f135-840581d10e3e","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T13:28:28.871Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T13:28:28.872Z -- info: ====================================
+2019-12-05T13:29:04.732Z -- error: uncaughtException: Cannot find module '../controllers/guest'
+Error: Cannot find module '../controllers/guest'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/routes/guest.js:11:26)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T13:29:08.647Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:29:12.464Z -- info: ====================================
+2019-12-05T13:29:12.477Z -- info: NEW REQUEST
+2019-12-05T13:29:12.478Z -- info: URL /login
+2019-12-05T13:29:12.479Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Bearer","api_key":"123456","postman-token":"6ea5edca-a2ce-3d63-e64d-cec27ed46d03","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T13:29:12.492Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T13:29:12.492Z -- info: ====================================
+2019-12-05T13:29:44.006Z -- error: uncaughtException: Cannot find module './routes/guest'
+Error: Cannot find module './routes/guest'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:36:15)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T13:30:00.213Z -- error: uncaughtException: Cannot find module './routes/guest'
+Error: Cannot find module './routes/guest'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:36:15)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T13:30:05.160Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:30:07.138Z -- info: ====================================
+2019-12-05T13:30:07.139Z -- info: NEW REQUEST
+2019-12-05T13:30:07.140Z -- info: URL /login
+2019-12-05T13:30:07.141Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Bearer","api_key":"123456","postman-token":"26160442-95f0-90b0-f717-627babe445b4","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T13:30:07.142Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T13:30:07.143Z -- info: ====================================
+2019-12-05T13:31:09.270Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:38:29.377Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:39:52.310Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:44:26.705Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:49:15.623Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:51:21.226Z -- info: Node server running on http://localhost:3000
+2019-12-05T13:53:32.332Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:04:14.840Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:05:07.146Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:07:50.860Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:15:00.021Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:36:43.667Z -- info: ====================================
+2019-12-05T14:36:43.667Z -- info: NEW REQUEST
+2019-12-05T14:36:43.667Z -- info: URL /login
+2019-12-05T14:36:43.667Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"f5a7bfed-fadb-0a4b-194a-82d3e1eaebaa","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T14:36:43.668Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T14:36:43.668Z -- info: ====================================
+2019-12-05T14:41:19.424Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:41:38.958Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:45:56.243Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:47:06.774Z -- info: Node server running on http://localhost:3000
+2019-12-05T14:52:28.822Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:02:34.391Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:02:34.460Z -- error: uncaughtException: null == 'MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.
+AssertionError [ERR_ASSERTION]: null == 'MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.
+    at /home/claudio/token-celeste/node-api-boilerplate/managers/MongoClient.js:9:10
+    at err (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/execute_operation.js:76:14)
+    at executeCallback (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/execute_operation.js:67:25)
+    at err (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/connect.js:194:23)
+    at connectCallback (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/connect.js:345:5)
+    at server.connect (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/connect.js:412:14)
+    at Server.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/topologies/server.js:237:11)
+    at Object.onceWrapper (events.js:254:19)
+    at Server.emit (events.js:159:13)
+    at Pool.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/core/topologies/server.js:431:21)
+2019-12-05T15:47:03.061Z -- error: uncaughtException: ENVIRONMENT is not defined
+ReferenceError: ENVIRONMENT is not defined
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:29:1)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Function.Module.runMain (module.js:701:10)
+    at startup (bootstrap_node.js:194:16)
+    at bootstrap_node.js:618:3
+2019-12-05T15:47:57.910Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:47:57.923Z -- error: uncaughtException: null == 'MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.
+AssertionError [ERR_ASSERTION]: null == 'MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.
+    at MongoClient.connect (/home/claudio/token-celeste/node-api-boilerplate/managers/mongoClient.js:9:10)
+    at err (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/execute_operation.js:76:14)
+    at executeCallback (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/execute_operation.js:67:25)
+    at err (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/connect.js:194:23)
+    at connectCallback (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/connect.js:345:5)
+    at server.connect (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/operations/connect.js:412:14)
+    at Server.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/topologies/server.js:237:11)
+    at Object.onceWrapper (events.js:254:19)
+    at Server.emit (events.js:159:13)
+    at Pool.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/node_modules/mongodb/lib/core/topologies/server.js:431:21)
+2019-12-05T15:49:48.672Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:49:48.842Z -- info: Connected successfully to MongoDB server
+2019-12-05T15:50:14.564Z -- info: ====================================
+2019-12-05T15:50:14.565Z -- info: NEW REQUEST
+2019-12-05T15:50:14.565Z -- info: URL /login
+2019-12-05T15:50:14.566Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"77ce49ca-631d-5fa7-2ef4-f567edad02f2","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T15:50:14.566Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T15:50:14.566Z -- info: ====================================
+2019-12-05T15:50:50.073Z -- info: ====================================
+2019-12-05T15:53:52.777Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:53:52.821Z -- info: Connected successfully to MongoDB server
+2019-12-05T15:53:55.850Z -- info: ====================================
+2019-12-05T15:53:55.851Z -- info: NEW REQUEST
+2019-12-05T15:53:55.851Z -- info: URL /register
+2019-12-05T15:53:55.851Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"70","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTYxMDE0LCJleHAiOjE1NzYxNjU4MTR9.p27rBBjR3g5wzCjCha1h6lQQkkeSnLfVUlSEE6F5RNs","api_key":"123456","postman-token":"27fe0db0-e85d-b67b-dc9a-0160dadc36a1","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T15:53:55.851Z -- info: BODY {"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T15:53:55.851Z -- info: ====================================
+2019-12-05T15:54:30.454Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:54:30.492Z -- info: Connected successfully to MongoDB server
+2019-12-05T15:54:41.674Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:54:41.706Z -- info: Connected successfully to MongoDB server
+2019-12-05T15:55:00.756Z -- info: ====================================
+2019-12-05T15:55:00.757Z -- info: NEW REQUEST
+2019-12-05T15:55:00.757Z -- info: URL /login
+2019-12-05T15:55:00.757Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"9b951ed4-39dd-7604-3d9d-07abcde04b0e","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T15:55:00.757Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T15:55:00.757Z -- info: ====================================
+2019-12-05T15:55:19.249Z -- info: ====================================
+2019-12-05T15:57:34.358Z -- info: Node server running on http://localhost:3000
+2019-12-05T15:57:34.393Z -- info: Connected successfully to MongoDB server
+2019-12-05T15:57:42.569Z -- info: ====================================
+2019-12-05T16:00:34.692Z -- info: Node server running on http://localhost:3000
+2019-12-05T16:00:39.761Z -- info: Connected successfully to MongoDB server
+2019-12-05T16:01:23.111Z -- info: Node server running on http://localhost:3000
+2019-12-05T16:01:23.154Z -- info: Connected successfully to MongoDB server
+2019-12-05T16:04:06.866Z -- error: uncaughtException: Identifier 'JWT_SECRET' has already been declared
+/home/claudio/token-celeste/node-api-boilerplate/helpers/jwt.js:3
+const { JWT_SECRET, JWT_LIFETIME, JWT_SECRET } = require('./config');
+                                  ^
+
+SyntaxError: Identifier 'JWT_SECRET' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:624:28)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/middleware/app.js:2:13)
+2019-12-05T16:05:26.803Z -- error: uncaughtException: Identifier 'JWT_SECRET' has already been declared
+/home/claudio/token-celeste/node-api-boilerplate/helpers/jwt.js:3
+const { JWT_SECRET, JWT_LIFETIME, JWT_SECRET } = require('./config');
+                                  ^
+
+SyntaxError: Identifier 'JWT_SECRET' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:152:10)
+    at Module._compile (module.js:624:28)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/middleware/app.js:2:13)
+2019-12-05T16:06:10.389Z -- error: uncaughtException: Cannot find module './config'
+Error: Cannot find module './config'
+    at Function.Module._resolveFilename (module.js:555:15)
+    at Function.Module._load (module.js:482:25)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/helpers/jwt.js:3:38)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+2019-12-05T16:06:31.060Z -- info: Node server running on http://localhost:3000
+2019-12-05T16:06:31.091Z -- info: Connected successfully to MongoDB server
+2019-12-05T16:06:38.469Z -- info: ====================================
+2019-12-05T16:06:38.472Z -- info: NEW REQUEST
+2019-12-05T16:06:38.472Z -- info: URL /login
+2019-12-05T16:06:38.472Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"60438ef2-eb5d-dbc3-2791-d159aa08410d","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T16:06:38.472Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T16:06:38.473Z -- info: ====================================
+2019-12-05T16:06:44.923Z -- info: ====================================
+2019-12-05T16:12:09.865Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:01:21.050Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:01:30.713Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:01:30.747Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:02:05.636Z -- info: ====================================
+2019-12-05T17:02:05.637Z -- info: NEW REQUEST
+2019-12-05T17:02:05.637Z -- info: URL /login
+2019-12-05T17:02:05.637Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"6ef8e623-56f6-54ba-422d-882847bbd59a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:02:05.638Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:02:05.638Z -- info: ====================================
+2019-12-05T17:02:18.907Z -- info: ====================================
+2019-12-05T17:03:22.212Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:03:22.228Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:03:22.266Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:03:56.190Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:03:56.225Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:04:26.695Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:04:26.732Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:04:34.347Z -- info: ====================================
+2019-12-05T17:04:34.353Z -- info: NEW REQUEST
+2019-12-05T17:04:34.354Z -- info: URL /login
+2019-12-05T17:04:34.354Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"662f7443-decd-5123-0c15-b1de40508dda","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:04:34.354Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:04:34.355Z -- info: ====================================
+2019-12-05T17:04:42.510Z -- info: ====================================
+2019-12-05T17:04:42.510Z -- info: NEW REQUEST
+2019-12-05T17:04:42.511Z -- info: URL /register
+2019-12-05T17:04:42.511Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"70","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"64c834ca-8432-f08f-8fea-b96cf7f74de6","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:04:42.511Z -- info: BODY {"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:04:42.511Z -- info: ====================================
+2019-12-05T17:04:42.533Z -- info: 1 userParam{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:04:42.534Z -- info: service{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:04:42.534Z -- info: 1 mongo{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:04:42.536Z -- info: 2 mongo{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:04:42.542Z -- info: 2 userParamtrue
+2019-12-05T17:04:42.937Z -- info: Insert 1 user into the collection
+2019-12-05T17:11:17.229Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:11:17.284Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:11:17.334Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:16:06.109Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:16:06.122Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:17:20.247Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:17:20.267Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:17:41.787Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:17:41.824Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:19:24.233Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:19:24.272Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:19:33.496Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:19:33.674Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:21:40.496Z -- info: ====================================
+2019-12-05T17:21:40.497Z -- info: NEW REQUEST
+2019-12-05T17:21:40.497Z -- info: URL /login
+2019-12-05T17:21:40.497Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"51d2521f-a0a1-74e8-c7b7-cac144c8c725","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:21:40.497Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:21:40.497Z -- info: ====================================
+2019-12-05T17:21:40.520Z -- info: 1 login 
+2019-12-05T17:22:04.590Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:22:04.631Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:22:04.602Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:22:10.911Z -- info: ====================================
+2019-12-05T17:22:10.912Z -- info: NEW REQUEST
+2019-12-05T17:22:10.912Z -- info: URL /login
+2019-12-05T17:22:10.913Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"199b1970-97b8-2eea-8eb4-485eed3d712a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:22:10.928Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:22:10.928Z -- info: ====================================
+2019-12-05T17:22:10.952Z -- info: 1 login 
+2019-12-05T17:22:45.225Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:22:48.258Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:22:48.295Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:23:14.123Z -- info: ====================================
+2019-12-05T17:23:14.128Z -- info: NEW REQUEST
+2019-12-05T17:23:14.128Z -- info: URL /login
+2019-12-05T17:23:14.128Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"3183b499-939b-2f91-4b7c-e4e043ed29ff","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:23:14.128Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:23:14.129Z -- info: ====================================
+2019-12-05T17:23:14.154Z -- info: 1 login 
+2019-12-05T17:26:16.601Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:26:16.602Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:27:19.595Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:27:19.629Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:27:46.249Z -- info: ====================================
+2019-12-05T17:27:46.249Z -- info: NEW REQUEST
+2019-12-05T17:27:46.249Z -- info: URL /login
+2019-12-05T17:27:46.249Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","cache-control":"no-cache","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","api_key":"123456","postman-token":"889d11fd-4ede-b29c-68e3-8f8578887850","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:27:46.250Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:27:46.250Z -- info: ====================================
+2019-12-05T17:27:46.271Z -- info: 1 login 
+2019-12-05T17:32:43.208Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:32:43.245Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:33:21.033Z -- info: ====================================
+2019-12-05T17:33:21.035Z -- info: NEW REQUEST
+2019-12-05T17:33:21.035Z -- info: URL /login
+2019-12-05T17:33:21.036Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","content-type":"application/json","authorization":"Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTU2NjAzLCJleHAiOjE1NzYxNjE0MDN9.4XohLgNT8DkLod9O30YbrEd7870WuXHNZLgtGuBKrek","postman-token":"0e8f0989-0889-820c-5094-21de68010724","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:33:21.036Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:33:21.036Z -- info: ====================================
+2019-12-05T17:34:21.546Z -- info: ====================================
+2019-12-05T17:34:21.546Z -- info: NEW REQUEST
+2019-12-05T17:34:21.546Z -- info: URL /login
+2019-12-05T17:34:21.546Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"46b89899-a6eb-3826-3f8a-f8a05eea430a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:34:21.547Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:34:21.547Z -- info: ====================================
+2019-12-05T17:34:21.576Z -- info: 1 login 
+2019-12-05T17:35:04.220Z -- info: ====================================
+2019-12-05T17:35:04.220Z -- info: NEW REQUEST
+2019-12-05T17:35:04.221Z -- info: URL /login
+2019-12-05T17:35:04.221Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"55a10a7a-774e-c9d6-be47-6931b936ad66","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:35:04.222Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:35:04.222Z -- info: ====================================
+2019-12-05T17:35:04.224Z -- info: 1 login 
+2019-12-05T17:37:05.042Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:37:05.049Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:37:05.134Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:37:20.484Z -- info: ====================================
+2019-12-05T17:37:20.485Z -- info: NEW REQUEST
+2019-12-05T17:37:20.485Z -- info: URL /login
+2019-12-05T17:37:20.485Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"12b0ecb6-eabc-bd51-3e88-a385c00fd58b","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:37:20.485Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:37:20.485Z -- info: ====================================
+2019-12-05T17:37:20.526Z -- info: 1 login 
+2019-12-05T17:37:20.526Z -- info: 1 pesistence getUser
+2019-12-05T17:39:33.241Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:39:33.244Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:39:33.316Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:39:47.661Z -- info: ====================================
+2019-12-05T17:39:47.662Z -- info: NEW REQUEST
+2019-12-05T17:39:47.662Z -- info: URL /login
+2019-12-05T17:39:47.662Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"59e8a843-d406-a22c-fe64-37a5e642e00e","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:39:47.662Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:39:47.663Z -- info: ====================================
+2019-12-05T17:39:47.696Z -- info: 1 login 
+2019-12-05T17:39:47.696Z -- info: 1 pesistence getUser
+2019-12-05T17:39:47.789Z -- info: 1 getUserpepe@gmail.com
+2019-12-05T17:39:47.789Z -- info: 2 getUser Successfully found document: [object Object].
+2019-12-05T17:39:47.789Z -- info: 2 login 
+2019-12-05T17:40:49.138Z -- info: ====================================
+2019-12-05T17:40:49.138Z -- info: NEW REQUEST
+2019-12-05T17:40:49.138Z -- info: URL /login
+2019-12-05T17:40:49.140Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"c9e2edcd-36a7-8d66-de08-d1c839069e58","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:40:49.140Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:40:49.140Z -- info: ====================================
+2019-12-05T17:40:49.142Z -- info: 1 login 
+2019-12-05T17:40:49.144Z -- info: 1 pesistence getUser
+2019-12-05T17:40:49.150Z -- info: 1 getUserpepe@gmail.com
+2019-12-05T17:40:49.151Z -- info: 2 getUser Successfully found document: [object Object].
+2019-12-05T17:40:49.151Z -- info: 2 login 
+2019-12-05T17:40:50.029Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:40:50.033Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:40:50.077Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:56:55.997Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:56:55.988Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:57:05.472Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:57:05.508Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:57:24.519Z -- info: ====================================
+2019-12-05T17:57:24.519Z -- info: NEW REQUEST
+2019-12-05T17:57:24.519Z -- info: URL /login
+2019-12-05T17:57:24.519Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"cabf3af2-ab30-e3a3-5515-951a7d7af231","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:57:24.520Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T17:57:24.520Z -- info: ====================================
+2019-12-05T17:57:24.549Z -- info: 1 login 
+2019-12-05T17:57:24.551Z -- info: 1 pesistence getUser
+2019-12-05T17:57:24.561Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T17:57:24.562Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T17:57:24.562Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4NjQ0LCJleHAiOjE1NzYxNzM0NDR9.qoaIMYUdVkMrDm4Xg8ZUsax6IKUGZ5xClYr04UPRJRg
+2019-12-05T17:57:38.331Z -- info: ====================================
+2019-12-05T17:57:38.331Z -- info: NEW REQUEST
+2019-12-05T17:57:38.331Z -- info: URL /login
+2019-12-05T17:57:38.331Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"828dcfd0-29a1-b1e0-7133-9a0173239812","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:57:38.332Z -- info: BODY {"email":"pepe@gmail.com","password":"12345"}
+2019-12-05T17:57:38.332Z -- info: ====================================
+2019-12-05T17:57:38.333Z -- info: 1 login 
+2019-12-05T17:57:38.334Z -- info: 1 pesistence getUser
+2019-12-05T17:57:38.338Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T17:57:38.339Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T17:57:38.339Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4NjU4LCJleHAiOjE1NzYxNzM0NTh9.PECs8wCWlNqZcVBRau7PveEfpTDdI4AmJ3_2C7MGKL8
+2019-12-05T17:58:39.708Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:58:39.752Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T17:58:44.860Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:58:44.895Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:58:48.392Z -- info: ====================================
+2019-12-05T17:58:48.395Z -- info: NEW REQUEST
+2019-12-05T17:58:48.396Z -- info: URL /login
+2019-12-05T17:58:48.396Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"9dac8842-d0e6-e9b3-9f59-9ce2f1b8d890","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:58:48.397Z -- info: BODY {"email":"pepe@gmail.com","password":"12345"}
+2019-12-05T17:58:48.397Z -- info: ====================================
+2019-12-05T17:58:48.428Z -- info: 1 login 
+2019-12-05T17:58:48.431Z -- info: 1 pesistence getUser
+2019-12-05T17:58:48.442Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T17:58:48.443Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T17:58:48.443Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4NzI4LCJleHAiOjE1NzYxNzM1Mjh9.5--sfQBqn0Ve8GeL3o6CfqVCdh-Uufhfv169Ln7bnoc
+2019-12-05T17:58:48.443Z -- info: 3 login === null && password !== login.password false
+2019-12-05T17:59:50.462Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T17:59:52.131Z -- info: Node server running on http://localhost:3000
+2019-12-05T17:59:52.164Z -- info: Connected successfully to MongoDB server
+2019-12-05T17:59:55.526Z -- info: ====================================
+2019-12-05T17:59:55.527Z -- info: NEW REQUEST
+2019-12-05T17:59:55.527Z -- info: URL /login
+2019-12-05T17:59:55.527Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"ac855fb4-0aec-103c-d5f8-99bb27d5b65a","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T17:59:55.527Z -- info: BODY {"email":"pepe@gmail.com","password":"12345"}
+2019-12-05T17:59:55.528Z -- info: ====================================
+2019-12-05T17:59:55.563Z -- info: 1 login 
+2019-12-05T17:59:55.567Z -- info: 1 pesistence getUser
+2019-12-05T17:59:55.585Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T17:59:55.586Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T17:59:55.586Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4Nzk1LCJleHAiOjE1NzYxNzM1OTV9.BIdrV76bIHR7Kl_cG7tpKaG_dmlqCqHm_cDsuGU502A
+2019-12-05T17:59:55.586Z -- info: 3 login === null && password !== login.password false
+2019-12-05T18:00:11.126Z -- info: ====================================
+2019-12-05T18:00:11.126Z -- info: NEW REQUEST
+2019-12-05T18:00:11.127Z -- info: URL /login
+2019-12-05T18:00:11.127Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"26404b62-6fd1-89f0-0333-a5c872a53237","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:00:11.127Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:00:11.127Z -- info: ====================================
+2019-12-05T18:00:11.146Z -- info: 1 login 
+2019-12-05T18:00:11.146Z -- info: 1 pesistence getUser
+2019-12-05T18:00:11.152Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:00:11.152Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:00:11.152Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4ODExLCJleHAiOjE1NzYxNzM2MTF9.jUxZcUsFUjaBSDT3QDYmwFmBp4lErNQvHgEXJptTuJI
+2019-12-05T18:00:11.153Z -- info: 3 login === null && password !== login.password false
+2019-12-05T18:00:18.504Z -- info: ====================================
+2019-12-05T18:00:18.504Z -- info: NEW REQUEST
+2019-12-05T18:00:18.506Z -- info: URL /login
+2019-12-05T18:00:18.506Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"2cf47cd4-6140-e8f7-681b-7b1c1853ef01","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:00:18.506Z -- info: BODY {"email":"pepe@gmail.co","password":"123456"}
+2019-12-05T18:00:18.506Z -- info: ====================================
+2019-12-05T18:00:18.508Z -- info: 1 login 
+2019-12-05T18:00:18.508Z -- info: 1 pesistence getUser
+2019-12-05T18:00:18.510Z -- info: 1 getUser pepe@gmail.co
+2019-12-05T18:00:18.510Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T18:00:18.510Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY28iLCJpYXQiOjE1NzU1Njg4MTgsImV4cCI6MTU3NjE3MzYxOH0.1ZCLJ-HAhWTF3N6N0lH9dxgIf7zHAKlVJGw7IzTIrWo
+2019-12-05T18:00:23.544Z -- info: ====================================
+2019-12-05T18:00:23.544Z -- info: NEW REQUEST
+2019-12-05T18:00:23.544Z -- info: URL /login
+2019-12-05T18:00:23.544Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"7b3c800e-8d65-effb-0a85-23007ab31591","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:00:23.544Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:00:23.546Z -- info: ====================================
+2019-12-05T18:00:23.547Z -- info: 1 login 
+2019-12-05T18:00:23.547Z -- info: 1 pesistence getUser
+2019-12-05T18:00:23.549Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:00:23.549Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:00:23.549Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4ODIzLCJleHAiOjE1NzYxNzM2MjN9.YKA4An1g4VtrjANfyLDoL1lni9nOv7g_b27NKuylBm4
+2019-12-05T18:00:23.549Z -- info: 3 login === null && password !== login.password false
+2019-12-05T18:01:21.926Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T18:01:21.998Z -- info: Node server running on http://localhost:3000
+2019-12-05T18:01:22.026Z -- info: Connected successfully to MongoDB server
+2019-12-05T18:01:27.584Z -- info: ====================================
+2019-12-05T18:01:27.588Z -- info: NEW REQUEST
+2019-12-05T18:01:27.588Z -- info: URL /login
+2019-12-05T18:01:27.589Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"cd3ad085-53c1-c7e0-9fa9-4249c3ae78af","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:01:27.589Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:01:27.589Z -- info: ====================================
+2019-12-05T18:01:27.618Z -- info: 1 login 
+2019-12-05T18:01:27.620Z -- info: 1 pesistence getUser
+2019-12-05T18:01:27.631Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:01:27.631Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:01:27.631Z -- info: 4 getUser result.[object Object]
+2019-12-05T18:01:27.631Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4ODg3LCJleHAiOjE1NzYxNzM2ODd9.mGwa0m03fsI5xObXvgHR8FumZtZs9TtZuJ8OtWY71EY
+2019-12-05T18:01:27.631Z -- info: 3 login === null && password !== login.password false
+2019-12-05T18:01:32.885Z -- info: ====================================
+2019-12-05T18:01:32.886Z -- info: NEW REQUEST
+2019-12-05T18:01:32.886Z -- info: URL /login
+2019-12-05T18:01:32.886Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"db66203e-0492-4a6c-1fb3-be8db4beb51c","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:01:32.886Z -- info: BODY {"email":"pepe@gmail.com","password":"12345"}
+2019-12-05T18:01:32.886Z -- info: ====================================
+2019-12-05T18:01:32.903Z -- info: 1 login 
+2019-12-05T18:01:32.903Z -- info: 1 pesistence getUser
+2019-12-05T18:01:32.908Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:01:32.908Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:01:32.908Z -- info: 4 getUser result.[object Object]
+2019-12-05T18:01:32.908Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY4ODkyLCJleHAiOjE1NzYxNzM2OTJ9.3jtGhx6In-FuSdxLGAFwFrVYbWC09jYG0UKaB0TJepk
+2019-12-05T18:01:32.909Z -- info: 3 login === null && password !== login.password false
+2019-12-05T18:02:00.646Z -- info: ====================================
+2019-12-05T18:02:00.646Z -- info: NEW REQUEST
+2019-12-05T18:02:00.647Z -- info: URL /login
+2019-12-05T18:02:00.647Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"51696fd4-759f-e37b-aa84-29d50b3857f9","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:02:00.647Z -- info: BODY {"email":"pepe@gmail.cm","password":"123456"}
+2019-12-05T18:02:00.647Z -- info: ====================================
+2019-12-05T18:02:00.649Z -- info: 1 login 
+2019-12-05T18:02:00.649Z -- info: 1 pesistence getUser
+2019-12-05T18:02:00.652Z -- info: 1 getUser pepe@gmail.cm
+2019-12-05T18:02:00.652Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T18:02:00.652Z -- info: 4 getUser result.null
+2019-12-05T18:02:00.653Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY20iLCJpYXQiOjE1NzU1Njg5MjAsImV4cCI6MTU3NjE3MzcyMH0.0b3PHUEstoKXlMSFf_VDKF-NLkQlIFBlxtw3lAHUXeA
+2019-12-05T18:02:41.380Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T18:02:41.373Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T18:02:47.420Z -- info: Node server running on http://localhost:3000
+2019-12-05T18:02:47.456Z -- info: Connected successfully to MongoDB server
+2019-12-05T18:02:50.004Z -- info: ====================================
+2019-12-05T18:02:50.008Z -- info: NEW REQUEST
+2019-12-05T18:02:50.009Z -- info: URL /login
+2019-12-05T18:02:50.010Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"64a7ee1c-d43d-1927-356e-081476fdda2f","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:02:50.010Z -- info: BODY {"email":"pepe@gmail.cm","password":"123456"}
+2019-12-05T18:02:50.010Z -- info: ====================================
+2019-12-05T18:02:50.043Z -- info: 1 login 
+2019-12-05T18:02:50.046Z -- info: 1 pesistence getUser
+2019-12-05T18:02:50.061Z -- info: 1 getUser pepe@gmail.cm
+2019-12-05T18:02:50.061Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T18:02:50.061Z -- info: 4 getUser result null
+2019-12-05T18:02:50.061Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY20iLCJpYXQiOjE1NzU1Njg5NzAsImV4cCI6MTU3NjE3Mzc3MH0.GZN1dTBNQD_9lYoScmNMNocol04iqo1aKojr19wF-sk
+2019-12-05T18:03:24.838Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T18:03:24.868Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T18:03:28.616Z -- info: Node server running on http://localhost:3000
+2019-12-05T18:03:28.651Z -- info: Connected successfully to MongoDB server
+2019-12-05T18:03:34.886Z -- info: ====================================
+2019-12-05T18:03:34.890Z -- info: NEW REQUEST
+2019-12-05T18:03:34.891Z -- info: URL /login
+2019-12-05T18:03:34.891Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"f1a33d07-e674-10d7-3b36-127831fb69f8","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:03:34.891Z -- info: BODY {"email":"pepe@gmail.cm","password":"123456"}
+2019-12-05T18:03:34.891Z -- info: ====================================
+2019-12-05T18:03:34.922Z -- info: 1 login 
+2019-12-05T18:03:34.926Z -- info: 1 pesistence getUser
+2019-12-05T18:03:34.941Z -- info: 1 getUser pepe@gmail.cm
+2019-12-05T18:03:34.941Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T18:03:34.941Z -- info: 4 getUser result null
+2019-12-05T18:03:34.941Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY20iLCJpYXQiOjE1NzU1NjkwMTQsImV4cCI6MTU3NjE3MzgxNH0.8xGtxKf4B7gyxuUbs4Rv8jTjEGBDAFWDk6DhHMuZT58
+2019-12-05T18:04:51.805Z -- info: ====================================
+2019-12-05T18:04:51.805Z -- info: NEW REQUEST
+2019-12-05T18:04:51.806Z -- info: URL /login
+2019-12-05T18:04:51.806Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"57acd531-42a7-bfe1-4448-92247988c3af","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:04:51.806Z -- info: BODY {"email":"pepe@gmail.cm","password":"123456"}
+2019-12-05T18:04:51.807Z -- info: ====================================
+2019-12-05T18:04:51.821Z -- info: 1 login 
+2019-12-05T18:04:51.822Z -- info: 1 pesistence getUser
+2019-12-05T18:04:51.825Z -- info: 1 getUser pepe@gmail.cm
+2019-12-05T18:04:51.825Z -- info: 3 getUser No document matches the provided query.
+2019-12-05T18:04:51.825Z -- info: 4 getUser result null
+2019-12-05T18:04:51.825Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY20iLCJpYXQiOjE1NzU1NjkwOTEsImV4cCI6MTU3NjE3Mzg5MX0.RD9gNMFyk9ePsulfWBV0ouUQQhc6NT9nnFINbEifWEM
+2019-12-05T18:04:55.965Z -- info: ====================================
+2019-12-05T18:04:55.965Z -- info: NEW REQUEST
+2019-12-05T18:04:55.966Z -- info: URL /login
+2019-12-05T18:04:55.966Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"495a21d8-9c57-2be2-2dfe-415d1ae027c2","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:04:55.968Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:04:55.968Z -- info: ====================================
+2019-12-05T18:04:55.970Z -- info: 1 login 
+2019-12-05T18:04:55.971Z -- info: 1 pesistence getUser
+2019-12-05T18:04:55.974Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:04:55.974Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:04:55.975Z -- info: 4 getUser result {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}
+2019-12-05T18:04:55.975Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY5MDk1LCJleHAiOjE1NzYxNzM4OTV9.0JTibgfdI9z5OS2XihkpZa9HZDVSriHfkaNEOWfhDVQ
+2019-12-05T18:05:00.316Z -- info: ====================================
+2019-12-05T18:05:00.316Z -- info: NEW REQUEST
+2019-12-05T18:05:00.317Z -- info: URL /login
+2019-12-05T18:05:00.317Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"52","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"913e1ed4-4f88-a375-d06c-6ae6fa6e67b4","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:05:00.320Z -- info: BODY {"email":"pepe@gmail.com","password":"12345"}
+2019-12-05T18:05:00.320Z -- info: ====================================
+2019-12-05T18:05:00.321Z -- info: 1 login 
+2019-12-05T18:05:00.322Z -- info: 1 pesistence getUser
+2019-12-05T18:05:00.325Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:05:00.326Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:05:00.326Z -- info: 4 getUser result {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}
+2019-12-05T18:05:00.326Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY5MTAwLCJleHAiOjE1NzYxNzM5MDB9.gOsiRufSxEUVovSPwbbn5rP3TB68d7iibfi5bLCf-ms
+2019-12-05T18:05:10.201Z -- info: ====================================
+2019-12-05T18:05:10.201Z -- info: NEW REQUEST
+2019-12-05T18:05:10.201Z -- info: URL /login
+2019-12-05T18:05:10.201Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"2ce3481d-7c9e-d4d3-2576-349c2f51984c","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:05:10.201Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:05:10.201Z -- info: ====================================
+2019-12-05T18:05:10.202Z -- info: 1 login 
+2019-12-05T18:05:10.202Z -- info: 1 pesistence getUser
+2019-12-05T18:05:10.206Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:05:10.210Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:05:10.210Z -- info: 4 getUser result {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}
+2019-12-05T18:05:10.210Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY5MTEwLCJleHAiOjE1NzYxNzM5MTB9.FHrPVERF7CiCOm5DGwj_Y6bz9qG14lIwxOWEHEOcQIY
+2019-12-05T18:07:56.974Z -- info: Node server running on http://localhost:3000
+2019-12-05T18:07:57.012Z -- info: Connected successfully to MongoDB server
+2019-12-05T18:07:56.988Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T18:17:54.107Z -- info: ====================================
+2019-12-05T18:17:54.119Z -- info: NEW REQUEST
+2019-12-05T18:17:54.120Z -- info: URL /login
+2019-12-05T18:17:54.120Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"12345","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"3943b436-f0cf-862d-3bb5-f7158f3ed56c","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:17:54.120Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:17:54.120Z -- info: ====================================
+2019-12-05T18:17:59.470Z -- info: ====================================
+2019-12-05T18:17:59.470Z -- info: NEW REQUEST
+2019-12-05T18:17:59.471Z -- info: URL /login
+2019-12-05T18:17:59.471Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"f348e8f0-ec83-3546-6bf5-e74d5e289d1f","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:17:59.472Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:17:59.472Z -- info: ====================================
+2019-12-05T18:17:59.560Z -- info: 1 login 
+2019-12-05T18:17:59.930Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:17:59.930Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:17:59.931Z -- info: 4 getUser result {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}
+2019-12-05T18:17:59.931Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTY5ODc5LCJleHAiOjE1NzYxNzQ2Nzl9.DDMDYxejDVpHkNC8Ykzs_QIQcS2qt7pI4onhQ0vqO54
+2019-12-05T18:19:20.192Z -- error: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at Object.fs.writeSync (fs.js:753:20)
+    at SyncWriteStream._write (internal/fs.js:75:6)
+    at doWrite (_stream_writable.js:399:12)
+    at writeOrBuffer (_stream_writable.js:385:5)
+    at SyncWriteStream.Writable.write (_stream_writable.js:292:11)
+    at Console.log (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/winston-transport/index.js:81:19)
+    at doWrite (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/claudio/token-celeste/node-api-boilerplate/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+2019-12-05T18:19:20.191Z -- error: uncaughtException: listen EADDRINUSE :::3000
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:999:13)
+    at _exceptionWithHostPort (util.js:1020:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1379:14)
+    at listenInCluster (net.js:1420:12)
+    at Server.listen (net.js:1508:7)
+    at Function.listen (/home/claudio/token-celeste/node-api-boilerplate/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/claudio/token-celeste/node-api-boilerplate/app.js:50:5)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+2019-12-05T18:27:05.474Z -- info: Node server running on http://localhost:3000
+2019-12-05T18:27:05.538Z -- info: Connected successfully to MongoDB server
+2019-12-05T18:27:07.681Z -- info: ====================================
+2019-12-05T18:27:07.681Z -- info: NEW REQUEST
+2019-12-05T18:27:07.681Z -- info: URL /login
+2019-12-05T18:27:07.681Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"53","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"7289b76e-4276-40d7-2c24-9107058e8b8c","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:27:07.681Z -- info: BODY {"email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:27:07.681Z -- info: ====================================
+2019-12-05T18:27:07.703Z -- info: 1 login 
+2019-12-05T18:27:07.718Z -- info: 1 getUser pepe@gmail.com
+2019-12-05T18:27:07.718Z -- info: 2 getUser Successfully found document: {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}.
+2019-12-05T18:27:07.718Z -- info: 4 getUser result {"_id":"5de938aa1fdf42710ef841f3","email":"pepe@gmail.com","name":"name","password":"123456"}
+2019-12-05T18:27:07.718Z -- info: 2 login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiaWF0IjoxNTc1NTcwNDI3LCJleHAiOjE1NzYxNzUyMjd9.uxZ7zFC6KwxMBo8mV4bsGnzkA7kM_U7w2YebhOi2DV8
+2019-12-05T18:27:13.926Z -- info: ====================================
+2019-12-05T18:27:13.928Z -- info: NEW REQUEST
+2019-12-05T18:27:13.929Z -- info: URL /register
+2019-12-05T18:27:13.929Z -- info: HEADERS {"host":"localhost:3000","connection":"keep-alive","content-length":"70","sec-fetch-mode":"cors","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","api_key":"123456","content-type":"application/json","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36","postman-token":"0b90ed3c-c30d-7e7f-da43-d95104b1ff35","accept":"*/*","sec-fetch-site":"cross-site","accept-encoding":"gzip, deflate, br","accept-language":"es-US,es;q=0.9,es-419;q=0.8,en;q=0.7"}
+2019-12-05T18:27:13.929Z -- info: BODY {"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:27:13.929Z -- info: ====================================
+2019-12-05T18:27:13.943Z -- info: 1 userParam{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:27:13.944Z -- info: service{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:27:13.944Z -- info: 1 mongo{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:27:13.944Z -- info: 2 mongo{"name":"name","email":"pepe@gmail.com","password":"123456"}
+2019-12-05T18:27:13.946Z -- info: 2 userParamtrue
+2019-12-05T18:27:14.087Z -- info: Insert 1 user into the collection
