@@ -1,0 +1,54 @@
+2019-12-06T16:15:27.416Z -- error: User is not a constructor
+2019-12-06T18:49:48.373Z -- error: Cannot read property 'password' of undefined
+2019-12-06T18:50:23.461Z -- error: Cannot read property 'password' of undefined
+2019-12-06T18:52:58.762Z -- error: Cannot read property 'password' of undefined
+2019-12-06T18:53:08.268Z -- error: User already exist
+2019-12-06T18:53:30.451Z -- error: User already exist
+2019-12-06T19:03:19.368Z -- error: Cannot read property 'password' of undefined
+2019-12-06T19:04:19.903Z -- error: Cannot read property 'password' of undefined
+2019-12-06T19:11:05.254Z -- error: Cannot read property 'password' of undefined
+2019-12-06T20:54:03.327Z -- error: wrong user or password
+2019-12-06T20:54:57.696Z -- error: wrong user or password
+2019-12-06T20:55:08.427Z -- error: User already exist
+2019-12-06T20:57:02.932Z -- error: wrong user or password
+2019-12-06T21:00:54.807Z -- error: Cast to string failed for value "{ email: 'pepe@gmail.com' }" at path "email" for model "user"
+2019-12-06T21:01:43.993Z -- error: wrong user or password
+2019-12-06T21:02:18.520Z -- error: wrong user or password
+2019-12-06T21:03:13.675Z -- error: wrong user or password
+2019-12-06T21:03:45.711Z -- error: wrong user or password
+2019-12-06T21:06:33.439Z -- error: User already exist
+2019-12-06T21:06:47.723Z -- error: User already exist
+2019-12-06T21:07:09.729Z -- error: User already exist
+2019-12-06T21:13:01.937Z -- error: wrong user or password
+2019-12-06T21:23:20.236Z -- error: wrong user or password
+2019-12-06T21:24:02.118Z -- error: wrong user or password
+2019-12-06T21:24:10.849Z -- error: wrong user or password
+2019-12-06T21:24:36.653Z -- error: wrong user or password
+2019-12-06T21:25:05.804Z -- error: wrong user or password
+2019-12-06T21:26:02.725Z -- error: wrong user or password
+2019-12-06T21:27:07.289Z -- error: wrong user or password
+2019-12-06T21:28:17.414Z -- error: wrong user or password
+2019-12-06T21:28:58.257Z -- error: wrong user or password
+2019-12-06T21:29:18.578Z -- error: wrong user or password
+2019-12-06T21:31:54.169Z -- error: Unexpected token _ in JSON at position 2
+2019-12-06T21:35:38.568Z -- error: Invalid select: select only takes 1 argument
+2019-12-06T21:37:22.930Z -- error: Projection cannot have a mix of inclusion and exclusion.
+2019-12-06T21:39:35.260Z -- error: Projection cannot have a mix of inclusion and exclusion.
+2019-12-06T21:39:53.340Z -- error: Projection cannot have a mix of inclusion and exclusion.
+2019-12-06T21:40:18.726Z -- error: Unexpected token _ in JSON at position 2
+2019-12-06T21:41:03.382Z -- error: Projection cannot have a mix of inclusion and exclusion.
+2019-12-06T21:43:05.677Z -- error: Projection cannot have a mix of inclusion and exclusion.
+2019-12-06T21:43:20.624Z -- error: Projection cannot have a mix of inclusion and exclusion.
+2019-12-06T21:43:25.946Z -- error: wrong user or password
+2019-12-06T21:44:45.300Z -- error: wrong user or password
+2019-12-06T21:46:34.670Z -- error: User already exist
+2019-12-06T21:46:45.600Z -- error: User already exist
+2019-12-06T21:46:59.870Z -- error: User already exist
+2019-12-06T21:49:00.674Z -- error: User already exist
+2019-12-06T21:49:59.817Z -- error: Cannot read property 'password' of undefined
+2019-12-06T21:50:27.143Z -- error: User already exist
+2019-12-06T21:52:30.163Z -- error: User already exist
+2019-12-06T21:53:09.609Z -- error: wrong user or password
+2019-12-06T21:53:23.541Z -- error: wrong user or password
+2019-12-06T22:01:00.277Z -- error: wrong user or password
+2019-12-06T22:01:14.859Z -- error: User already exist

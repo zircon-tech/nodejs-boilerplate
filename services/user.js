@@ -11,17 +11,17 @@ const logger = require('../helpers/logger');
  * @returns {Promise<{user: *, jwtToken: *}>}
  */
 exports.login = async (email, password) => {
-  // Check login
 
-  logger.info('1 login ');
-  // const login = await externalAuth.login(email, password);
   const jwtToken = JWT.sign({ email });
-  const login = await persistence.getUser(email);
+  const user = await persistence.getUser(email);
 
-  logger.info(`2 login ${jwtToken}`);
-  if (login === null || password !== login.password) throw new customError('wrong user or password');
+  logger.info(`3 login ${jwtToken}`);
+  if (user === null || password !== user[0].password) throw new customError('wrong user or password');
 
-  return { user: login, jwtToken };
+  return {
+    user: user,
+    jwtToken
+  };
 };
 
 
@@ -32,10 +32,16 @@ exports.login = async (email, password) => {
  * @returns {Promise<*>}
  */
 exports.add = async (user) => {
+
   logger.info(`service${JSON.stringify(user)}`);
 
   const existUser = await persistence.getUser(user.email);
   if (existUser !== null) throw new customError('User already exist');
+
+  logger.info('1 service');
   const result = await persistence.addUser(user);
+
+
+  logger.info('2 service');
   return result;
 };

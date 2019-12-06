@@ -21,6 +21,7 @@ exports.login = async (req, res) => {
       : res.status(200)
         .jsonp(auth);
   } catch (err) {
+    logger.error(err);
     return err.name === 'customError'
       ? generic(res, err.message)
       : generic(res, '');
@@ -44,6 +45,7 @@ exports.add = async (req, res) => {
       : res.status(200)
         .jsonp(user);
   } catch (err) {
+    logger.error(err);
     return err.name === 'customError'
       ? generic(res, err.message)
       : generic(res, '');

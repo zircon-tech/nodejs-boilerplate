@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 const logger = require('./helpers/logger');
-const { ENVIRONMENT, PORT } = require('./config');
+const { ENVIRONMENT, PORT, URL, DB_NAME } = require('./config');
 
 // CORS
 app.use(cors());
@@ -31,7 +31,7 @@ const appMiddleware = require('./middleware/app');
 ENVIRONMENT === 'dev' && app.use('/', appMiddleware.log);
 
 // Basic auth to all api calls
-app.use('/', appMiddleware.auth);
+app.use('/api/', appMiddleware.auth);
 
 // User JWT
 app.use('/user', appMiddleware.auth);
@@ -42,7 +42,7 @@ app.use('/user', appMiddleware.auth);
  *************************************** */
 const user = require('./routes/user');
 // Imports routes for guest
-app.use('/', user);
+app.use('/api/', user);
 
 
 /** ***************************************
@@ -50,5 +50,5 @@ app.use('/', user);
  *************************************** */
 app.set('port', PORT || 3000);
 app.listen(app.get('port'), () => {
-  logger.info(`Node server running on http://localhost:${app.get('port')}`);
+  logger.info(`Node server running on http://localhost:${app.get('port')}/api`);
 });
