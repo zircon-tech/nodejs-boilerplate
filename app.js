@@ -34,7 +34,7 @@ ENVIRONMENT === 'dev' && app.use('/', appMiddleware.log);
 app.use('/', appMiddleware.auth);
 
 // User JWT
-app.use('/user', appMiddleware.jwtCheck);
+app.use('/user', appMiddleware.auth);
 
 
 /** ***************************************
