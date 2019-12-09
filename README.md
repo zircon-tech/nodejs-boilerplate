@@ -12,7 +12,7 @@ This is a basic NodeJS architecture to help you build amazing things from scratc
 - jsonwebtoken
 - mongodb
 
-# Database
+## Database
 - Install MongoDB community sever see https://docs.mongodb.com/guides/server/install/
 - mongodb configuration /etc/mongod.conf 
 - start mongo: `sudo mongod --dbpath=/var/lib/mongodb`
