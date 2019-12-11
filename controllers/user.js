@@ -51,3 +51,38 @@ exports.add = async (req, res) => {
       : generic(res, '');
   }
 };
+
+
+exports.forgotPasswordRequest = async (req, res) => {
+  const userParam = req.body;
+  try {
+    const user = await userServices.forgotPasswordRequest(userParam);
+    return user && user.error
+      ? res.status(200)
+        .jsonp({ error: user.error })
+      : res.status(200)
+        .jsonp(user);
+  } catch (err) {
+    logger.error(err);
+    return err.name === 'customError'
+      ? generic(res, err.message)
+      : generic(res, '');
+  }
+};
+
+exports.forgotPasswordConfirm = async (req, res) => {
+  const userParam = req.body;
+  try {
+    const user = await userServices.forgotPasswordConfirm(userParam);
+    return user && user.error
+      ? res.status(200)
+        .jsonp({ error: user.error })
+      : res.status(200)
+        .jsonp(user);
+  } catch (err) {
+    logger.error(err);
+    return err.name === 'customError'
+      ? generic(res, err.message)
+      : generic(res, '');
+  }
+};

@@ -8,6 +8,8 @@ const {
   first_name,
   last_name,
   cellphone,
+  url,
+  token,
 } = require('../helpers/validators');
 
 // CONTROLLER
@@ -27,5 +29,20 @@ router.post(
   validation,
   userController.add,
 );
+
+router.post(
+  '/user/forgot_password',
+  [email, url],
+  validation,
+  userController.forgotPasswordRequest,
+);
+
+router.post(
+  '/user/forgot_password_confirm',
+  [password, token],
+  validation,
+  userController.forgotPasswordConfirm,
+);
+
 
 module.exports = router;

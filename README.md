@@ -25,6 +25,21 @@ This is a basic NodeJS architecture to help you build amazing things from scratc
 - Build amazing APIs 🚀.
 
 
+##### Mailer configurations
+To complete the authentication flow properly you must configure the mailer. 
+You can chose to configure an AWS SES service, or to configure your own gmail account as mailer. 
+We recommend the later for local deployments. In the same mood, we do not recommended gmail mailer for prod environments.
+```
+EMAIL_ACCOUNT=email@gmail.com
+EMAIL_SECRET=secret
+EMAIL_FROM_ADDR=email@gmail.com
+TEMPLATE_PATH=/path/to-template/
+```
+
+If you choose the gmail mailer, don't forget to activate that feature on gmail's admin panel.
+Visit your [gmail admin panel](https://myaccount.google.com/lesssecureapps?pli=1) to enable the email account as an external mailer.
+
+
 ## Contributions
 Feel free to collaborate with the project to improve it
 
