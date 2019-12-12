@@ -3,6 +3,7 @@ const User = require('../model/user');
 const Token = require('../model/token');
 // Dont remove the below file upload the database
 const database = require('./database');
+const crypt = require('../helpers/crypt');
 
 exports.getUser = async (email) => {
   let result = await User.find({ email: `${email.toLowerCase()}` });
@@ -36,6 +37,7 @@ exports.getUserByEmail = async (email) => {
 
 
 exports.addUser = async (user) => {
+
   const usdb = new User({
     first_name: user.first_name,
     last_name: user.last_name,

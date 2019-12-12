@@ -4,6 +4,7 @@ const JWT = require('../helpers/jwt');
 const logger = require('../helpers/logger');
 const { FRONT_DOMAIN } = require('../config');
 const { sendTemplate } = require('../helpers/sendMail');
+const crypt = require('../helpers/crypt');
 
 
 /**
@@ -17,12 +18,23 @@ exports.login = async (email, password) => {
   const jwtToken = JWT.sign({ email });
   const user = await persistence.getUserByEmail(email);
 
+
+  logger.info(`password= ${password} user.password= ${user.password}` );
+
+
+  const validPass = await crypt.validatePassword(password, user.password);
+  logger.info(`validPass= ${validPass}`);
+
+  const validPass1 = await crypt.validatePassword(user.password, password);
+  logger.info(`validPass1= ${validPass1}`)
+
+
   logger.info(`jwtToken= ${jwtToken}`);
-  if (user === null || password !== user.password) throw new CustomError('Wrong user or password');
+  if (user === null || !validPass) throw new CustomError('Wrong user or password');
 
   return {
     user,
-    jwtToken,
+    jwtToken
   };
 };
 
@@ -39,7 +51,15 @@ exports.add = async (user) => {
   const existUser = await persistence.getUserByEmail(user.email);
   if (existUser !== null) throw new CustomError('User already exist');
 
-  const result = await persistence.addUser(user);
+
+  const hash = await crypt.hashPassword(user.password);
+
+  logger.info('hashhhhhhhh' + hash);
+
+  const result = await persistence.addUser({
+    ...user,
+    password: hash
+  });
   return result;
 };
 
@@ -56,16 +76,11 @@ exports.forgotPasswordRequest = async (param) => {
   // const tkn = 'GENEATETOKEN123TK123';
   const forgotPassUrl = `${FRONT_DOMAIN}${param.url}${tkn}`;
 
-  await sendTemplate(
-    'reset_password',
-    'Recover password ',
-    email,
-    {
-      resetLink: forgotPassUrl,
-      first_name: `${first_name}`,
-      last_name: `${last_name}`,
-    },
-  );
+  await sendTemplate('reset_password', 'Recover password ', email, {
+    resetLink: forgotPassUrl,
+    first_name: `${first_name}`,
+    last_name: `${last_name}`
+  });
 
   await persistence.addToken(email, tkn);
   return true;
@@ -88,7 +103,7 @@ exports.forgotPasswordConfirm = async (param) => {
 
   return {
     user,
-    jwtToken,
+    jwtToken
   };
 };
 

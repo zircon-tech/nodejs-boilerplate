@@ -1,4 +1,5 @@
 const { check, validationResult } = require('express-validator');
+const passwordRegexp = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[!?@#$%^&*_0-9]).*$/;
 
 /* CHECKERS */
 
@@ -17,6 +18,8 @@ exports.cellphone = check('cellphone').isLength({ min: 8 });
 // Forgot password
 exports.url = check('url').isLength({ min: 5 });
 exports.token = check('token').isLength({ min: 20 });
+
+exports.validPassword = (password) => !!passwordRegexp.exec(password);
 
 /* Validation */
 exports.validation = (req, res, next) => {
