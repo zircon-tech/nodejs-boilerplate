@@ -1,27 +1,27 @@
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 
-let UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   first_name: {
     type: String,
-    required: true
+    required: true,
   },
   last_name: {
     type: String,
-    required: true
+    required: true,
   },
   email: {
     type: String,
-    required: true
+    required: true,
   },
   password: {
     type: String,
-    required: true
+    required: true,
   },
   cellphone: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 });
 
 

@@ -1,20 +1,20 @@
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 
-let TokenSchema = new mongoose.Schema({
+const TokenSchema = new mongoose.Schema({
   email: {
     type: String,
-    required: true
+    required: true,
   },
   token: {
     type: String,
-    required: true
+    required: true,
   },
   isUsed: {
     type: Boolean,
     required: true,
-    default: false
-  }
+    default: false,
+  },
 });
 
 

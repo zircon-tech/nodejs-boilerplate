@@ -1,8 +1,8 @@
-const { customError } = require('../helpers/errorHandler');
+const { CustomError } = require('../helpers/errorHandler');
 const persistence = require('../managers/persistenceManager');
 const JWT = require('../helpers/jwt');
 const logger = require('../helpers/logger');
-const { FRONT_DOMAIN, EMAIL_FROM_ADDR } = require('../config');
+const { FRONT_DOMAIN } = require('../config');
 const { sendTemplate } = require('../helpers/sendMail');
 
 
@@ -14,16 +14,15 @@ const { sendTemplate } = require('../helpers/sendMail');
  * @returns {Promise<{user: *, jwtToken: *}>}
  */
 exports.login = async (email, password) => {
-
   const jwtToken = JWT.sign({ email });
-  const user = await persistence.getUser(email);
+  const user = await persistence.getUserByEmail(email);
 
   logger.info(`jwtToken= ${jwtToken}`);
-  if (user === null || password !== user[0].password) throw new customError('wrong user or password');
+  if (user === null || password !== user.password) throw new CustomError('Wrong user or password');
 
   return {
-    user: user,
-    jwtToken
+    user,
+    jwtToken,
   };
 };
 
@@ -35,73 +34,69 @@ exports.login = async (email, password) => {
  * @returns {Promise<*>}
  */
 exports.add = async (user) => {
-
   logger.info(`add user, user= ${JSON.stringify(user)}`);
 
-  const existUser = await persistence.getUser(user.email);
-  if (existUser !== null ) throw new customError('User already exist');
+  const existUser = await persistence.getUserByEmail(user.email);
+  if (existUser !== null) throw new CustomError('User already exist');
 
   const result = await persistence.addUser(user);
-
   return result;
 };
 
 
 exports.forgotPasswordRequest = async (param) => {
-
   logger.info(`forgotPasswordRequest, param= ${JSON.stringify(param)}`);
 
-const email = param.email;
-  const existUser = await persistence.getUser(email);
-  if (existUser === null) throw new customError('User do not exist');
+  const { email } = param;
+  const existUser = await persistence.getUserByEmail(email);
+  if (existUser === null) throw new CustomError('User not exist');
 
-  const {first_name, last_name} = existUser;
-
-  console.log('existUser' + JSON.stringify(existUser));
-
-  console.log('first_name' + existUser[0].first_name);
-  console.log('last_name' + existUser[0].last_name);
-
-
+  const { first_name, last_name } = existUser;
   const tkn = JWT.sign({ email });
-  //const tkn = 'GENEATETOKEN123TK123';
+  // const tkn = 'GENEATETOKEN123TK123';
   const forgotPassUrl = `${FRONT_DOMAIN}${param.url}${tkn}`;
 
   await sendTemplate(
     'reset_password',
     'Recover password ',
-    param.email,
+    email,
     {
       resetLink: forgotPassUrl,
-      first_name: `${existUser[0].first_name}`,
-      last_name: `${existUser[0].last_name}`
-    }
+      first_name: `${first_name}`,
+      last_name: `${last_name}`,
+    },
   );
 
-  console.log(' forgotPasswordRequestluego ');
-
-
-  const token = await persistence.addToken(param.email, tkn);
-
+  await persistence.addToken(email, tkn);
   return true;
 };
 
 exports.forgotPasswordConfirm = async (param) => {
-
   logger.info(`forgotPasswordConfirm, param= ${JSON.stringify(param)}`);
 
   const existToken = await persistence.getToken(param.token);
-  if (existToken === null) throw new customError('Token do not exist');
-  if (existToken[0].isUsed) throw new customError('Token already used');
+  if (existToken === null) throw new CustomError('Token do not exist');
+  if (existToken.isUsed) throw new CustomError('Token already used');
+
+  const { email } = existToken;
+
+  await persistence.updateUser(email, param.password);
+  await persistence.markTokenAsUsed(param.token);
+
+  const user = await persistence.getUserByEmail(email);
+  const jwtToken = JWT.sign({ email });
+
+  return {
+    user,
+    jwtToken,
+  };
+};
 
 
+exports.getUser = async (email) => {
+  const user = await persistence.getUserByEmail(email);
 
-
-  const result = await persistence.updateUser(existToken[0].email, param.password);
-
-  const tknResult = await persistence.markTokenAsUsed(param.token);
-
-  const user = await persistence.getOneUser(existToken[0].email);
+  if (user === null) throw new CustomError('User not found');
 
   return user;
 };

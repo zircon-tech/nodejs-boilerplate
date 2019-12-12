@@ -30,6 +30,14 @@ router.post(
   userController.add,
 );
 
+router.get(
+  '/user/:email',
+  [],
+  validation,
+  userController.get,
+);
+
+
 router.post(
   '/user/forgot_password',
   [email, url],

@@ -4,12 +4,12 @@ const cors = require('cors');
 const app = express();
 const http = require('http');
 
-const server = http.createServer(app);
+http.createServer(app);
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 const logger = require('./helpers/logger');
-const { ENVIRONMENT, PORT, URL, DB_NAME } = require('./config');
+const { ENVIRONMENT, PORT } = require('./config');
 
 // CORS
 app.use(cors());
