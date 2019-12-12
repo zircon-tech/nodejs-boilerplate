@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 
 
-/******************************************
+/** ****************************************
  * MIDDLEWARES
  *************************************** */
 const appMiddleware = require('./middleware/app');

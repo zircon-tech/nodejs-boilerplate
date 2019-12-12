@@ -7,6 +7,16 @@ const { sendTemplate } = require('../helpers/sendMail');
 const crypt = require('../helpers/crypt');
 
 
+function formatUser(user) {
+  return {
+    id: user._id,
+    first_name: user.first_name,
+    last_name: user.last_name,
+    email: user.email,
+    cellphone: user.cellphone,
+  };
+}
+
 /**
  *  Login
  *
@@ -18,23 +28,13 @@ exports.login = async (email, password) => {
   const jwtToken = JWT.sign({ email });
   const user = await persistence.getUserByEmail(email);
 
-
-  logger.info(`password= ${password} user.password= ${user.password}` );
-
-
   const validPass = await crypt.validatePassword(password, user.password);
-  logger.info(`validPass= ${validPass}`);
 
-  const validPass1 = await crypt.validatePassword(user.password, password);
-  logger.info(`validPass1= ${validPass1}`)
-
-
-  logger.info(`jwtToken= ${jwtToken}`);
   if (user === null || !validPass) throw new CustomError('Wrong user or password');
 
   return {
-    user,
-    jwtToken
+    user: formatUser(user),
+    jwtToken,
   };
 };
 
@@ -51,16 +51,13 @@ exports.add = async (user) => {
   const existUser = await persistence.getUserByEmail(user.email);
   if (existUser !== null) throw new CustomError('User already exist');
 
-
   const hash = await crypt.hashPassword(user.password);
-
-  logger.info('hashhhhhhhh' + hash);
 
   const result = await persistence.addUser({
     ...user,
-    password: hash
+    password: hash,
   });
-  return result;
+  return formatUser(result);
 };
 
 
@@ -79,11 +76,11 @@ exports.forgotPasswordRequest = async (param) => {
   await sendTemplate('reset_password', 'Recover password ', email, {
     resetLink: forgotPassUrl,
     first_name: `${first_name}`,
-    last_name: `${last_name}`
+    last_name: `${last_name}`,
   });
 
   await persistence.addToken(email, tkn);
-  return true;
+  return {};
 };
 
 exports.forgotPasswordConfirm = async (param) => {
@@ -93,17 +90,19 @@ exports.forgotPasswordConfirm = async (param) => {
   if (existToken === null) throw new CustomError('Token do not exist');
   if (existToken.isUsed) throw new CustomError('Token already used');
 
+  const hash = await crypt.hashPassword(param.password);
+
   const { email } = existToken;
 
-  await persistence.updateUser(email, param.password);
+  await persistence.updateUser(email, hash);
   await persistence.markTokenAsUsed(param.token);
 
   const user = await persistence.getUserByEmail(email);
   const jwtToken = JWT.sign({ email });
 
   return {
-    user,
-    jwtToken
+    user: formatUser(user),
+    jwtToken,
   };
 };
 
@@ -113,5 +112,5 @@ exports.getUser = async (email) => {
 
   if (user === null) throw new CustomError('User not found');
 
-  return user;
+  return formatUser(user);
 };

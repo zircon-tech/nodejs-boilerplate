@@ -1,19 +1,13 @@
 const mongoClient = require('./persistenceManagerMongo');
 
-exports.getUser = async (email) => await mongoClient.getUser(email);
+exports.getUserByEmail = async (email) => mongoClient.getUserByEmail(email);
 
-exports.getUserByEmail = async (email) => await mongoClient.getUserByEmail(email);
+exports.addUser = async (user) => mongoClient.addUser(user);
 
-exports.getOneUser = async (email) => await mongoClient.getOneUser(email);
+exports.updateUser = async (email, password) => mongoClient.updateUser(email, password);
 
-exports.addUser = async (user) => await mongoClient.addUser(user);
+exports.getToken = async (token) => mongoClient.getToken(token);
 
-exports.updateUser = async (email, password) => await mongoClient.updateUser(email, password);
+exports.addToken = async (email, token) => mongoClient.addToken(email, token);
 
-
-exports.getToken = async (token) => await mongoClient.getToken(token);
-
-exports.addToken = async (email, token) => await mongoClient.addToken(email, token);
-
-
-exports.markTokenAsUsed = async (token) => await mongoClient.markTokenAsUsed(token);
+exports.markTokenAsUsed = async (token) => mongoClient.markTokenAsUsed(token);
