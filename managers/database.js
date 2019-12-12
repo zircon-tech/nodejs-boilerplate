@@ -1,5 +1,6 @@
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const { URL, DB_NAME } = require('../config');
+const logger = require('../helpers/logger');
 
 class Database {
   constructor() {
@@ -9,11 +10,11 @@ class Database {
   connect() {
     mongoose.connect(`${URL}${DB_NAME}`)
       .then(() => {
-        console.log(`Database connection successful to ${URL}${DB_NAME}`);
+        logger.info(`Database connection successful to ${URL}${DB_NAME}`);
       })
-      .catch(err => {
-        console.error('Database connection error');
-      })
+      .catch((err) => {
+        logger.error('Database connection error');
+      });
   }
 }
 

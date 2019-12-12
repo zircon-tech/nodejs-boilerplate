@@ -53,6 +53,24 @@ exports.add = async (req, res) => {
 };
 
 
+exports.get = async (req, res) => {
+  const { email } = req.params;
+  try {
+    const auth = await userServices.getUser(email);
+    return auth && auth.error
+      ? res.status(200)
+        .jsonp({ error: auth.error })
+      : res.status(200)
+        .jsonp(auth);
+  } catch (err) {
+    logger.error(err);
+    return err.name === 'customError'
+      ? generic(res, err.message)
+      : generic(res, '');
+  }
+};
+
+
 exports.forgotPasswordRequest = async (req, res) => {
   const userParam = req.body;
   try {

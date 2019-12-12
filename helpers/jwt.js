@@ -18,7 +18,7 @@ const check = (req, res, next) => {
         req.jwt = null;
         return errorHandler.unauthorized(res, 'Auth token is not valid');
       }
-      //req.body.email = decode.email;
+      // req.body.email = decode.email;
       next();
     });
   } else {

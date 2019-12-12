@@ -8,7 +8,7 @@ exports.unauthorized = (res, msg) => res.status(401).json({
   error: msg,
 });
 
-exports.customError = class customError extends Error {
+exports.CustomError = class CustomError extends Error {
   constructor(args) {
     super(args);
     this.name = 'customError';

@@ -1,14 +1,15 @@
-const assert = require('assert');
-const { URL, DB_NAME } = require('../config');
 const logger = require('../helpers/logger');
 const User = require('../model/user');
 const Token = require('../model/token');
+// Dont remove the below file upload the database
 const database = require('./database');
+const crypt = require('../helpers/crypt');
 
-exports.getUser = async (email) => {
-  let result = await User.find({ email: `${email}` });
+exports.getUserByEmail = async (email) => {
+  const lowerEmail = email.toLowerCase();
 
-  if (result.length > 0 ) {
+  let result = await User.findOne({ email: `${lowerEmail}` }).select('-__v');
+  if (result !== null) {
     logger.info(`User successfully found document: ${result}`);
   } else {
     result = null;
@@ -17,41 +18,25 @@ exports.getUser = async (email) => {
   return result;
 };
 
-exports.getOneUser = async (email) => {
-  let result = await User.findOne({ email: `${email}` });
-  return result;
-};
-
-
-
 exports.addUser = async (user) => {
-
-  let usdb = new User({
+  const usdb = new User({
     first_name: user.first_name,
     last_name: user.last_name,
-    email: user.email,
+    email: user.email.toLowerCase(),
     password: user.password,
-    cellphone: user.cellphone
+    cellphone: user.cellphone,
   });
 
-  const result = await usdb.save();
-
-  return result;
+  return usdb.save();
 };
 
-
-exports.updateUser = async (email, password) => {
-  const result = await User.updateOne({email: email}, {password: password});
-  console.log('user update result= ' + JSON.stringify(result));
-  return result;
-};
-
+exports.updateUser = async (email, password) => User.updateOne({ email: email.toLowerCase() }, { password });
 
 
 exports.getToken = async (token) => {
-  let result = await Token.find({ token: `${token}` });
+  let result = await Token.findOne({ token: `${token}` });
 
-  if (result.length > 0 ) {
+  if (result !== null) {
     logger.info(`Token successfully found document: ${result}`);
   } else {
     result = null;
@@ -61,23 +46,14 @@ exports.getToken = async (token) => {
 };
 
 exports.addToken = async (email, token) => {
-
-  let tokendb = new Token({
-    email: email,
-    token: token,
-    isUsed: false
+  const tokenDB = new Token({
+    email: email.toLowerCase(),
+    token,
+    isUsed: false,
   });
 
-  const result = await tokendb.save();
-
-  return result;
+  return tokenDB.save();
 };
 
 
-
-exports.markTokenAsUsed = async (token) => {
-  const result = await Token.updateOne({token: token}, {isUsed: true});
-  console.log('token update result result= ' + JSON.stringify(result));
-  return result;
-};
-
+exports.markTokenAsUsed = async (token) => Token.updateOne({ token }, { isUsed: true });

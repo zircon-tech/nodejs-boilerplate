@@ -11,15 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoaquinBeceiro/node-api-basic-architecture.git"
+    "url": "https://cuslenghi@bitbucket.org/cuslenghi/node-api-boilerplate.git"
   },
-  "author": "JoaquinB",
+  "author": "zircon.tech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JoaquinBeceiro/node-api-basic-architecture/issues"
+    "url": "https://zircon.atlassian.net/jira/software/projects/TOK/boards/13/backlog"
   },
-  "homepage": "https://github.com/JoaquinBeceiro/node-api-basic-architecture#readme",
+  "homepage": "https://bitbucket.org/cuslenghi/node-api-boilerplate/src/master/README.md",
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
