@@ -3,7 +3,6 @@ const User = require('../model/user');
 const Token = require('../model/token');
 // Dont remove the below file upload the database
 const database = require('./database');
-const crypt = require('../helpers/crypt');
 
 exports.getUserByEmail = async (email) => {
   const lowerEmail = email.toLowerCase();
@@ -25,6 +24,7 @@ exports.addUser = async (user) => {
     email: user.email.toLowerCase(),
     password: user.password,
     cellphone: user.cellphone,
+    isGoogleAccount: user.isGoogleAccount,
   });
 
   return usdb.save();

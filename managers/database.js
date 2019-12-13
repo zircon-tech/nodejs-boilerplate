@@ -13,7 +13,7 @@ class Database {
         logger.info(`Database connection successful to ${URL}${DB_NAME}`);
       })
       .catch((err) => {
-        logger.error('Database connection error');
+        logger.error(`Database connection error ${err}`);
       });
   }
 }

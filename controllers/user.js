@@ -104,3 +104,20 @@ exports.forgotPasswordConfirm = async (req, res) => {
       : generic(res, '');
   }
 };
+
+exports.googleAccount = async (req, res) => {
+  const param = req.body;
+  try {
+    const user = await userServices.checkGoogleToken(param);
+    return user && user.error
+      ? res.status(200)
+        .jsonp({ error: user.error })
+      : res.status(200)
+        .jsonp(user);
+  } catch (err) {
+    logger.error(err);
+    return err.name === 'customError'
+      ? generic(res, err.message)
+      : generic(res, '');
+  }
+};

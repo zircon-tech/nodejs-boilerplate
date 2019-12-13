@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const express = require('express');
 
 const router = express.Router();
@@ -52,5 +53,11 @@ router.post(
   userController.forgotPasswordConfirm,
 );
 
+router.post(
+  '/user/google_account',
+  [token],
+  validation,
+  userController.googleAccount,
+);
 
 module.exports = router;

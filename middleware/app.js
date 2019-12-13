@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const errorHandler = require('../helpers/errorHandler');
 const jwt = require('../helpers/jwt');
 const logger = require('../helpers/logger');
