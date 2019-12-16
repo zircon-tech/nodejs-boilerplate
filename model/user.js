@@ -20,7 +20,7 @@ const UserSchema = new mongoose.Schema({
   },
   cellphone: {
     type: String,
-    required: true,
+    required: false,
   },
   isGoogleAccount: {
     type: Boolean,

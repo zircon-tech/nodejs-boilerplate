@@ -146,7 +146,7 @@ exports.checkGoogleToken = async (param) => {
     const last_name = (user && user.last_name) || (googleUser && googleUser.last_name);
     const email = (user && user.email) || (googleUser && googleUser.email);
     const cellphone = (user && user.cellphone);
-    if (!email || !first_name || !last_name || !cellphone) {
+    if (!email || !first_name || !last_name) {
       infoMissing = {
         email: email || '',
         first_name: first_name || '',
