@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 const { createLogger, format, transports } = require('winston');
 
 const { LOG_LEVEL } = require('../config');

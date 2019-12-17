@@ -1,11 +1,11 @@
 exports.generic = (res, msg) => res.status(422).json({
-  message: 'Error',
-  error: msg,
+  code: 'Error',
+  message: msg,
 });
 
 exports.unauthorized = (res, msg) => res.status(401).json({
-  message: 'Authorization failed.',
-  error: msg,
+  code: 'Authorization failed.',
+  message: msg,
 });
 
 exports.CustomError = class CustomError extends Error {

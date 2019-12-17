@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const { check, validationResult } = require('express-validator');
 
 const passwordRegexp = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[!?@#$%^&*_0-9]).*$/;

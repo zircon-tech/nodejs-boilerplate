@@ -16,11 +16,16 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
+    required: false,
   },
   cellphone: {
     type: String,
-    required: true,
+    required: false,
+  },
+  isGoogleAccount: {
+    type: Boolean,
+    required: false,
+    default: false,
   },
 });
 

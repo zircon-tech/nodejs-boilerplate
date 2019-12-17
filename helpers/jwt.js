@@ -1,7 +1,7 @@
+/* eslint-disable consistent-return */
 const jsonwebtoken = require('jsonwebtoken');
 const errorHandler = require('../helpers/errorHandler');
 const { JWT_SECRET, JWT_LIFETIME } = require('../config');
-const logger = require('../helpers/logger');
 
 const sign = (payload) => jsonwebtoken.sign(payload, JWT_SECRET, {
   expiresIn: JWT_LIFETIME,

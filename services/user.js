@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const { CustomError } = require('../helpers/errorHandler');
 const persistence = require('../managers/persistenceManager');
 const JWT = require('../helpers/jwt');
@@ -5,6 +6,7 @@ const logger = require('../helpers/logger');
 const { FRONT_DOMAIN } = require('../config');
 const { sendTemplate } = require('../helpers/sendMail');
 const crypt = require('../helpers/crypt');
+const googleAuthService = require('./googleAuthService');
 
 
 function formatUser(user) {
@@ -113,4 +115,67 @@ exports.getUser = async (email) => {
   if (user === null) throw new CustomError('User not found');
 
   return formatUser(user);
+};
+
+
+exports.checkGoogleToken = async (param) => {
+  const { token, user } = param;
+  const googleUser = await googleAuthService.verifyToken(token);
+
+  if (googleUser === null) throw new CustomError('Google token invalid');
+
+  let oldUser;
+  let userResult;
+  let infoMissing;
+
+  if (googleUser !== null && googleUser.email) {
+    oldUser = await persistence.getUserByEmail(googleUser.email);
+  }
+
+  // Si exite el usuario y el usuario no es una cuenta de google retornamos error
+  if (oldUser && !oldUser.isGoogleAccount) {
+    throw new CustomError(`An user with email ${googleUser.email} already exist`);
+  }
+
+  // Si ya existe el usuario y es google account esta intentando loguearse
+  if (oldUser && oldUser.isGoogleAccount) {
+    userResult = oldUser;
+  } else {
+    // No existe el usuario entonces lo creamos
+    const first_name = (user && user.first_name) || (googleUser && googleUser.first_name);
+    const last_name = (user && user.last_name) || (googleUser && googleUser.last_name);
+    const email = (user && user.email) || (googleUser && googleUser.email);
+    const cellphone = (user && user.cellphone);
+    if (!email || !first_name || !last_name) {
+      infoMissing = {
+        email: email || '',
+        first_name: first_name || '',
+        last_name: last_name || '',
+        cellphone: cellphone || '',
+      };
+
+      return {
+        user: {},
+        jwtToken: '',
+        isInfoMissing: true,
+        infoMissing,
+      };
+    }
+    userResult = await persistence.addUser({
+      email,
+      first_name,
+      last_name,
+      cellphone,
+      isGoogleAccount: true,
+    });
+  }
+  const { email } = userResult.email;
+  const jwtToken = JWT.sign({ email });
+
+  return {
+    user: formatUser(userResult),
+    jwtToken,
+    isInfoMissing: false,
+    infoMissing: {},
+  };
 };
