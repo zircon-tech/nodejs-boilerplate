@@ -16,7 +16,7 @@ const log = (req, res, next) => {
 
 const auth = (req, res, next) => {
   // CHECK API KEY
-  if (process.env.API_KEY === req.headers.api_key) {
+  if (process.env.API_KEY === req.headers['x-api-key']) {
     next();
   } else {
     return errorHandler.unauthorized(res, 'Invalid API KEY');
