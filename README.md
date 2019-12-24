@@ -19,7 +19,7 @@ This is a basic NodeJS architecture to help you build amazing things from scratc
 
 
 ## Installation & Usage
-- Download the repo `git clone https://cuslenghi@bitbucket.org/cuslenghi/node-api-boilerplate.git`.
+- Download the repo `git clone https://cuslenghi@bitbucket.org/zircon-tech/node-api-boilerplate.git`.
 - Install dependencies `npm i`.
 - Start the server `npm start` (this use nodemon).
 - Build amazing APIs 🚀.
@@ -48,5 +48,5 @@ Feel free to collaborate with the project to improve it
  
  **Claudio Uslenghi** 
  
-- [Bitbucket](https://bitbucket.org/cuslenghi/node-api-boilerplate/) 
+- [Bitbucket](https://bitbucket.org/zircon-tech/node-api-boilerplate/) 
 

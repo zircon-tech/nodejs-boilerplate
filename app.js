@@ -32,8 +32,6 @@ ENVIRONMENT === 'dev' && app.use('/', appMiddleware.log);
 
 // Basic auth to all api calls
 app.use('/api/', appMiddleware.auth);
-
-// User JWT
 app.use('/user', appMiddleware.auth);
 
 

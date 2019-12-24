@@ -74,12 +74,30 @@ exports.get = async (req, res) => {
 exports.forgotPasswordRequest = async (req, res) => {
   const userParam = req.body;
   try {
-    const user = await userServices.forgotPasswordRequest(userParam);
-    return user && user.error
+    const result = await userServices.forgotPasswordRequest(userParam);
+    return result && result.error
       ? res.status(200)
-        .jsonp({ error: user.error })
+        .jsonp({ error: result.error })
       : res.status(200)
-        .jsonp(user);
+        .jsonp(result);
+  } catch (err) {
+    logger.error(err);
+    return err.name === 'customError'
+      ? generic(res, err.message)
+      : generic(res, '');
+  }
+};
+
+
+exports.forgotPasswordCheckToken = async (req, res) => {
+  const userParam = req.body;
+  try {
+    const result = await userServices.forgotPasswordCheckToken(userParam);
+    return result && result.error
+      ? res.status(200)
+        .jsonp({ error: result.error })
+      : res.status(200)
+        .jsonp(result);
   } catch (err) {
     logger.error(err);
     return err.name === 'customError'

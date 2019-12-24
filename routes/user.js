@@ -47,6 +47,14 @@ router.post(
 );
 
 router.post(
+  '/user/forgot_password_checktoken',
+  [token],
+  validation,
+  userController.forgotPasswordCheckToken,
+);
+
+
+router.post(
   '/user/forgot_password_confirm',
   [password, token],
   validation,

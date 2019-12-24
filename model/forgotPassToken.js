@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const TokenSchema = new mongoose.Schema({
+const ForgotPassTokenSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
@@ -18,4 +18,4 @@ const TokenSchema = new mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('token', TokenSchema);
+module.exports = mongoose.model('forgotPassToken', ForgotPassTokenSchema);

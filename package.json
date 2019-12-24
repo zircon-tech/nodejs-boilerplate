@@ -7,18 +7,18 @@
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "eslint --ignore-path .gitignore .",
-    "prettier": "prettier --print-width 80 --end-of-line lf --trailing-comma es5 --write 'src/**/*.js'"
+    "prettier": "prettier --print-width 110 --end-of-line lf --trailing-comma es5 --write 'src/**/*.js'"
   },
   "repository": {
     "type": "git",
-    "url": "https://cuslenghi@bitbucket.org/cuslenghi/node-api-boilerplate.git"
+    "url": "https://cuslenghi@bitbucket.org/zircon-tech/node-api-boilerplate.git"
   },
   "author": "zircon.tech",
   "license": "ISC",
   "bugs": {
     "url": "https://zircon.atlassian.net/jira/software/projects/TOK/boards/13/backlog"
   },
-  "homepage": "https://bitbucket.org/cuslenghi/node-api-boilerplate/src/master/README.md",
+  "homepage": "https://bitbucket.org/zircon-tech/node-api-boilerplate/src/master/README.md",
   "dependencies": {
     "bcrypt": "^3.0.7",
     "bluebird": "^3.7.2",

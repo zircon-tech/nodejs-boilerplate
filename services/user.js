@@ -30,9 +30,10 @@ exports.login = async (email, password) => {
   const jwtToken = JWT.sign({ email });
   const user = await persistence.getUserByEmail(email);
 
-  const validPass = await crypt.validatePassword(password, user.password);
+  if (user === null) throw new CustomError('Wrong user or password');
 
-  if (user === null || !validPass) throw new CustomError('Wrong user or password');
+  const validPass = await crypt.validatePassword(password, user.password);
+  if (!validPass) throw new CustomError('Wrong user or password');
 
   return {
     user: formatUser(user),
@@ -84,6 +85,20 @@ exports.forgotPasswordRequest = async (param) => {
   await persistence.addToken(email, tkn);
   return {};
 };
+
+
+exports.forgotPasswordCheckToken = async (param) => {
+  logger.info(`forgotPasswordCheckToken, param= ${JSON.stringify(param)}`);
+
+  const existToken = await persistence.getToken(param.token);
+  if (existToken === null) throw new CustomError('Token do not exist');
+  if (existToken.isUsed) throw new CustomError('Token already used');
+
+  return {
+    status: 'forgot password token is valid',
+  };
+};
+
 
 exports.forgotPasswordConfirm = async (param) => {
   logger.info(`forgotPasswordConfirm, param= ${JSON.stringify(param)}`);
@@ -169,7 +184,9 @@ exports.checkGoogleToken = async (param) => {
       isGoogleAccount: true,
     });
   }
-  const { email } = userResult.email;
+
+  const { email } = userResult;
+  logger.info(`email= ${email}`);
   const jwtToken = JWT.sign({ email });
 
   return {
