@@ -1,52 +1,39 @@
+process.on('uncaughtException', function(err) {
+  console.error(err)
+});
+
 const express = require('express');
 const cors = require('cors');
-
-const app = express();
-const http = require('http');
-
-http.createServer(app);
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 const logger = require('./helpers/logger');
-const { ENVIRONMENT, PORT } = require('./config');
+const database = require('./managers/database');
+const appMiddleware = require('./middleware/app');
+const {
+  ENVIRONMENT,
+  PORT,
+} = require('./config');
 
-// CORS
+const app = express();
+
 app.use(cors());
-// parse application/json
 app.use(bodyParser.json());
-
-// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-
-// SMALL SECURITY
 app.use(helmet());
 
+if (ENVIRONMENT === 'dev') {
+  app.use('/', appMiddleware.log);
+}
 
-/** ****************************************
- * MIDDLEWARES
- *************************************** */
-const appMiddleware = require('./middleware/app');
-// Log request on develop
-ENVIRONMENT === 'dev' && app.use('/', appMiddleware.log);
-
-// Basic auth to all api calls
 app.use('/api/', appMiddleware.auth);
 app.use('/user', appMiddleware.auth);
 
-
-/** ***************************************
- * ROUTES
- *************************************** */
 const user = require('./routes/user');
-// Imports routes for guest
 app.use('/api/', user);
 
-
-/** ***************************************
- * Server
- *************************************** */
 app.set('port', PORT || 3000);
-app.listen(app.get('port'), () => {
-  logger.info(`Node server running on http://localhost:${app.get('port')}/api`);
+app.listen(app.get('port'), 'localhost', async () => {
+  await database.connect();
+  logger.info(`Node server running on http://localhost:${app.get('port')}`);
 });

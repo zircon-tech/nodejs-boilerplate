@@ -2,9 +2,6 @@ const nodemailer = require('nodemailer');
 const { EMAIL_ACCOUNT, EMAIL_SECRET, EMAIL_FROM_ADDR } = require('../config');
 const { loadTemplate } = require('./templateLoader');
 
-const options = { format: 'Letter' };
-
-
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -12,7 +9,6 @@ const transporter = nodemailer.createTransport({
     pass: EMAIL_SECRET,
   },
 });
-
 
 module.exports = {
   sendTemplate: (templateName, subject, toEmail, params) => loadTemplate(templateName, params)

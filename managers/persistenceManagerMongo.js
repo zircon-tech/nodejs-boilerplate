@@ -1,8 +1,6 @@
 const logger = require('../helpers/logger');
 const User = require('../model/user');
 const ForgotPassToken = require('../model/forgotPassToken');
-// Dont remove the below file upload the database
-const database = require('./database');
 
 exports.getUserByEmail = async (email) => {
   const lowerEmail = email.toLowerCase();
@@ -27,12 +25,10 @@ exports.addUser = async (user) => {
     cellphone: user.cellphone,
     isGoogleAccount: user.isGoogleAccount,
   });
-
   return usdb.save();
 };
 
 exports.updateUser = async (email, password) => User.updateOne({ email: email.toLowerCase() }, { password });
-
 
 exports.getToken = async (token) => {
   let result = await ForgotPassToken.findOne({ token: `${token}` });
@@ -40,7 +36,6 @@ exports.getToken = async (token) => {
   if (result !== null) {
     logger.info(`Token successfully found document: ${result}`);
   } else {
-    result = null;
     logger.info('Token not found.');
   }
   return result;
@@ -55,6 +50,5 @@ exports.addToken = async (email, token) => {
 
   return tokenDB.save();
 };
-
 
 exports.markTokenAsUsed = async (token) => ForgotPassToken.updateOne({ token }, { isUsed: true });

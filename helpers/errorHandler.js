@@ -3,6 +3,13 @@ exports.generic = (res, msg) => res.status(422).json({
   message: msg,
 });
 
+exports.internal = (res, err) => {
+  console.error(err);
+  res.status(500).json({
+    code: 'Error',
+  });
+};
+
 exports.unauthorized = (res, msg) => res.status(401).json({
   code: 'Authorization failed.',
   message: msg,

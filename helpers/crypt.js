@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
+const crypto = require('crypto');
 const { validPassword } = require('../helpers/validators');
 const { CustomError } = require('../helpers/errorHandler');
-
 
 exports.hashPassword = async (password) => {
   if (!validPassword(password)) {
@@ -11,8 +11,17 @@ exports.hashPassword = async (password) => {
   return hash;
 };
 
-
 exports.validatePassword = async (password, hashPassword) => {
   const match = await bcrypt.compare(password, hashPassword);
   return match;
 };
+
+exports.getRandomToken = async (len = 30) => {
+  return new Promise(
+    (resolve, reject) => crypto.randomBytes(
+      len,
+      (err, buf) => err ? reject(err) : resolve(buf.toString('hex'))
+    )
+  );
+};
+

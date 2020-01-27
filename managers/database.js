@@ -1,20 +1,24 @@
 const mongoose = require('mongoose');
-const { URL, DB_NAME } = require('../config');
+const {
+  DB_URL,
+  DB_NAME,
+  DB_PASS,
+  DB_USER,
+} = require('../config');
 const logger = require('../helpers/logger');
 
 class Database {
-  constructor() {
-    this.connect();
-  }
-
   connect() {
-    mongoose.connect(`${URL}${DB_NAME}`)
+    return mongoose.connect(DB_URL, {user: DB_USER, pass: DB_PASS, dbName: DB_NAME})
       .then(() => {
-        logger.info(`Database connection successful to ${URL}${DB_NAME}`);
+        logger.info(`Database connection successful to ${DB_URL}${DB_NAME}`);
       })
       .catch((err) => {
         logger.error(`Database connection error ${err}`);
       });
+  }
+  close() {
+    mongoose.disconnect();
   }
 }
 

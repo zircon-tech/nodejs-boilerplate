@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-
-const ForgotPassTokenSchema = new mongoose.Schema({
+const schema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
@@ -9,6 +8,7 @@ const ForgotPassTokenSchema = new mongoose.Schema({
   token: {
     type: String,
     required: true,
+    unique: true,
   },
   isUsed: {
     type: Boolean,
@@ -17,5 +17,4 @@ const ForgotPassTokenSchema = new mongoose.Schema({
   },
 });
 
-
-module.exports = mongoose.model('forgotPassToken', ForgotPassTokenSchema);
+module.exports = mongoose.model('forgotPassToken', schema);
