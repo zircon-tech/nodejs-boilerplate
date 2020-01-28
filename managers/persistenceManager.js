@@ -1,8 +1,12 @@
-const mongoClient = require('./persistenceManagerMongo');
+const userManager = require('./userManager');
+const forgotPassManager = require('./forgotPassManager');
 
-exports.getUserByEmail = mongoClient.getUserByEmail;
-exports.addUser = mongoClient.addUser;
-exports.updateUser = mongoClient.updateUser;
-exports.getToken = mongoClient.getToken;
-exports.addToken = mongoClient.addToken;
-exports.markTokenAsUsed = mongoClient.markTokenAsUsed;
+// Auth
+exports.getForgotPassPincode = forgotPassManager.get;
+exports.addForgotPassPincode = forgotPassManager.add;
+exports.markForgotPassPincodeAsUsed = forgotPassManager.markAsUsed;
+
+// User
+exports.getUserByEmail = userManager.getUserByEmail;
+exports.addUser = userManager.addUser;
+exports.updateUser = userManager.updateUser;

@@ -10,6 +10,8 @@ const helmet = require('helmet');
 const logger = require('./helpers/logger');
 const database = require('./managers/database');
 const appMiddleware = require('./middleware/app');
+const auth = require('./routes/auth');
+const user = require('./routes/user');
 const {
   ENVIRONMENT,
   PORT,
@@ -26,11 +28,10 @@ if (ENVIRONMENT === 'dev') {
   app.use('/', appMiddleware.log);
 }
 
-app.use('/api/', appMiddleware.auth);
-app.use('/user', appMiddleware.auth);
+app.use('/', appMiddleware.validateAPIKey);
 
-const user = require('./routes/user');
-app.use('/api/', user);
+app.use('/api/auth', auth);
+app.use('/api/users', appMiddleware.jwtCheck, user);
 
 app.set('port', PORT || 3000);
 app.listen(app.get('port'), 'localhost', async () => {

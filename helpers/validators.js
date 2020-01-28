@@ -2,6 +2,7 @@
 const { check, validationResult } = require('express-validator');
 
 const passwordRegexp = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[!?@#$%^&*_0-9]).*$/;
+// const stringRegexp = /^[a-z0-9 ]+$/i;
 
 /* CHECKERS */
 
@@ -13,13 +14,14 @@ exports.boolean = (value) => check(value, `${value} must be boolean`).isBoolean(
 // User
 exports.email = check('email').isEmail();
 exports.password = check('password').isLength({ min: 5 });
-exports.first_name = check('first_name').isLength({ min: 2 });
-exports.last_name = check('last_name').isLength({ min: 2 });
-exports.cellphone = check('cellphone').isLength({ min: 8 });
+exports.firstName = check('firstName').isLength({ min: 2 });
+exports.lastName = check('lastName').isLength({ min: 2 });
+exports.cellphone = check('cellphone').optional().isLength({ min: 8 });
 
 // Forgot password
 exports.url = check('url').isLength({ min: 5 });
 exports.token = check('token').isLength({ min: 20 });
+exports.pincode = check('pincode').isLength({ min: 5 });
 
 exports.validPassword = (password) => !!passwordRegexp.exec(password);
 

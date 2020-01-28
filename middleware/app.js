@@ -14,7 +14,7 @@ const log = (req, res, next) => {
   next();
 };
 
-const auth = (req, res, next) => {
+const validateAPIKey = (req, res, next) => {
   // CHECK API KEY
   if (process.env.API_KEY === req.headers['x-api-key']) {
     next();
@@ -25,4 +25,4 @@ const auth = (req, res, next) => {
 
 const jwtCheck = (req, res, next) => jwt.check(req, res, next);
 
-module.exports = { log, auth, jwtCheck };
+module.exports = { log, validateAPIKey, jwtCheck };

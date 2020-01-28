@@ -1,9 +1,10 @@
 /* eslint-disable camelcase */
+const securePin = require('secure-pin');
+const moment = require('moment');
 const { CustomError } = require('../helpers/errorHandler');
 const persistence = require('../managers/persistenceManager');
 const JWT = require('../helpers/jwt');
 const logger = require('../helpers/logger');
-const { FRONT_DOMAIN } = require('../config');
 const { sendTemplate } = require('../helpers/sendMail');
 const crypt = require('../helpers/crypt');
 const googleAuthService = require('./googleAuthService');
@@ -11,9 +12,10 @@ const googleAuthService = require('./googleAuthService');
 
 function formatUser(user) {
   return {
+    // eslint-disable-next-line no-underscore-dangle
     id: user._id,
-    first_name: user.first_name,
-    last_name: user.last_name,
+    firstName: user.firstName,
+    lastName: user.lastName,
     email: user.email,
     cellphone: user.cellphone,
   };
@@ -68,21 +70,18 @@ exports.forgotPasswordRequest = async (param) => {
   logger.info(`forgotPasswordRequest, param= ${JSON.stringify(param)}`);
 
   const { email } = param;
-  const existUser = await persistence.getUserByEmail(email);
-  if (existUser === null) throw new CustomError('User not exist');
+  const existingUser = await persistence.getUserByEmail(email);
+  if (existingUser === null) throw new CustomError('User does not exist');
 
-  const { first_name, last_name } = existUser;
-  const tkn = JWT.sign({ email });
-  // const tkn = 'GENEATETOKEN123TK123';
-  const forgotPassUrl = `${FRONT_DOMAIN}${param.url}${tkn}`;
+  const { firstName } = existingUser;
+  const pin = securePin.generatePinSync(5);
 
   await sendTemplate('reset_password', 'Recover password ', email, {
-    resetLink: forgotPassUrl,
-    first_name: `${first_name}`,
-    last_name: `${last_name}`,
+    pin,
+    firstName,
   });
 
-  await persistence.addToken(email, tkn);
+  await persistence.addForgotPassPincode(email, pin);
   return {};
 };
 
@@ -90,12 +89,15 @@ exports.forgotPasswordRequest = async (param) => {
 exports.forgotPasswordCheckToken = async (param) => {
   logger.info(`forgotPasswordCheckToken, param= ${JSON.stringify(param)}`);
 
-  const existToken = await persistence.getToken(param.token);
-  if (existToken === null) throw new CustomError('Token do not exist');
-  if (existToken.isUsed) throw new CustomError('Token already used');
+  const existingToken = await persistence.getForgotPassPincode(param.email, param.pincode);
+  if (existingToken === null) throw new CustomError('Token does not exist');
+  if (existingToken.isUsed) throw new CustomError('Token already used');
+
+  const isExpired = moment().diff(moment(existingToken.expiresAt)) > 0;
+  if (isExpired) throw new CustomError('Token has expired');
 
   return {
-    status: 'forgot password token is valid',
+    status: 'forgot password pincode is valid',
   };
 };
 
@@ -103,16 +105,19 @@ exports.forgotPasswordCheckToken = async (param) => {
 exports.forgotPasswordConfirm = async (param) => {
   logger.info(`forgotPasswordConfirm, param= ${JSON.stringify(param)}`);
 
-  const existToken = await persistence.getToken(param.token);
-  if (existToken === null) throw new CustomError('Token do not exist');
-  if (existToken.isUsed) throw new CustomError('Token already used');
+  const { email, pincode } = param;
+
+  const existingToken = await persistence.getForgotPassPincode(email, pincode);
+  if (existingToken === null) throw new CustomError('Token does not exist');
+  if (existingToken.isUsed) throw new CustomError('Token already used');
+
+  const isExpired = moment().diff(moment(existingToken.expiresAt)) > 0;
+  if (isExpired) throw new CustomError('Token has expired');
 
   const hash = await crypt.hashPassword(param.password);
 
-  const { email } = existToken;
-
   await persistence.updateUser(email, hash);
-  await persistence.markTokenAsUsed(param.token);
+  await persistence.markForgotPassPincodeAsUsed(email, pincode);
 
   const user = await persistence.getUserByEmail(email);
   const jwtToken = JWT.sign({ email });
@@ -178,8 +183,8 @@ exports.checkGoogleToken = async (param) => {
     }
     userResult = await persistence.addUser({
       email,
-      first_name,
-      last_name,
+      firstName: first_name,
+      lastName: last_name,
       cellphone,
       isGoogleAccount: true,
     });

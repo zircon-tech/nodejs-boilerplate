@@ -8,8 +8,9 @@ const {
 const logger = require('../helpers/logger');
 
 class Database {
+  // eslint-disable-next-line class-methods-use-this
   connect() {
-    return mongoose.connect(DB_URL, {user: DB_USER, pass: DB_PASS, dbName: DB_NAME})
+    return mongoose.connect(DB_URL, { user: DB_USER, pass: DB_PASS, dbName: DB_NAME })
       .then(() => {
         logger.info(`Database connection successful to ${DB_URL}${DB_NAME}`);
       })
@@ -17,6 +18,8 @@ class Database {
         logger.error(`Database connection error ${err}`);
       });
   }
+
+  // eslint-disable-next-line class-methods-use-this
   close() {
     mongoose.disconnect();
   }

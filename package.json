@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test mocha --recursive \"test/**/*.test.js\" ",
     "pretest": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --print-width 110 --end-of-line lf --trailing-comma es5 --write 'src/**/*.js'"
   },
@@ -23,6 +23,8 @@
     "bcrypt": "^3.0.7",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
@@ -31,9 +33,12 @@
     "google-auth-library": "^5.7.0",
     "helmet": "^3.21.2",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.0.1",
+    "moment": "^2.24.0",
     "mongodb": "^3.3.5",
     "mongoose": "^5.7.13",
     "nodemailer": "^6.4.1",
+    "secure-pin": "^1.0.14",
     "winston": "^3.2.1"
   },
   "devDependencies": {
