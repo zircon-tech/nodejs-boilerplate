@@ -1,5 +1,5 @@
-process.on('uncaughtException', function(err) {
-  console.error(err)
+process.on('uncaughtException', (err) => {
+  console.error(err);
 });
 
 const express = require('express');
@@ -38,3 +38,5 @@ app.listen(app.get('port'), 'localhost', async () => {
   await database.connect();
   logger.info(`Node server running on http://localhost:${app.get('port')}`);
 });
+
+module.exports = app; // Export so we can test it

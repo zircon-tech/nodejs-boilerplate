@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 const mongoose = require('mongoose');
 const {
   DB_URL,
@@ -8,7 +9,6 @@ const {
 const logger = require('../helpers/logger');
 
 class Database {
-  // eslint-disable-next-line class-methods-use-this
   connect() {
     return mongoose.connect(DB_URL, { user: DB_USER, pass: DB_PASS, dbName: DB_NAME })
       .then(() => {
@@ -19,9 +19,14 @@ class Database {
       });
   }
 
-  // eslint-disable-next-line class-methods-use-this
   close() {
     mongoose.disconnect();
+  }
+
+  clean() {
+    if (process.env.NODE_ENV === 'test') {
+      mongoose.connection.db.dropDatabase();
+    }
   }
 }
 

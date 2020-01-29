@@ -7,6 +7,7 @@ exports.addForgotPassPincode = forgotPassManager.add;
 exports.markForgotPassPincodeAsUsed = forgotPassManager.markAsUsed;
 
 // User
-exports.getUserByEmail = userManager.getUserByEmail;
-exports.addUser = userManager.addUser;
-exports.updateUser = userManager.updateUser;
+exports.getUser = userManager.get;
+exports.getUserByEmail = userManager.getByEmail;
+exports.addUser = userManager.add;
+exports.updateUser = userManager.update;

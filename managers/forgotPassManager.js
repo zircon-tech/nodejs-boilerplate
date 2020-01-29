@@ -5,20 +5,20 @@ exports.get = async (email, pincode) => {
   const result = await ForgotPassPincode.findOne({ email, pincode });
 
   if (result !== null) {
-    logger.info(`Token successfully found document: ${result}`);
+    logger.info(`Pincode successfully found document: ${result}`);
   } else {
-    logger.info('Token not found.');
+    logger.info('Pincode not found.');
   }
   return result;
 };
 
 exports.add = async (email, pincode) => {
-  const token = new ForgotPassPincode({
+  const pincodeObj = new ForgotPassPincode({
     email: email.toLowerCase(),
     pincode,
   });
 
-  return token.save();
+  return pincodeObj.save();
 };
 
 exports.markAsUsed = async (email, pincode) => ForgotPassPincode.updateOne(

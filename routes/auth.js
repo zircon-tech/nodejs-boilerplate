@@ -40,7 +40,7 @@ router.post(
   '/forgot_password_check',
   [email, pincode],
   validation,
-  userController.forgotPasswordCheckToken,
+  userController.forgotPasswordCheckPincode,
 );
 
 router.post(

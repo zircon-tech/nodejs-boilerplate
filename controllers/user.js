@@ -33,9 +33,9 @@ exports.forgotPasswordRequest = async (req, res) => {
   );
 };
 
-exports.forgotPasswordCheckToken = async (req, res) => {
+exports.forgotPasswordCheckPincode = async (req, res) => {
   const userParam = req.body;
-  return userServices.forgotPasswordCheckToken(userParam).then(
+  return userServices.forgotPasswordCheckPincode(userParam).then(
     responseHandler(res),
     errorHandler(res),
   );

@@ -1,4 +1,6 @@
 const dotenv = require('dotenv');
 
-dotenv.config({ silent: true });
+const path = process.env.NODE_ENV === 'test' ? './.env.test' : './.env';
+
+dotenv.config({ path, silent: true });
 module.exports = process.env;

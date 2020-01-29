@@ -16,12 +16,9 @@ exports.validatePassword = async (password, hashPassword) => {
   return match;
 };
 
-exports.getRandomToken = async (len = 30) => {
-  return new Promise(
-    (resolve, reject) => crypto.randomBytes(
-      len,
-      (err, buf) => err ? reject(err) : resolve(buf.toString('hex'))
-    )
-  );
-};
-
+exports.getRandomToken = async (len = 30) => new Promise(
+  (resolve, reject) => crypto.randomBytes(
+    len,
+    (err, buf) => (err ? reject(err) : resolve(buf.toString('hex'))),
+  ),
+);

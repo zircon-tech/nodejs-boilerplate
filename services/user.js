@@ -9,7 +9,6 @@ const { sendTemplate } = require('../helpers/sendMail');
 const crypt = require('../helpers/crypt');
 const googleAuthService = require('./googleAuthService');
 
-
 function formatUser(user) {
   return {
     // eslint-disable-next-line no-underscore-dangle
@@ -76,25 +75,25 @@ exports.forgotPasswordRequest = async (param) => {
   const { firstName } = existingUser;
   const pin = securePin.generatePinSync(5);
 
+  await persistence.addForgotPassPincode(email, pin);
   await sendTemplate('reset_password', 'Recover password ', email, {
     pin,
     firstName,
   });
 
-  await persistence.addForgotPassPincode(email, pin);
   return {};
 };
 
 
-exports.forgotPasswordCheckToken = async (param) => {
-  logger.info(`forgotPasswordCheckToken, param= ${JSON.stringify(param)}`);
+exports.forgotPasswordCheckPincode = async (param) => {
+  logger.info(`forgotPasswordCheckPincode, param= ${JSON.stringify(param)}`);
 
-  const existingToken = await persistence.getForgotPassPincode(param.email, param.pincode);
-  if (existingToken === null) throw new CustomError('Token does not exist');
-  if (existingToken.isUsed) throw new CustomError('Token already used');
+  const existingPincode = await persistence.getForgotPassPincode(param.email, param.pincode);
+  if (existingPincode === null) throw new CustomError('Pincode does not exist');
+  if (existingPincode.isUsed) throw new CustomError('Pincode already used');
 
-  const isExpired = moment().diff(moment(existingToken.expiresAt)) > 0;
-  if (isExpired) throw new CustomError('Token has expired');
+  const isExpired = moment().diff(moment(existingPincode.expiresAt)) > 0;
+  if (isExpired) throw new CustomError('Pincode has expired');
 
   return {
     status: 'forgot password pincode is valid',
@@ -107,12 +106,12 @@ exports.forgotPasswordConfirm = async (param) => {
 
   const { email, pincode } = param;
 
-  const existingToken = await persistence.getForgotPassPincode(email, pincode);
-  if (existingToken === null) throw new CustomError('Token does not exist');
-  if (existingToken.isUsed) throw new CustomError('Token already used');
+  const existingPincode = await persistence.getForgotPassPincode(email, pincode);
+  if (existingPincode === null) throw new CustomError('Pincode does not exist');
+  if (existingPincode.isUsed) throw new CustomError('Pincode already used');
 
-  const isExpired = moment().diff(moment(existingToken.expiresAt)) > 0;
-  if (isExpired) throw new CustomError('Token has expired');
+  const isExpired = moment().diff(moment(existingPincode.expiresAt)) > 0;
+  if (isExpired) throw new CustomError('Pincode has expired');
 
   const hash = await crypt.hashPassword(param.password);
 
