@@ -8,6 +8,8 @@ const logger = require('../helpers/logger');
 const { sendTemplate } = require('../helpers/sendMail');
 const crypt = require('../helpers/crypt');
 const googleAuthService = require('./googleAuthService');
+const User = require('../model/user');
+const { FRONT_DOMAIN } = require('../config');
 
 function formatUser(user) {
   return {
@@ -127,7 +129,6 @@ exports.forgotPasswordConfirm = async (param) => {
   };
 };
 
-
 exports.getUser = async (email) => {
   const user = await persistence.getUserByEmail(email);
 
@@ -136,6 +137,58 @@ exports.getUser = async (email) => {
   return formatUser(user);
 };
 
+exports.invite = async (email, url) => {
+  const invitation_token = await crypt.getRandomToken();
+  const existUser = await User.findOneAndUpdate(
+    {
+      email,
+      password: null,
+    },
+    {
+      invitation_token,
+    },
+    {
+      new: true,
+      upsert: true,
+    }
+  ).then();
+  await sendTemplate('invitation', 'Invitation', email, {
+    // ToDo: Sanitize url
+    inviteLink: `${FRONT_DOMAIN}${url}${invitation_token}`,
+  });
+  return formatUser(existUser);
+};
+
+exports.checkInvitation = async (token, password, first_name, last_name, cellphone) => {
+  const user = await User.findOne(
+    {
+      invitation_token: token
+    }
+  ).then();
+  return {
+    user: formatUser(user),
+  };
+};
+
+exports.acceptInvitation = async (token, password, first_name, last_name, cellphone) => {
+  const hash = await crypt.hashPassword(password);
+  const user = await User.updateOne(
+    {
+      invitation_token: token
+    },
+    {
+      password: hash,
+      invitation_token: null,
+      first_name,
+      last_name,
+      cellphone,
+    }
+  ).then();
+  return {
+    user: formatUser(user),
+    jwtToken: JWT.sign({sub: user._id, role: user.role}),
+  };
+};
 
 exports.checkGoogleToken = async (param) => {
   const { token, user } = param;

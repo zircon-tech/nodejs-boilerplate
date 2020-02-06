@@ -5,6 +5,7 @@ const chai = require('chai');
 const { expect } = require('chai');
 const chaiHttp = require('chai-http');
 const crypt = require('../../helpers/crypt');
+const Role = require('../../helpers/role');
 const User = require('../../model/user');
 const server = require('../../app');
 const database = require('../../managers/database');
@@ -96,6 +97,32 @@ describe('auth API', () => {
 
       const res = await chai.request(server)
         .post('/api/auth/login')
+        .set('x-api-key', process.env.API_KEY)
+        .send({
+          email: 'rick2@mail.com',
+          password: 'Abc123456',
+        });
+
+      expect(res.status).to.eq(422);
+      expect(res.body.errors).to.not.be.null;
+    });
+
+    it('invites an user', async () => {
+      const user = {
+        email: 'rick@mail.com',
+        firstName: 'Rick',
+        lastName: 'Rodriguez',
+        password: 'Abc123456',
+      };
+      const hash = await crypt.hashPassword(user.password);
+      await User.create({
+        ...user,
+        password: hash,
+        role: Role.Admin,
+      });
+
+      const res = await chai.request(server)
+        .post('/api/auth/invitation/invite')
         .set('x-api-key', process.env.API_KEY)
         .send({
           email: 'rick2@mail.com',

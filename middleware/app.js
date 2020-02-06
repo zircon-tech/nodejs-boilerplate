@@ -25,4 +25,28 @@ const validateAPIKey = (req, res, next) => {
 
 const jwtCheck = (req, res, next) => jwt.check(req, res, next);
 
-module.exports = { log, validateAPIKey, jwtCheck };
+function authorize(roles = []) {
+  return (req, res, next) => {
+    // roles param is a single string (e.g. 'User')
+    // or an array of roles (e.g. ['Admin', 'User'])
+    if (typeof roles === 'string') {
+      roles = [roles];
+    }
+    // authorize based on user role
+
+    if (roles.length && !roles.includes(req.user.role)) {
+      // user's role is not authorized
+      return res.status(401).json({ message: 'Unauthorized' });
+    }
+
+    // authentication and authorization successful
+    next();
+  }
+}
+
+module.exports = {
+  log,
+  validateAPIKey,
+  jwtCheck,
+  authorize,
+};

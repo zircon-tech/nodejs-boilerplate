@@ -1,0 +1,26 @@
+version: '3.2'
+
+services:
+#  api:
+#    build:
+#      context: .
+#      dockerfile: .docker/api/Dockerfile
+#    hostname: api
+#    ports:
+#      - 80:80
+#      - 443:443
+#    links:
+#      - mongo
+#    volumes:
+#      - .:/app
+  mongo:
+    image: mongo:4.2.2-bionic
+#    command: --serviceExecutor adaptive
+    hostname: mongo
+    restart: always
+    ports:
+    - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret
+#      MONGO_INITDB_DATABASE: cloud7

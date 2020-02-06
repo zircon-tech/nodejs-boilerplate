@@ -56,3 +56,27 @@ exports.googleAccount = async (req, res) => {
     errorHandler(res),
   );
 };
+
+exports.invite = (req, res) => userServices.invite(...{
+  ...req.query, ...req.body, ...req.params,
+  currentUser: req.user
+}).then(
+  responseHandler(res),
+  errorHandler(res)
+);
+
+exports.checkInvitation = (req, res) => userServices.checkInvitation(...{
+  ...req.query, ...req.body, ...req.params,
+  currentUser: req.user
+}).then(
+  responseHandler(res),
+  errorHandler(res)
+);
+
+exports.acceptInvitation = (req, res) => userServices.acceptInvitation(...{
+  ...req.query, ...req.body, ...req.params,
+  currentUser: req.user
+}).then(
+  responseHandler(res),
+  errorHandler(res)
+);

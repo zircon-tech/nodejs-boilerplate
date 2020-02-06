@@ -1,5 +1,7 @@
 /* eslint-disable camelcase */
 const express = require('express');
+const {authorize} = require('../middleware/app');
+const Role = require('../helpers/role');
 
 const router = express.Router();
 const {
@@ -11,6 +13,7 @@ const {
   cellphone,
   pincode,
   token,
+  url,
 } = require('../helpers/validators');
 
 const userController = require('../controllers/user');
@@ -36,6 +39,8 @@ router.post(
   userController.forgotPasswordRequest,
 );
 
+// ToDo: Create new endpoints for pincode reset password versions
+
 router.post(
   '/forgot_password_check',
   [email, pincode],
@@ -55,6 +60,28 @@ router.post(
   [token],
   validation,
   userController.googleAccount,
+);
+
+router.post(
+  '/invitation/invite',
+  authorize([Role.Admin]),
+  [email, url],
+  validation,
+  userController.invite
+);
+
+router.post(
+  '/invitation/check/:token',
+  [firstName, lastName, cellphone, password],
+  validation,
+  userController.checkInvitation
+);
+
+router.post(
+  '/invitation/accept/:token',
+  [firstName, lastName, cellphone, password],
+  validation,
+  userController.acceptInvitation
 );
 
 module.exports = router;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>MyCustomApp</title>
+    </head>
+    <body>
+        <table style="width: 100%; max-width: 600px; margin: 20px auto;">
+            <thead>
+                <tr>
+                    <th align="center" style="padding: 10px 0 10px 0;">
+                        <%- include('/partials/logo.html.ejs') %>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0 20px;">
+                        <p style="font-family: sans-serif; font-size: 16px;"><b>Hi,</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 20px;">
+                        <p style="font-family: sans-serif; font-size: 16px;">You have been invited to <b><i>MyCustomApp</i></b>. If you want to accept the invitation, please click the link below:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 20px;" align="center">
+                        <a href="<%= inviteLink %>" style="font-family: sans-serif; display: block; padding: 10px; color: #ffffff; text-decoration: none; background: #0094FF">
+                            <b>Click here to accept invitation</b>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px;">
+                        <p style="font-family: sans-serif; font-size: 16px;">
+                            Sincerely,<br>
+                            <b>The MyCustomApp Team</b>
+                        </p>
+                        <a style="font-family: sans-serif; font-size: 16px;" href="<%= baseSite %>"><%= baseSite %></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

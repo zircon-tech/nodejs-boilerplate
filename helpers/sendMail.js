@@ -3,7 +3,9 @@ const { EMAIL_ACCOUNT, EMAIL_SECRET, EMAIL_FROM_ADDR } = require('../config');
 const { loadTemplate } = require('./templateLoader');
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.ethereal.email',
+  port: 587,
+  secure: false,
   auth: {
     user: EMAIL_ACCOUNT,
     pass: EMAIL_SECRET,
