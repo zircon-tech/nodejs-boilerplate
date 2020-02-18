@@ -5,7 +5,7 @@ const { CustomError } = require('../helpers/errorHandler');
 const persistence = require('../managers/persistenceManager');
 const JWT = require('../helpers/jwt');
 const logger = require('../helpers/logger');
-const { sendTemplate } = require('../helpers/sendMail');
+const { sendTemplate } = require('../services/email');
 const crypt = require('../helpers/crypt');
 const googleAuthService = require('./googleAuthService');
 const User = require('../model/user');
@@ -44,7 +44,6 @@ exports.login = async (email, password) => {
   };
 };
 
-
 /**
  *  Add User
  *
@@ -66,7 +65,6 @@ exports.add = async (user) => {
   return formatUser(result);
 };
 
-
 exports.forgotPasswordRequest = async (param) => {
   logger.info(`forgotPasswordRequest, param= ${JSON.stringify(param)}`);
 
@@ -86,7 +84,6 @@ exports.forgotPasswordRequest = async (param) => {
   return {};
 };
 
-
 exports.forgotPasswordCheckPincode = async (param) => {
   logger.info(`forgotPasswordCheckPincode, param= ${JSON.stringify(param)}`);
 
@@ -101,7 +98,6 @@ exports.forgotPasswordCheckPincode = async (param) => {
     status: 'forgot password pincode is valid',
   };
 };
-
 
 exports.forgotPasswordConfirm = async (param) => {
   logger.info(`forgotPasswordConfirm, param= ${JSON.stringify(param)}`);
@@ -137,44 +133,52 @@ exports.getUser = async (email) => {
   return formatUser(user);
 };
 
-exports.invite = async (email, url) => {
-  const invitation_token = await crypt.getRandomToken();
+exports.invite = async ({ email, url }) => {
+  const invitationToken = await crypt.getRandomToken();
   const existUser = await User.findOneAndUpdate(
     {
       email,
       password: null,
     },
     {
-      invitation_token,
+      invitation_token: invitationToken,
     },
     {
       new: true,
       upsert: true,
-    }
+    },
   ).then();
   await sendTemplate('invitation', 'Invitation', email, {
     // ToDo: Sanitize url
-    inviteLink: `${FRONT_DOMAIN}${url}${invitation_token}`,
+    inviteLink: `${FRONT_DOMAIN}${url}${invitationToken}`,
   });
   return formatUser(existUser);
 };
 
-exports.checkInvitation = async (token, password, first_name, last_name, cellphone) => {
+exports.checkInvitation = async ({ token }) => {
   const user = await User.findOne(
     {
-      invitation_token: token
-    }
+      invitation_token: token,
+    },
   ).then();
   return {
     user: formatUser(user),
   };
 };
 
-exports.acceptInvitation = async (token, password, first_name, last_name, cellphone) => {
+exports.acceptInvitation = async (
+  {
+    token,
+    password,
+    first_name,
+    last_name,
+    cellphone,
+  },
+) => {
   const hash = await crypt.hashPassword(password);
-  const user = await User.updateOne(
+  const user = await User.findOneAndUpdate(
     {
-      invitation_token: token
+      invitation_token: token,
     },
     {
       password: hash,
@@ -182,11 +186,15 @@ exports.acceptInvitation = async (token, password, first_name, last_name, cellph
       first_name,
       last_name,
       cellphone,
-    }
+    },
   ).then();
   return {
     user: formatUser(user),
-    jwtToken: JWT.sign({sub: user._id, role: user.role}),
+    jwtToken: JWT.sign({
+      /* eslint-disable-next-line no-underscore-dangle */
+      sub: user._id,
+      role: user.role,
+    }),
   };
 };
 

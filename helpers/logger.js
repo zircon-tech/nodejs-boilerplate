@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const { createLogger, format, transports } = require('winston');
 
 const { LOG_LEVEL } = require('../config');
@@ -9,6 +8,7 @@ const {
 
 const myFormat = printf(({ level, message, time }) => `${time} -- ${level}: ${message}`);
 
+/* eslint-disable-next-line new-cap */
 const logger = new createLogger({
   level: LOG_LEVEL,
   format: combine(

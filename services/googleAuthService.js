@@ -7,11 +7,9 @@ const client = new OAuth2Client(GOOGLE_AUTH_CLIENT_ID);
 exports.verifyToken = (token) => client.verifyIdToken({
   idToken: token,
   audience: GOOGLE_AUTH_CLIENT_ID,
-})
-  .then((ticket) => {
+}).then(
+  (ticket) => {
     const payload = ticket.getPayload();
-
-    console.log(`getPayload${JSON.stringify(payload)}`);
     return {
       id: payload.sub,
       expires_at: payload.exp,
@@ -19,7 +17,8 @@ exports.verifyToken = (token) => client.verifyIdToken({
       first_name: payload.given_name,
       last_name: payload.family_name,
     };
-  })
-  .catch((err) => {
+  },
+  (err) => {
     throw new CustomError(`Error validating google token ${err}`);
-  });
+  },
+);

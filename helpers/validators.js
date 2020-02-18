@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 const { check, validationResult } = require('express-validator');
 
 const passwordRegexp = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[!?@#$%^&*_0-9]).*$/;
@@ -31,5 +30,5 @@ exports.validation = (req, res, next) => {
   if (!errors.isEmpty()) {
     return res.status(422).json({ errors: errors.array() });
   }
-  next();
+  return next();
 };

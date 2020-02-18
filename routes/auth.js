@@ -1,9 +1,9 @@
-/* eslint-disable camelcase */
 const express = require('express');
-const {authorize} = require('../middleware/app');
+const {
+  authorize,
+  jwtCheck,
+} = require('../middleware/app');
 const Role = require('../helpers/role');
-
-const router = express.Router();
 const {
   validation,
   email,
@@ -16,6 +16,7 @@ const {
   url,
 } = require('../helpers/validators');
 
+const router = express.Router();
 const userController = require('../controllers/user');
 
 router.post(
@@ -64,24 +65,24 @@ router.post(
 
 router.post(
   '/invitation/invite',
-  authorize([Role.Admin]),
+  [jwtCheck, authorize([Role.Admin])],
   [email, url],
   validation,
-  userController.invite
+  userController.invite,
 );
 
 router.post(
   '/invitation/check/:token',
   [firstName, lastName, cellphone, password],
   validation,
-  userController.checkInvitation
+  userController.checkInvitation,
 );
 
 router.post(
   '/invitation/accept/:token',
   [firstName, lastName, cellphone, password],
   validation,
-  userController.acceptInvitation
+  userController.acceptInvitation,
 );
 
 module.exports = router;

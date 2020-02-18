@@ -4,6 +4,7 @@ exports.generic = (res, msg) => res.status(422).json({
 });
 
 exports.internal = (res, err) => {
+  /* eslint-disable-next-line no-console */
   console.error(err);
   res.status(500).json({
     code: 'Error',

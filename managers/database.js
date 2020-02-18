@@ -20,12 +20,12 @@ class Database {
   }
 
   close() {
-    mongoose.disconnect();
+    return mongoose.disconnect();
   }
 
-  clean() {
+  async clean() {
     if (process.env.NODE_ENV === 'test') {
-      mongoose.connection.db.dropDatabase();
+      await mongoose.connection.db.dropDatabase();
     }
   }
 }
