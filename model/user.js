@@ -8,17 +8,21 @@ const Role = require('../helpers/role');
  *      User:
  *        type: object
  *        required:
- *          - name
+ *          - firstName
+ *          - lastName
  *          - email
  *        properties:
- *          name:
+ *          firstName:
+ *            type: string
+ *          lastName:
  *            type: string
  *          email:
  *            type: string
  *            format: email
  *            description: Email for the user, needs to be unique.
  *        example:
- *           name: Alexander
+ *           firstName: Alexander
+ *           lastName: Fake
  *           email: fake@email.com
  */
 const UserSchema = new mongoose.Schema({

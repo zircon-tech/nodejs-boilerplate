@@ -43,3 +43,11 @@ exports.add = async (user) => {
 exports.update = async (email, password) => User.updateOne({
   email: email.toLowerCase(),
 }, { password });
+
+exports.updateUserProfile = async (user) => User.updateOne({
+  email: user.email.toLowerCase(),
+}, {
+    firstName: user.firstName,
+    lastName: user.lastName,
+});
+

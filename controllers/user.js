@@ -25,6 +25,14 @@ exports.get = (req, res) => {
   );
 };
 
+exports.update = (req, res) => {
+  const userParam = req.body;
+  return userServices.update(userParam).then(
+    responseHandler(res),
+    errorHandler(res),
+  );
+};
+
 exports.forgotPasswordRequest = async (req, res) => {
   const userParam = req.body;
   return userServices.forgotPasswordRequest(userParam).then(
