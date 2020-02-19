@@ -133,6 +133,13 @@ exports.getUser = async (email) => {
   return formatUser(user);
 };
 
+exports.update = async (userParam) => {
+  let user = await persistence.getUserByEmail(userParam.email);
+  if (user === null) throw new CustomError('User not found');
+  user = await persistence.updateUserProfile(userParam)
+  return formatUser(user);
+};
+
 exports.invite = async ({ email, url }) => {
   const invitationToken = await crypt.getRandomToken();
   const existUser = await User.findOneAndUpdate(

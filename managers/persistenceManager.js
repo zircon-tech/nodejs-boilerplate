@@ -11,3 +11,4 @@ exports.getUser = userManager.get;
 exports.getUserByEmail = userManager.getByEmail;
 exports.addUser = userManager.add;
 exports.updateUser = userManager.update;
+exports.updateUserProfile = userManager.updateUserProfile;

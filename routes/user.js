@@ -2,6 +2,9 @@ const express = require('express');
 
 const router = express.Router();
 const {
+  firstName,
+  lastName,
+  email,
   validation,
 } = require('../helpers/validators');
 
@@ -10,9 +13,31 @@ const userController = require('../controllers/user');
 /**
  * @swagger
  * path:
- *  /users/:
+ *  /users/profile:
+ *    get:
+ *      summary: Get user profile
+ *      tags: [Users]
+ *      responses:
+ *        "200":
+ *          description: A user schema
+ *          content:
+ *            application/json:
+ *              schema:
+ *                $ref: '#/components/schemas/User'
+ */
+router.get(
+  '/profile/:email',
+  [email],
+  validation,
+  userController.get,
+);
+
+/**
+ * @swagger
+ * path:
+ *  /users/profile:
  *    post:
- *      summary: Create a new user
+ *      summary: Get user profile
  *      tags: [Users]
  *      requestBody:
  *        required: true
@@ -28,11 +53,11 @@ const userController = require('../controllers/user');
  *              schema:
  *                $ref: '#/components/schemas/User'
  */
-router.get(
+router.post(
   '/profile',
-  [],
+  [firstName, lastName, email],
   validation,
-  userController.get,
+  userController.update,
 );
 
 module.exports = router;
