@@ -6,7 +6,7 @@ const {
   combine, timestamp, printf,
 } = format;
 
-const myFormat = printf(({ level, message, time }) => `${time} -- ${level}: ${message}`);
+const myFormat = printf(({ level, message, timestamp: ts }) => `${ts} -- ${level}: ${message}`);
 
 /* eslint-disable-next-line new-cap */
 const logger = new createLogger({
@@ -20,18 +20,18 @@ const logger = new createLogger({
       timestamp: true,
       json: true,
     }),
-    new transports.File({
-      filename: 'server.log',
-      handleExceptions: true,
-      maxsize: 5242880, // 5MB
-      maxFiles: 30,
-    }),
-    new transports.File({
-      filename: 'error.log',
-      level: 'error',
-      maxsize: 5242880, // 5MB
-      maxFiles: 30,
-    }),
+    // new transports.File({
+    //   filename: 'server.log',
+    //   handleExceptions: true,
+    //   maxsize: 5242880, // 5MB
+    //   maxFiles: 30,
+    // }),
+    // new transports.File({
+    //   filename: 'error.log',
+    //   level: 'error',
+    //   maxsize: 5242880, // 5MB
+    //   maxFiles: 30,
+    // }),
   ],
 });
 

@@ -8,15 +8,17 @@ const schema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  pincode: {
-    type: Number,
+  token: {
+    type: String,
     required: true,
+    unique: true,
   },
   isUsed: {
     type: Boolean,
     required: true,
     default: false,
   },
+  // Expired time can be calculated based on ts from ID...
   expiresAt: {
     type: Date,
     required: false,
@@ -24,4 +26,4 @@ const schema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('ForgotPassPincode', schema);
+module.exports = mongoose.model('ForgotPassToken', schema);

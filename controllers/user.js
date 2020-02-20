@@ -17,45 +17,87 @@ exports.add = (req, res) => {
   );
 };
 
-exports.get = (req, res) => {
-  const { email } = req.params;
-  return userServices.getUser(email).then(
-    responseHandler(res),
-    errorHandler(res),
-  );
-};
+exports.get = (req, res) => userServices.getUser({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
 
-exports.update = (req, res) => {
-  const userParam = req.body;
-  return userServices.update(userParam).then(
-    responseHandler(res),
-    errorHandler(res),
-  );
-};
+exports.update = (req, res) => userServices.update({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
 
-exports.forgotPasswordRequest = async (req, res) => {
-  const userParam = req.body;
-  return userServices.forgotPasswordRequest(userParam).then(
+exports.forgotPasswordRequestPincode = async (req, res) => userServices
+  .forgotPasswordRequestPincode({
+    ...req.query,
+    ...req.body,
+    ...req.params,
+    currentUser: req.user,
+  }).then(
     responseHandler(res),
     errorHandler(res),
   );
-};
 
-exports.forgotPasswordCheckPincode = async (req, res) => {
-  const userParam = req.body;
-  return userServices.forgotPasswordCheckPincode(userParam).then(
-    responseHandler(res),
-    errorHandler(res),
-  );
-};
+exports.forgotPasswordCheckPincode = async (req, res) => userServices.forgotPasswordCheckPincode({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
 
-exports.forgotPasswordConfirm = async (req, res) => {
-  const userParam = req.body;
-  return userServices.forgotPasswordConfirm(userParam).then(
+exports.forgotPasswordConfirmPincode = async (req, res) => userServices
+  .forgotPasswordConfirmPincode({
+    ...req.query,
+    ...req.body,
+    ...req.params,
+    currentUser: req.user,
+  }).then(
     responseHandler(res),
     errorHandler(res),
   );
-};
+
+exports.forgotPasswordRequestToken = async (req, res) => userServices.forgotPasswordRequestToken({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
+
+exports.forgotPasswordCheckToken = async (req, res) => userServices.forgotPasswordCheckToken({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
+
+exports.forgotPasswordConfirmToken = async (req, res) => userServices.forgotPasswordConfirmToken({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
 
 exports.googleAccount = async (req, res) => {
   const param = req.body;
@@ -86,6 +128,16 @@ exports.checkInvitation = (req, res) => userServices.checkInvitation({
 );
 
 exports.acceptInvitation = (req, res) => userServices.acceptInvitation({
+  ...req.query,
+  ...req.body,
+  ...req.params,
+  currentUser: req.user,
+}).then(
+  responseHandler(res),
+  errorHandler(res),
+);
+
+exports.changePassword = (req, res) => userServices.changePassword({
   ...req.query,
   ...req.body,
   ...req.params,

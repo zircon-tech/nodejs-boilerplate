@@ -5,7 +5,6 @@ const chai = require('chai');
 const { expect } = require('chai');
 const chaiHttp = require('chai-http');
 const crypt = require('../../helpers/crypt');
-const Role = require('../../helpers/role');
 const User = require('../../model/user');
 const server = require('../../app');
 const database = require('../../managers/database');
@@ -32,10 +31,39 @@ function extractActivateUserLink(link, subpath) {
 
 chai.use(chaiHttp);
 
+
+async function seedUser(version) {
+  const user = {
+    email: `rick${version}@mail.com`,
+    firstName: `FirstName${version}`,
+    lastName: `LastName${version}`,
+    password: `Test1234${version}`,
+  };
+  const hash = await crypt.hashPassword(user.password);
+  await User.create({
+    ...user,
+    password: hash,
+  });
+  return user;
+}
+
+async function logInUser(user) {
+  const res = await chai.request(server)
+    .post('/api/auth/login')
+    .set('x-api-key', process.env.API_KEY)
+    .send({
+      email: user.email,
+      password: user.password,
+    });
+  return res.body.jwtToken;
+}
+
 describe('auth API', function test() {
   this.timeout(4000);
 
   beforeEach(async () => {
+    await database.connect();
+    await database.clean();
     await database.connect();
   });
 
@@ -83,24 +111,14 @@ describe('auth API', function test() {
 
   describe('login', () => {
     it('login an existing user', async () => {
-      const user = {
-        email: 'rick@mail.com',
-        firstName: 'Rick',
-        lastName: 'Rodriguez',
-        password: 'Abc123456',
-      };
-      const hash = await crypt.hashPassword(user.password);
-      await User.create({
-        ...user,
-        password: hash,
-      });
+      const user = await seedUser(1);
 
       const res = await chai.request(server)
         .post('/api/auth/login')
         .set('x-api-key', process.env.API_KEY)
         .send({
-          email: 'rick@mail.com',
-          password: 'Abc123456',
+          email: user.email,
+          password: user.password,
         });
 
       expect(res.status).to.eq(200);
@@ -110,23 +128,13 @@ describe('auth API', function test() {
     });
 
     it('fails to login due to wrong credentials', async () => {
-      const user = {
-        email: 'rick@mail.com',
-        firstName: 'Rick',
-        lastName: 'Rodriguez',
-        password: 'Abc123456',
-      };
-      const hash = await crypt.hashPassword(user.password);
-      await User.create({
-        ...user,
-        password: hash,
-      });
+      const user = await seedUser(1);
 
       const res = await chai.request(server)
         .post('/api/auth/login')
         .set('x-api-key', process.env.API_KEY)
         .send({
-          email: 'rick2@mail.com',
+          email: user.email,
           password: 'Abc123456',
         });
 
@@ -136,37 +144,11 @@ describe('auth API', function test() {
   });
 
   describe('invitations', () => {
-    it('invites an user', async function testInvitations() {
-      this.timeout(10000);
-      const user = {
-        email: 'rick@mail.com',
-        firstName: 'Rick',
-        lastName: 'Rodriguez',
-        password: 'Abc123456',
-      };
-      const hash = await crypt.hashPassword(user.password);
-      await User.create({
-        ...user,
-        password: hash,
-        role: Role.Admin,
-      });
+    it('invites an user', async () => {
+      const user = await seedUser(1);
+      const jwtTokenAdmin = await logInUser(user);
 
       let res;
-
-      res = await chai.request(server).post('/api/auth/login')
-        .set('x-api-key', process.env.API_KEY)
-        .send({
-          email: 'rick@mail.com',
-          password: 'Abc123456',
-        });
-      expect(res.status).to.eq(200);
-      expect(res.body).to.exist;
-      expect(res.body.user.id).to.not.be.null;
-      expect(res.body.jwtToken).to.not.be.null;
-      const {
-        jwtToken: jwtTokenAdmin,
-      } = res.body;
-
       const newUserEmail = 'rick2@mail.com';
       res = await chai.request(server).post('/api/auth/invitation/invite')
         .set('x-api-key', process.env.API_KEY)
@@ -177,7 +159,6 @@ describe('auth API', function test() {
         });
       expect(res.status).to.eq(200);
 
-      // ToDo: Check email was sent to new address
       const invitationEmail = outbox.pop();
       invitationEmail.meta.to = newUserEmail;
       const activateToken = extractActivateUserLink(invitationEmail.meta.inviteLink, 'somepath/');
@@ -198,6 +179,34 @@ describe('auth API', function test() {
       // const {
       //   jwtToken: jwtTokenOther,
       // } = res.body;
+    });
+  });
+
+  describe('profile and change password', () => {
+    it('get profile', async () => {
+
+    });
+    it('update profile', async () => {
+
+    });
+    it('change password', async () => {
+      const user = await seedUser(1);
+      const jwtToken = await logInUser(user);
+
+      const newPassword = `${user.password}NEW`;
+      const res = await chai.request(server).post('/api/auth/change_password')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`)
+        .send({
+          oldPassword: user.password,
+          newPassword,
+        });
+      expect(res.status).to.eq(200);
+
+      await logInUser({
+        ...user,
+        password: newPassword,
+      });
     });
   });
 });

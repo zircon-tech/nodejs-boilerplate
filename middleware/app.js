@@ -33,7 +33,7 @@ const jwtCheck = (req, res, next) => {
     async (decode) => {
       req.jwt = decode;
       req.user_email = decode.email;
-      req.user = await User.findOne({ email: decode.email });
+      req.user = await User.findById(decode.sub);
       next();
     },
     (error) => {

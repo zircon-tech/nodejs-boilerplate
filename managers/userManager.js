@@ -2,8 +2,6 @@ const logger = require('../helpers/logger');
 const User = require('../model/user');
 
 exports.get = async (id) => {
-  logger.info(`getUserById id: ${id}`);
-
   let result = await User.findById(id).select('-__v');
   if (result !== null) {
     logger.info(`User successfully found document: ${result}`);
@@ -16,8 +14,6 @@ exports.get = async (id) => {
 
 exports.getByEmail = async (email) => {
   const lowerEmail = email.toLowerCase();
-  logger.info(`getUserByEmail email: ${lowerEmail}`);
-
   let result = await User.findOne({ email: `${lowerEmail}` }).select('-__v');
   if (result !== null) {
     logger.info(`User successfully found document: ${result}`);
@@ -47,7 +43,6 @@ exports.update = async (email, password) => User.updateOne({
 exports.updateUserProfile = async (user) => User.updateOne({
   email: user.email.toLowerCase(),
 }, {
-    firstName: user.firstName,
-    lastName: user.lastName,
+  firstName: user.firstName,
+  lastName: user.lastName,
 });
-

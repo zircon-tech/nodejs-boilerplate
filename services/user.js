@@ -4,7 +4,6 @@ const moment = require('moment');
 const { CustomError } = require('../helpers/errorHandler');
 const persistence = require('../managers/persistenceManager');
 const JWT = require('../helpers/jwt');
-const logger = require('../helpers/logger');
 const { sendTemplate } = require('../services/email');
 const crypt = require('../helpers/crypt');
 const googleAuthService = require('./googleAuthService');
@@ -22,15 +21,15 @@ function formatUser(user) {
   };
 }
 
-/**
- *  Login
- *
- * @param email
- * @param password
- * @returns {Promise<{user: *, jwtToken: *}>}
- */
+function getJWT(user) {
+  return JWT.sign({
+    /* eslint-disable-next-line no-underscore-dangle */
+    sub: user._id,
+    role: user.role,
+  });
+}
+
 exports.login = async (email, password) => {
-  const jwtToken = JWT.sign({ email });
   const user = await persistence.getUserByEmail(email);
 
   if (user === null) throw new CustomError('Wrong user or password');
@@ -40,7 +39,7 @@ exports.login = async (email, password) => {
 
   return {
     user: formatUser(user),
-    jwtToken,
+    jwtToken: getJWT(user),
   };
 };
 
@@ -51,8 +50,6 @@ exports.login = async (email, password) => {
  * @returns {Promise<*>}
  */
 exports.add = async (user) => {
-  logger.info(`add user, user= ${JSON.stringify(user)}`);
-
   const existUser = await persistence.getUserByEmail(user.email);
   if (existUser !== null) throw new CustomError('User already exist');
 
@@ -65,10 +62,7 @@ exports.add = async (user) => {
   return formatUser(result);
 };
 
-exports.forgotPasswordRequest = async (param) => {
-  logger.info(`forgotPasswordRequest, param= ${JSON.stringify(param)}`);
-
-  const { email } = param;
+exports.forgotPasswordRequestPincode = async ({ email }) => {
   const existingUser = await persistence.getUserByEmail(email);
   if (existingUser === null) throw new CustomError('User does not exist');
 
@@ -76,34 +70,13 @@ exports.forgotPasswordRequest = async (param) => {
   const pin = securePin.generatePinSync(5);
 
   await persistence.addForgotPassPincode(email, pin);
-  await sendTemplate('reset_password', 'Recover password ', email, {
+  await sendTemplate('reset_password_pincode', 'Recover password ', email, {
     pin,
     firstName,
   });
-
-  return {};
 };
 
-exports.forgotPasswordCheckPincode = async (param) => {
-  logger.info(`forgotPasswordCheckPincode, param= ${JSON.stringify(param)}`);
-
-  const existingPincode = await persistence.getForgotPassPincode(param.email, param.pincode);
-  if (existingPincode === null) throw new CustomError('Pincode does not exist');
-  if (existingPincode.isUsed) throw new CustomError('Pincode already used');
-
-  const isExpired = moment().diff(moment(existingPincode.expiresAt)) > 0;
-  if (isExpired) throw new CustomError('Pincode has expired');
-
-  return {
-    status: 'forgot password pincode is valid',
-  };
-};
-
-exports.forgotPasswordConfirm = async (param) => {
-  logger.info(`forgotPasswordConfirm, param= ${JSON.stringify(param)}`);
-
-  const { email, pincode } = param;
-
+exports.forgotPasswordCheckPincode = async ({ email, pincode }) => {
   const existingPincode = await persistence.getForgotPassPincode(email, pincode);
   if (existingPincode === null) throw new CustomError('Pincode does not exist');
   if (existingPincode.isUsed) throw new CustomError('Pincode already used');
@@ -111,32 +84,89 @@ exports.forgotPasswordConfirm = async (param) => {
   const isExpired = moment().diff(moment(existingPincode.expiresAt)) > 0;
   if (isExpired) throw new CustomError('Pincode has expired');
 
-  const hash = await crypt.hashPassword(param.password);
+  // ToDo: Can also return a JWT now
+  return {
+    status: 'forgot password pincode is valid',
+  };
+};
+
+exports.forgotPasswordConfirmPincode = async ({ email, pincode, password }) => {
+  const existingPincode = await persistence.getForgotPassPincode(email, pincode);
+  if (existingPincode === null) throw new CustomError('Pincode does not exist');
+  if (existingPincode.isUsed) throw new CustomError('Pincode already used');
+
+  const isExpired = moment().diff(moment(existingPincode.expiresAt)) > 0;
+  if (isExpired) throw new CustomError('Pincode has expired');
+
+  const hash = await crypt.hashPassword(password);
 
   await persistence.updateUser(email, hash);
   await persistence.markForgotPassPincodeAsUsed(email, pincode);
 
   const user = await persistence.getUserByEmail(email);
-  const jwtToken = JWT.sign({ email });
-
   return {
     user: formatUser(user),
-    jwtToken,
+    jwtToken: getJWT(user),
+  };
+};
+
+exports.forgotPasswordRequestToken = async ({ email, url }) => {
+  const existingUser = await persistence.getUserByEmail(email);
+  if (existingUser === null) throw new CustomError('User does not exist');
+
+  const token = await crypt.getRandomToken();
+  await persistence.addForgotPassToken(email, token);
+  const { firstName } = existingUser;
+  await sendTemplate('reset_password_token', 'Recover password ', email, {
+    // ToDo: Sanitize url
+    resetLink: `${FRONT_DOMAIN}${url}${token}`,
+    firstName,
+  });
+};
+
+async function checkToken(token) {
+  const existing = await persistence.getForgotPassToken(token);
+  if (existing === null) throw new CustomError('Token does not exist');
+  if (existing.isUsed) throw new CustomError('Token already used');
+
+  const isExpired = moment().diff(moment(existing.expiresAt)) > 0;
+  if (isExpired) throw new CustomError('Token has expired');
+  return existing;
+}
+
+exports.forgotPasswordCheckToken = async ({ token }) => {
+  await checkToken(token);
+  // ToDo: Can also return a JWT now
+  return {
+    status: 'forgot password token is valid',
+  };
+};
+
+exports.forgotPasswordConfirmToken = async ({ token, password }) => {
+  const dbToken = await checkToken(token);
+
+  const hash = await crypt.hashPassword(password);
+
+  await persistence.updateUser(dbToken.email, hash);
+  await persistence.markForgotPassTokenAsUsed(dbToken);
+
+  const user = await persistence.getUserByEmail(dbToken.email);
+  return {
+    user: formatUser(user),
+    jwtToken: getJWT(user),
   };
 };
 
 exports.getUser = async (email) => {
   const user = await persistence.getUserByEmail(email);
-
   if (user === null) throw new CustomError('User not found');
-
   return formatUser(user);
 };
 
 exports.update = async (userParam) => {
   let user = await persistence.getUserByEmail(userParam.email);
   if (user === null) throw new CustomError('User not found');
-  user = await persistence.updateUserProfile(userParam)
+  user = await persistence.updateUserProfile(userParam);
   return formatUser(user);
 };
 
@@ -256,15 +286,27 @@ exports.checkGoogleToken = async (param) => {
       isGoogleAccount: true,
     });
   }
-
-  const { email } = userResult;
-  logger.info(`email= ${email}`);
-  const jwtToken = JWT.sign({ email });
-
   return {
     user: formatUser(userResult),
-    jwtToken,
+    jwtToken: getJWT(userResult),
     isInfoMissing: false,
     infoMissing: {},
   };
+};
+
+exports.changePassword = async (
+  {
+    newPassword,
+    oldPassword,
+    currentUser,
+  },
+) => {
+  // newPassword must follow pass policies too...
+  const validPass = await crypt.validatePassword(oldPassword, currentUser.password);
+  if (!validPass) throw new CustomError('Wrong user or password');
+  // eslint-disable-next-line no-param-reassign
+  currentUser.password = await crypt.hashPassword(newPassword);
+  // eslint-disable-next-line no-param-reassign
+  currentUser.save();
+  // ToDo: Invalidate current token? How?
 };

@@ -5,6 +5,9 @@ const forgotPassManager = require('./forgotPassManager');
 exports.getForgotPassPincode = forgotPassManager.get;
 exports.addForgotPassPincode = forgotPassManager.add;
 exports.markForgotPassPincodeAsUsed = forgotPassManager.markAsUsed;
+exports.getForgotPassToken = forgotPassManager.getByToken;
+exports.addForgotPassToken = forgotPassManager.addByToken;
+exports.markForgotPassTokenAsUsed = forgotPassManager.markAsUsedByToken;
 
 // User
 exports.getUser = userManager.get;

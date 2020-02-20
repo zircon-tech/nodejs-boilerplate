@@ -7,6 +7,7 @@
     "start": "nodemon app.js",
     "test": "NODE_ENV=test mocha --exit --recursive \"test/**/*.test.js\"",
     "pretest": "eslint --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ignore-path .gitignore .",
     "prettier": "prettier --print-width 110 --end-of-line lf --trailing-comma es5 --write 'src/**/*.js'"
   },
   "repository": {
