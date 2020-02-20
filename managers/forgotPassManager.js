@@ -29,7 +29,7 @@ exports.markAsUsed = async (email, pincode) => ForgotPassPincode.updateOne(
 exports.getByToken = async (token) => ForgotPassToken.findOne({ token });
 
 exports.addByToken = async (email, token) => {
-  const obj = new ForgotPassPincode({
+  const obj = new ForgotPassToken({
     email: email.toLowerCase(),
     token,
   });

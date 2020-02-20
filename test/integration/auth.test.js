@@ -145,6 +145,46 @@ describe('auth API', function test() {
     });
   });
 
+  describe('reset password', () => {
+    it('happy path', async () => {
+      const user = await seedUser(1);
+      const jwtToken = await logInUser(user);
+      let res;
+      res = await chai.request(server).post('/api/auth/forgot_password_token')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`)
+        .send({
+          email: user.email,
+          url: 'somepath/',
+        });
+      expect(res.status).to.eq(200);
+
+      const invitationEmail = outbox.pop();
+      expect(invitationEmail.email.to).to.eq(user.email);
+      const activateToken = extractActivateUserLink(invitationEmail.meta.resetLink, 'somepath/');
+
+      res = await chai.request(server).post('/api/auth/forgot_password_check_token')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`)
+        .send({
+          token: activateToken,
+        });
+      expect(res.status).to.eq(200);
+
+      user.password = `${user.password}NEW`;
+      res = await chai.request(server).post('/api/auth/forgot_password_confirm_token')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`)
+        .send({
+          token: activateToken,
+          password: user.password,
+        });
+      expect(res.status).to.eq(200);
+
+      await logInUser(user);
+    });
+  });
+
   describe('invitations', () => {
     it('invites an user', async () => {
       const user = await seedUser(1, { role: Role.Admin });
@@ -162,7 +202,7 @@ describe('auth API', function test() {
       expect(res.status).to.eq(200);
 
       const invitationEmail = outbox.pop();
-      invitationEmail.meta.to = newUserEmail;
+      expect(invitationEmail.email.to).to.eq(newUserEmail);
       const activateToken = extractActivateUserLink(invitationEmail.meta.inviteLink, 'somepath/');
 
       res = await chai.request(server).post(`/api/auth/invitation/accept/${activateToken}`)

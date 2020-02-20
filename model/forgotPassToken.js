@@ -18,7 +18,7 @@ const schema = new mongoose.Schema({
     required: true,
     default: false,
   },
-  // Expired time can be calculated based on ts from ID...
+  // ToDo: Expired time can be calculated based on ts from ID...
   expiresAt: {
     type: Date,
     required: false,
