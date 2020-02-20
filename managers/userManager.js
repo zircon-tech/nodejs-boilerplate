@@ -40,8 +40,10 @@ exports.update = async (email, password) => User.updateOne({
   email: email.toLowerCase(),
 }, { password });
 
-exports.updateUserProfile = async (user, {firstName, lastName}) => {
+exports.updateUserProfile = async (user, { firstName, lastName }) => {
+  /* eslint-disable-next-line no-param-reassign */
   user.firstName = firstName;
+  /* eslint-disable-next-line no-param-reassign */
   user.lastName = lastName;
   return user.save();
 };

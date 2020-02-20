@@ -32,7 +32,6 @@ const jwtCheck = (req, res, next) => {
   jwt.check(token).then(
     async (decode) => {
       req.jwt = decode;
-      req.user_email = decode.email;
       req.user = await User.findById(decode.sub);
       next();
     },

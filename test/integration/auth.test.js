@@ -6,6 +6,7 @@ const { expect } = require('chai');
 const chaiHttp = require('chai-http');
 const crypt = require('../../helpers/crypt');
 const User = require('../../model/user');
+const Role = require('../../helpers/role');
 const server = require('../../app');
 const database = require('../../managers/database');
 const { outbox } = require('../../services/email');
@@ -32,7 +33,7 @@ function extractActivateUserLink(link, subpath) {
 chai.use(chaiHttp);
 
 
-async function seedUser(version) {
+async function seedUser(version, extra) {
   const user = {
     email: `rick${version}@mail.com`,
     firstName: `FirstName${version}`,
@@ -43,6 +44,7 @@ async function seedUser(version) {
   await User.create({
     ...user,
     password: hash,
+    ...extra,
   });
   return user;
 }
@@ -145,7 +147,7 @@ describe('auth API', function test() {
 
   describe('invitations', () => {
     it('invites an user', async () => {
-      const user = await seedUser(1);
+      const user = await seedUser(1, { role: Role.Admin });
       const jwtTokenAdmin = await logInUser(user);
 
       let res;
@@ -183,23 +185,25 @@ describe('auth API', function test() {
   });
 
   describe('profile and change password', () => {
-    it('get profile', async () => {
-      const user = await seedUser(1);
-      const jwtToken = await logInUser(user);
-      const res = await chai.request(server).post('/api/user/profile')
-        .set('x-api-key', process.env.API_KEY)
-        .set('authorization', `Bearer ${jwtToken}`)
-        .send({
-          oldPassword: user.password,
-          newPassword,
-        });
-      expect(res.status).to.eq(200);
-      ''
-      '/user/profile'
-    });
     it('update profile', async () => {
       const user = await seedUser(1);
       const jwtToken = await logInUser(user);
+      const res = await chai.request(server).get('/api/users/profile')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`)
+        .send({
+          firstName: `${user.firstName}NEW`,
+          lastName: `${user.lastName}NEW`,
+        });
+      expect(res.status).to.eq(200);
+    });
+    it('get profile', async () => {
+      const user = await seedUser(1);
+      const jwtToken = await logInUser(user);
+      const res = await chai.request(server).get('/api/users/profile')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`);
+      expect(res.status).to.eq(200);
     });
     it('change password', async () => {
       const user = await seedUser(1);

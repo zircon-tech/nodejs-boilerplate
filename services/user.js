@@ -157,11 +157,9 @@ exports.forgotPasswordConfirmToken = async ({ token, password }) => {
   };
 };
 
-exports.getCurrentUser = async ({currentUser}) => {
-  return formatUser(currentUser);
-};
+exports.getCurrentUser = async ({ currentUser }) => formatUser(currentUser);
 
-exports.updateCurrentUser = async ({currentUser, ...params}) => {
+exports.updateCurrentUser = async ({ currentUser, ...params }) => {
   await persistence.updateUserProfile(currentUser, params);
   return formatUser(currentUser);
 };
