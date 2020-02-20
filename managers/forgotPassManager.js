@@ -39,5 +39,5 @@ exports.addByToken = async (email, token) => {
 exports.markAsUsedByToken = async (dbToken) => {
   /* eslint-disable-next-line no-param-reassign */
   dbToken.isUsed = true;
-  dbToken.save();
+  return dbToken.save();
 };

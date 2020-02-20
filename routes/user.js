@@ -4,7 +4,6 @@ const router = express.Router();
 const {
   firstName,
   lastName,
-  email,
   validation,
 } = require('../helpers/validators');
 
@@ -26,8 +25,7 @@ const userController = require('../controllers/user');
  *                $ref: '#/components/schemas/User'
  */
 router.get(
-  '/profile/:email',
-  [email],
+  '/profile',
   validation,
   userController.get,
 );
@@ -55,7 +53,7 @@ router.get(
  */
 router.post(
   '/profile',
-  [firstName, lastName, email],
+  [firstName, lastName],
   validation,
   userController.update,
 );

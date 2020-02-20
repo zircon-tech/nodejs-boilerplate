@@ -157,17 +157,13 @@ exports.forgotPasswordConfirmToken = async ({ token, password }) => {
   };
 };
 
-exports.getUser = async (email) => {
-  const user = await persistence.getUserByEmail(email);
-  if (user === null) throw new CustomError('User not found');
-  return formatUser(user);
+exports.getCurrentUser = async ({currentUser}) => {
+  return formatUser(currentUser);
 };
 
-exports.update = async (userParam) => {
-  let user = await persistence.getUserByEmail(userParam.email);
-  if (user === null) throw new CustomError('User not found');
-  user = await persistence.updateUserProfile(userParam);
-  return formatUser(user);
+exports.updateCurrentUser = async ({currentUser, ...params}) => {
+  await persistence.updateUserProfile(currentUser, params);
+  return formatUser(currentUser);
 };
 
 exports.invite = async ({ email, url }) => {
@@ -307,6 +303,6 @@ exports.changePassword = async (
   // eslint-disable-next-line no-param-reassign
   currentUser.password = await crypt.hashPassword(newPassword);
   // eslint-disable-next-line no-param-reassign
-  currentUser.save();
+  await currentUser.save();
   // ToDo: Invalidate current token? How?
 };

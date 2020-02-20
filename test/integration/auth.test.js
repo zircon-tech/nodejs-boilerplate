@@ -184,10 +184,22 @@ describe('auth API', function test() {
 
   describe('profile and change password', () => {
     it('get profile', async () => {
-
+      const user = await seedUser(1);
+      const jwtToken = await logInUser(user);
+      const res = await chai.request(server).post('/api/user/profile')
+        .set('x-api-key', process.env.API_KEY)
+        .set('authorization', `Bearer ${jwtToken}`)
+        .send({
+          oldPassword: user.password,
+          newPassword,
+        });
+      expect(res.status).to.eq(200);
+      ''
+      '/user/profile'
     });
     it('update profile', async () => {
-
+      const user = await seedUser(1);
+      const jwtToken = await logInUser(user);
     });
     it('change password', async () => {
       const user = await seedUser(1);

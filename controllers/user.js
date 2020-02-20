@@ -17,7 +17,7 @@ exports.add = (req, res) => {
   );
 };
 
-exports.get = (req, res) => userServices.getUser({
+exports.get = (req, res) => userServices.getCurrentUser({
   ...req.query,
   ...req.body,
   ...req.params,
@@ -27,7 +27,7 @@ exports.get = (req, res) => userServices.getUser({
   errorHandler(res),
 );
 
-exports.update = (req, res) => userServices.update({
+exports.update = (req, res) => userServices.updateCurrentUser({
   ...req.query,
   ...req.body,
   ...req.params,

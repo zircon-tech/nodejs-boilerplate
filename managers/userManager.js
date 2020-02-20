@@ -40,9 +40,8 @@ exports.update = async (email, password) => User.updateOne({
   email: email.toLowerCase(),
 }, { password });
 
-exports.updateUserProfile = async (user) => User.updateOne({
-  email: user.email.toLowerCase(),
-}, {
-  firstName: user.firstName,
-  lastName: user.lastName,
-});
+exports.updateUserProfile = async (user, {firstName, lastName}) => {
+  user.firstName = firstName;
+  user.lastName = lastName;
+  return user.save();
+};
